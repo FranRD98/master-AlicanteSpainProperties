@@ -1,0 +1,135 @@
+<?php
+// Cargamos la conexión a MySql
+include( $_SERVER["DOCUMENT_ROOT"] . '/Connections/inmoconn.php' );
+
+// Cargamos los idiomas de la administración
+include( $_SERVER["DOCUMENT_ROOT"] . '/intramedianet/includes/resources/translate.php' );
+
+// Load the common classes
+require_once( $_SERVER["DOCUMENT_ROOT"] . '/includes/common/KT_common.php' );
+
+// Load the tNG classes
+require_once( $_SERVER["DOCUMENT_ROOT"] . '/includes/tng/tNG.inc.php' );
+
+// Make a transaction dispatcher instance
+$tNGs = new tNG_dispatcher("../../");
+
+// Make unified connection variable
+$conn_inmoconn = new KT_connection($inmoconn, $database_inmoconn);
+
+//Start Restrict Access To Page
+$restrict = new tNG_RestrictAccess($conn_inmoconn, "../../");
+//Grand Levels: Level
+$restrict->addLevel("10");
+$restrict->addLevel("9");
+$restrict->addLevel("8");
+$restrict->addLevel("7");
+$restrict->Execute();
+//End Restrict Access To Page
+
+// Start trigger
+$formValidation = new tNG_FormValidation();
+$tNGs->prepareValidation($formValidation);
+// End trigger
+
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$colname_rsImg = "-1";
+if (isset($_GET['p'])) {
+  $colname_rsImg = $_GET['p'];
+}
+
+$colname_rsImg = mysqli_real_escape_string($inmoconn, $colname_rsImg);
+
+$query_rsImg = sprintf("SELECT * FROM news_files WHERE id_fil = %s", GetSQLValueString($colname_rsImg, "int"));
+$rsImg = mysqli_query($inmoconn,$query_rsImg) or die(mysqli_error());
+$row_rsImg = mysqli_fetch_assoc($rsImg);
+$totalRows_rsImg = mysqli_num_rows($rsImg);
+
+
+
+// Make a custom transaction instance
+$customTransaction = new tNG_custom($conn_inmoconn);
+$tNGs->addTransaction($customTransaction);
+// Register triggers
+$customTransaction->registerTrigger("STARTER", "Trigger_Default_Starter", 1, "GET", "KT_Custom1");
+$customTransaction->registerTrigger("BEFORE", "Trigger_Default_FormValidation", 10, $formValidation);
+//$customTransaction->registerTrigger("END", "Trigger_Default_Redirect", 99, "../../modules/contactar/{GET.lang}/contactar/?s=ok");
+// Set custom transaction SQL
+$set  = '';
+$num = count($languages);
+$i = 1;
+foreach($languages as $value) {
+  $nom = "name_".$value."_fil";
+   $set  .= "`".$nom."` =  '".$_GET[$nom]."'";
+  if($i++ < $num) {
+    $set  .= " , ";
+  }
+
+}
+
+$customTransaction->setSQL("UPDATE  `news_files` SET  ". $set."  WHERE  `news_files`.`id_fil` = ".$_GET['p']." LIMIT 1 ;");
+// Add columns
+foreach($languages as $value) {
+  $customTransaction->addColumn("name_".$value."_fil", "STRING_TYPE", "GET", "name_".$value."_fil", $row_rsImg['name_'.$value.'_fil']);
+}
+// End of custom transaction instance
+
+// Execute all the registered transactions
+$tNGs->executeTransactions();
+
+// Get the transaction recordset
+$rscustom = $tNGs->getRecordset("custom");
+$row_rscustom = mysqli_fetch_assoc($rscustom);
+$totalRows_rscustom = mysqli_num_rows($rscustom);
+?>
+<?php
+  echo $tNGs->getErrorMsg();
+?>
+<div class="bg-light">
+    <?php foreach($languages as $value) {  ?>
+    <div class="mb-2 <?php if($tNGs->displayFieldError("custom", "name_".$value."_fil") != '') { ?>has-error<?php } ?>">
+        <div class="input-group">
+            <span class="input-group-text"><img src="/intramedianet/includes/assets/imgs/flags/<?php echo $value; ?>.svg" alt="" height="15"></span>
+            <?php if($value == 'ru') { ?>
+                <input type="text" class="form-control" name="name_<?php echo $value; ?>_fil" id="name_<?php echo $value; ?>_fil" value="<?php echo $row_rscustom['name_'.$value.'_fil']; ?>">
+            <?php } else { ?>
+                <input type="text" class="form-control" name="name_<?php echo $value; ?>_fil" id="name_<?php echo $value; ?>_fil" value="<?php echo KT_escapeAttribute($row_rscustom['name_'.$value.'_fil']); ?>">
+            <?php } ?>
+            <?php echo $tNGs->displayFieldError("custom", "name_".$value."_fil"); ?>
+        </div>
+    </div>
+    <?php } ?>
+    <input type="hidden" name="p" id="p" value="<?php echo $_GET['p'] ?>" />
+    <input type="hidden" name="KT_Custom1" id="KT_Custom1" value="1" />
+</div>
+<?php
+mysqli_free_result($rsImg);
+?>

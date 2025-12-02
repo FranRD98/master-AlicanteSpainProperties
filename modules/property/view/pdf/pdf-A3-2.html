@@ -1,0 +1,220 @@
+<style type="text/css">
+    page {
+        margin: 0;
+    }
+    #header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        padding: 5px;
+        background-image: url(../../media/images/website/pdf-top-a3.png);
+        background-repeat: no-repeat;
+    }
+    #qrcode {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #image-big {
+        position: absolute;
+        left: 10px;
+        top:  120px;
+        width: 570px;
+        height: 440px;
+    }
+    #labels {
+        position: absolute;
+        left: 20px;
+        top:  130px;
+    }
+    #labels .label {
+        padding: 5px 10px;
+        background: #32466B;
+        margin: 0 0 10px;
+        display: inline-block;
+        width: auto;
+        color: #fff;
+    }
+    #labels .label-success {
+        background: #5cb85c;
+    }
+    #labels .label-danger {
+        background: #DB001E;
+    }
+    #labels .label-custom {
+        padding: 5px 10px;
+        margin: 0 0 10px;
+        display: inline-block;
+        width: auto;
+    }
+    #image-small-1, #image-small-2 {
+        position: absolute;
+        left: 590px;
+        top:  120px;
+        width: 235px;
+        height: 167px;
+    }
+    #image-small-2 {
+        top:  297px;
+    }
+    #image-small-3, #image-small-4 {
+        position: absolute;
+        left: 590px;
+        top:  474px;
+        width: 111px;
+        height: 142px;
+    }
+    #image-small-4 {
+        left: 713px;
+    }
+    #title {
+        position: absolute;
+        right: 15px;
+        top:  120px;
+        width: 265px;
+    }
+    h2 {
+        margin: 0 0 5px 0;
+        font-size: 20px;
+        color: #000;
+        font-weight: 400;
+    }
+    h3 {
+        margin: 0 0 10px 0;
+        font-size: 14px;
+        color: #666;
+        font-weight: 400;
+    }
+    h4 {
+        margin: 0;
+        font-size: 18px;
+        color: #000;
+        font-weight: 600;
+    }
+    #precio {
+        position: absolute;
+        right: 15px;
+        top:  240px;
+        width: 265px;
+        color: #2474F2;
+    }
+    #precio b {
+        font-size: 22px;
+        font-weight: 300;
+    }
+    #precio span {
+        margin: 0 10px 0 0;
+        display: inline-block;
+    }
+    #precio del {
+        color: red;
+        font-size: 50%;
+    }
+    #description {
+        position: absolute;
+        right: 15px;
+        top:  290px;
+        width: 265px;
+    }
+    #description b {
+        font-weight: 300;
+        color: #000;
+        line-height: 20px;
+    }
+    #iconos {
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        top:  585px;
+        width: 96%;
+        font-size: 14px;
+        background: #eee;
+        padding: 20px 10px;
+        border-radius: 4px;
+    }
+    #iconos b {
+        font-weight: 500;
+    }
+    #iconos span {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #features {
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        top:  850px;
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+        font-weight: 300;
+    }
+    #footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-image: url(../../media/images/website/pdf-foot-a3.png);
+        background-repeat: no-repeat;
+    }
+</style>
+<page format="A3" orientation="L">
+    <div id="header"></div>
+    <div id="qrcode">
+        <qrcode value="{URL}" ec="L" style="width: 24mm;"></qrcode>
+    </div>
+    <div id="image-big">
+        <img src="{IMGBIG}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="labels">
+        {LABELS}
+    </div>
+    <div id="image-small-1">
+        <img src="{IMGSMALL1}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="image-small-2">
+        <img src="{IMGSMALL2}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="image-small-3">
+        <img src="{IMGSMALL3}" style="width: 100%;">
+    </div>
+    <div id="image-small-4">
+        <img src="{IMGSMALL4}" style="width: 100%;">
+    </div>
+    <div id="title">
+        <h2>{H1}</h2>
+        <h3>{H2}</h3>
+        <h4>{REF}</h4>
+    </div>
+    <div id="precio">
+        <b>{PRECIO}</b>
+    </div>
+    <div id="description">
+        <b>{DESCRIPTION}</b>
+    </div>
+    <!-- <div id="features">
+        <b>{FEATURES}</b>
+    </div> -->
+    <div id="iconos">
+        <table style="width: 100%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                {ICONHAB}
+                {ICONBAN}
+                {ICONM2}
+                {ICONM2P}
+                {POOL}
+                {PARKING}
+                {ENERGY}
+            </tr>
+        </table>
+    </div>
+    <div id="footer"></div>
+</page>
+<!-- backcolor="#AAAACC" -->

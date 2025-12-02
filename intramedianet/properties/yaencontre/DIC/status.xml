@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+
+    <status id="1" name="Compra"></status>
+
+    <status id="2" name="Alquiler"></status>
+
+    <status id="3" name="Alquiler de temporada"></status>
+
+    <status id="4" name="Traspaso"></status>
+
+    <status id="7" name="Alquiler con opción a compra"></status>
+
+</xml>

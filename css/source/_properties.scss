@@ -1,0 +1,464 @@
+//  ============================================================================
+//  /* @group LISTADOS DE PROPIEDADES */
+//  ============================================================================
+
+.item-list-property {
+    h3 {
+        font-size: 24px;
+        font-weight: 300;
+
+        @include text-wrap;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+    
+    h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #a3a3a3;
+
+        @include text-wrap;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .prices {
+        color: $primary;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 10px;
+
+        span,
+        del {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    
+    .icons {
+        font-size: 11px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        img {
+            height: 16px;
+            display: inline-block;
+        }
+        span {
+            display: inline-block;
+            padding-left: 8px;
+        }
+
+        ul {
+            padding: 10px 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+.fav-default {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 36px;
+    width: 36px;
+    line-height: 1;
+
+    img {
+        height: 22px;
+    }
+}
+
+//  ============================================================================
+//  /* @group PROPIEDADES */
+//  ============================================================================
+
+.search-btn-props {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px 0 0 8px;
+    @include transition;
+
+    a {
+        color: #fff;
+        font-size: 18px;
+        padding: 8px 16px 10px;
+        display: inline-block;
+
+        img {
+            height: 26px;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.form-group,
+.porta-order,
+.porta-num,
+.relative {
+    position: relative;
+}
+
+.porta-label {
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    padding-top: 10px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.porta-order,
+.porta-num {
+    text-align: center;
+
+    span.customSelect {
+        border: 0 !important;
+        border-radius: 0;
+        background-color: #fff;
+        color: $text-form;
+        font-weight: bold;
+    }
+    strong {
+        color: #000;
+    }
+    .customSelectInner {
+        color: $text-form;
+        font-size: 15px;
+        border: 0;
+        background-color: #fff;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 8px;
+        margin-top: 6px;
+        &:after {
+            font-weight: bold;
+            color: $dark;
+        }
+    }
+}
+
+.views-properties {
+    .btn {
+        padding: 0 !important;
+        line-height: 49px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50% !important;
+        border: 0 !important;
+        margin-right: 6px;
+
+        &:hover {
+            z-index: 0 !important;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        &:focus,
+        &:active {
+            box-shadow: none;
+        }
+        &.btn-active {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        img {
+            height: 22px;
+            position: relative;
+            margin-top: -4px !important;
+        }
+    }
+}
+
+.porta-order,
+.porta-num {
+    .customSelectInner {
+        &::after {
+            top: 44%;
+        }
+    }
+
+    span.customSelect,
+    input[type="text"],
+    .select2-container--default .select2-selection--multiple {
+        border-radius: 0;
+        min-height: 48px;
+        border: 1px solid #000;
+    }
+}
+
+.property-list-box {
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 0;
+
+    .add-fav,
+    .rem-fav,
+    .add-fav2,
+    .rem-fav2 {
+        @extend .fav-default;
+    }
+
+    .property {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        display: block;
+        @include transition(1s);
+
+        .porta-img {
+            position: relative;
+            z-index: 0;
+
+            .labels {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                z-index: 1;
+
+                .badge {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        a.textos {
+            text-decoration: none;
+
+            .property-detail {
+                padding: 15px;
+                @extend .item-list-property;
+            }
+        }
+        .view-more {
+            position: absolute;
+            text-transform: uppercase;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0;
+            color: $primary;
+            font-size: 12px;
+            font-weight: 300;
+            transition: 0.4s;
+        }
+        .ref {
+            @extend .badge;
+            @extend .bg-primary;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            display: none;
+        }
+
+        &:hover {
+            .view-more {
+                opacity: 1;
+            }
+        }
+    }
+
+    @extend .slides-custom; //iconos izquierda-derecha para el slider. En _custom-mixins.sccs
+
+    .loading {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3) url(/media/images/website/large-loading.gif) no-repeat center center;
+    }
+}
+
+.btn-props-list {
+    display: none;
+}
+
+@include media-breakpoint-up(md) {
+    .sidebar-content {
+        .property-list-list {
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+        .vistas-prop {
+            min-width: 100% !important;
+        }
+    }
+}
+
+.sidebar-content-full {
+    .property-list-list {
+        width: 100% !important;
+        min-width: 100% !important;
+
+        .property-list-box {
+            @extend .px-lg-3;
+
+            .property {
+                @extend .row;
+
+                .description {
+                    display: block;
+                }
+                .property-detail {
+                    padding-top: 15px;
+                }
+            }
+            .porta-img {
+                @extend .col-lg-5;
+                padding-left: 0;
+            }
+            .textos {
+                @extend .col-lg-7;
+                text-align: left;
+            }
+        }
+
+        // Zig-zag de propiedades (comentar si no se quiere usar)
+        //
+        &:nth-child(even) {
+            .add-fav,
+            .rem-fav,
+            .add-fav2,
+            .rem-fav2 {
+            }
+
+            .property-list-box {
+                .porta-img {
+                    @extend .px-0;
+                }
+                .textos {
+                    @extend .order-lg-first;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group SEARCH SIDEBAR */
+//  ============================================================================
+
+.sidebar-form {
+    margin-bottom: -15px;
+
+    .col-md-8,
+    .col-md-4,
+    .col-md-3 {
+        @extend .col-12;
+    }
+}
+
+//  ============================================================================
+//  /* @group MAPA PROPIEDADES */
+//  ============================================================================
+
+#mapa_propiedades {
+    height: 700px;
+    margin-bottom: 40px;
+    img {
+        max-width: auto;
+    }
+}
+
+#mapa img {
+    max-width: none;
+}
+
+.cluster {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 300;
+    text-shadow: 0 0 2px #fff;
+    line-height: 58px;
+}
+
+.cluster-1,
+.cluster-2,
+.cluster-3 {
+    background: url(/media/images/website/map-cluster.png) no-repeat;
+    width: 55px;
+    height: 55px;
+}
+
+//  ============================================================================
+//  /* @group PROPIADEDES VISTAS*/
+//  ============================================================================
+
+.viewed-props-full {
+    margin-bottom: 30px;
+
+    a.wrapper {
+        display: block;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+
+        h3 {
+            margin: 8px 0 10px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 2;
+            color: #3e3e3e;
+
+            @extend .text-nowrap;
+
+            small {
+                display: block;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1;
+                text-transform: uppercase;
+                color: #7b7979;
+            }
+        }
+        .prices {
+            color: #303030;
+            padding-top: 6px;
+            font-size: 20px;
+            font-weight: 600;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 22px;
+            }
+
+            strong {
+                font-size: 15px;
+            }
+        }
+    }
+}
+.vistas-prop {
+    .btn .badge {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+}

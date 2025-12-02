@@ -1,0 +1,160 @@
+#!/usr/bin/env php
+<?php
+// Execute only via shell
+if(php_sapi_name() !== 'cli') {
+    die ("Script executable only via shell");
+}
+set_time_limit(0);
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+ini_set('default_socket_timeout', '-1');
+
+if (!file_exists(__DIR__.'/vendor/autoload.php')) {
+    throw new \RuntimeException(
+        "\n"
+        ."[ERROR] It seems that those dependencies aren't properly installed.\n"
+        ."Please run composer install on project root.\n"
+        ."\n\n"
+    );
+}
+require __DIR__ . '/vendor/autoload.php';
+
+define('APP_PATH', __DIR__ . '/..');
+
+$languages = array('da', 'de', 'en', 'es', 'fi', 'fr', 'is', 'nl', 'no', 'ru', 'se', 'zh');
+
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+use Symfony\Component\Console\Question\Question;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Question\ConfirmationQuestion;
+use Symfony\Component\Console\Input\InputOption;
+
+use Stichoza\GoogleTranslate\TranslateClient;
+use Stringy\Stringy;
+
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
+
+// COMANDO PARA TRADUCIR
+class TranslateCommand extends Command
+{
+    protected $languages;
+
+    public function configure()
+    {
+       $this
+           ->setName('t:all')
+           ->setDescription('Will translate the term and output clean string')
+           ->addArgument(
+               'term',
+               InputArgument::REQUIRED,
+               'A string to translate'
+           )
+           ->addArgument(
+               'lang',
+               InputArgument::OPTIONAL,
+               'The original language for the string'
+           )
+           ->addArgument(
+               'languages',
+               InputArgument::IS_ARRAY,
+               'List of languages to transalte'
+           )
+           ->addOption(
+               'secure',
+               's',
+               InputOption::VALUE_OPTIONAL,
+               'Check before replace'
+           )
+       ;
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output)
+    {
+       $s = $input->getOption('secure');
+       $term = $input->getArgument('term');
+       $olang = $input->getArgument('lang') ?: 'en';
+       $this->languages = $input->getArgument('languages') ?: $this->languages;
+
+       $t = new TranslateClient();
+       $cleanTerm = Stringy::create($term)->slugify()->underscored();
+
+       $adapter = new Local(APP_PATH);
+       $filesystem = new Filesystem($adapter);
+
+       foreach ($this->languages as $lang) {
+           $file = 'resources/lang_'.$lang.'.php';
+           $lang = ($lang == 'se')?'sv':$lang;
+           $translated = ucfirst($t->setSource($olang)->setTarget($lang)->translate($term));
+           $append = '$langStr["' . $term . '"] = "'.$translated.'";';
+           if( !$filesystem->has($file) ) {
+               continue;
+
+           }
+           $content = $filesystem->read($file);
+
+           $helper = $this->getHelper('question');
+
+           echo "\n";
+           echo "\n";
+           if($s){
+               $question = new Question($lang.': '.$translated.' | ¿Quieres modificar la traducción?(intro para omitir)', false);
+
+               $translated = $helper->ask($input, $output, $question)? : $translated;
+           }
+
+
+           $replace = '/\$langStr\[["|\']'.$term.'["|\']\].*["|\'](.*?)["|\'];/i';
+           if( preg_match_all($replace, $content, $matches, PREG_SET_ORDER) ){
+               $question = new ConfirmationQuestion($lang.': "'.$matches[0][1]. '" ==> "'.$translated.'" (y/n)', false);
+               $respuesta = $helper->ask($input, $output, $question);
+
+               if ($respuesta) {
+                   $append = '$langStr["' . $term . '"] = "'.$translated.'";';
+                   $content = preg_replace( $replace , $append , $content );
+               } else {
+                   $append = '$langStr["' . $term . '"] = "'.$matches[0][1].'";';
+               }
+           } else {
+               $content = Stringy::create($content)->replace('?>', $append."\n?>");
+           }
+
+           $filesystem->put($file, $content);
+
+           echo $lang.': '.$append;
+           echo "\n";
+       }
+       echo "\n";
+       echo "------------------------------------------------";
+       echo "\n";
+       echo "------------------------------------------------";
+       echo "\n";
+       echo "\n";
+       echo 'Resultado: $lng_'.$cleanTerm;
+       echo "\n";
+       echo "\n";
+       echo "------------------------------------------------";
+       echo "\n";
+       echo "------------------------------------------------";
+       echo "\n";
+   }
+
+   public function setLanguages($languages)
+   {
+       $this->languages = $languages;
+       return $this;
+   }
+}
+
+
+use Symfony\Component\Console\Application;
+
+$app = new Application('Mediaelx Master Tools', 'v1.0');
+
+$command = new TranslateCommand();
+$app->add($command->setLanguages($languages));
+
+$app->run();

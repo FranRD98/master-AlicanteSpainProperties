@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * Project:     SmartyPaginate: Pagination for the Smarty Template Engine
+ * File:        function.paginate_next2.php
+ * Author:      Monte Ohrt <monte at newdigitalgroup dot com>
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *
+ * @link http://www.phpinsider.com/php/code/SmartyPaginate/
+ * @copyright 2001-2005 New Digital Group, Inc.
+ * @author Monte Ohrt <monte at newdigitalgroup dot com>
+ * @package SmartyPaginate
+ * @version 1.6-dev
+ */
+
+function smarty_function_paginate_next2($params, &$smarty) {
+    $paginate = new SmartyPaginate();
+    $_id = 'default';
+    $_attrs = array();
+
+    if (!class_exists('SmartyPaginate')) {
+        trigger_error("paginate_next2: missing SmartyPaginate class");
+        return;
+    }
+    if (!isset($_SESSION['SmartyPaginate'])) {
+        trigger_error("paginate_next2: SmartyPaginate is not initialized, use connect() first");
+        return;
+    }
+
+    foreach($params as $_key => $_val) {
+        switch($_key) {
+            case 'id':
+                if (!$paginate->isConnected($_val)) {
+                    trigger_error("paginate_next2: unknown id '$_val'");
+                    return;
+                }
+                $_id = $_val;
+                break;
+            default:
+                $_attrs[] = $_key . '="' . $_val . '"';
+                break;
+        }
+    }
+
+    if ($paginate->getTotal($_id) === false) {
+        trigger_error("paginate_next2: total was not set");
+        return;
+    }
+
+    $_url = $paginate->getURL($_id);
+
+    $_attrs = !empty($_attrs) ? ' ' . implode(' ', $_attrs) : '';
+
+    if(($_item = $paginate->_getNextPageItem($_id)) !== false) {
+        $_show = true;
+        $_text = isset($params['text']) ? $params['text'] : $paginate->getNextText($_id);
+        $_url = parse_url($_url, PHP_URL_PATH) . '?';
+        $_url .= $paginate->getUrlVar($_id) . '=' . $_item;
+    } else {
+        $_show = false;
+    }
+    return $_show ? '<link rel="next" href="' . $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . str_replace('&','&amp;', $_url) . '" />' : '';
+
+}
+
+?>

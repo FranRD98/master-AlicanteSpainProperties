@@ -1,0 +1,361 @@
+<style type="text/css">
+    page {
+        margin: 0;
+    }
+    #header 
+    {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: calc(100% - 50px);
+        height: 90px;
+        padding: 5px;
+    }
+    #qrcode span
+    {
+        font-size: 10px;
+        color: {COLOR};
+        margin-top: 3px;
+    }
+    #qrcode 
+    {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+
+    #logo {
+        position: absolute;
+        right:20px;
+        top:130px;
+        width:100px;
+        height: 100px;
+        z-index:2;
+    }
+     #description
+    {
+        top: 115px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        height: 60px;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        color: #222;
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        width: 98%;
+        text-align: center;
+    }
+    #description h2
+    {
+        font-weight: normal;
+        font-size: 18px;
+    }
+    #description span 
+    {
+        margin: 10px 0 5px;
+        text-decoration: underline;
+        color: #000;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    #image-big 
+    {
+        position: absolute;
+        left: 10px;
+        top:  220px;
+        width: 773px;
+        height: 530px;
+    }
+    #labels {
+        position: absolute;
+        left: 20px;
+        top:  230px;
+    }
+    #labels .label {
+        padding: 5px 10px;
+        background: #2c394e;
+        margin: 0 0 10px;
+        display: inline-block;
+        width: auto;
+        color: #fff;
+    }
+    #labels .label-success {
+        background: #5cb85c;
+    }
+    #labels .label-danger {
+        background: #DB001E;
+    }
+    #labels .label-custom {
+        padding: 5px 10px;
+        margin: 0 0 10px;
+        display: inline-block;
+        width: auto;
+    }
+    #image-small-1, #image-small-2, #image-small-3 {
+        position: absolute;
+        left: 10px;
+        top:  760px;
+        width: 251px;
+        height: 173px;
+    }
+    #image-small-2 {
+        left:  271px;
+    }
+    #image-small-3 {
+        left:  532px;
+    }
+    #title 
+    {
+        position: absolute;
+        text-align: right;
+        left: 330px;
+        top:  30px;
+        width: 340px;
+    }
+
+    h3 
+    {
+        margin: 0 0 8px 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #222;
+        font-weight: lighter;
+    }
+    .precio 
+    {
+       font-size: 24px;
+       /*color: {COLOR};*/
+       font-weight: 400;
+    }
+    .precio del 
+    {
+        color: #7b7b7b;
+        font-size: 50%;
+    }
+    
+
+
+    #private{
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top:  1001px;
+        width: 95%;
+        font-size: 14px;
+        text-align: center;
+        color:#000;
+    }
+     #iconos {
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        bottom:  80px;
+        width: 96%;
+        font-size: 14px;
+        padding: 20px 10px;
+        border-radius: 4px;
+    }
+    #iconos b 
+    {
+        font-weight: 500;
+    }
+
+    #iconos span 
+    {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    #features {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top:  295px;
+        width: 95%;
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+        font-weight: 300;
+    }
+    #features p {
+        font-size: 14px;
+        text-align: left;
+        color: #000;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    #features h2{
+        color:#2c394e;
+        text-align: left;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size:26px;
+    }
+    #features td{
+        text-align: left;
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
+    #features td img{
+        height: 12px;
+        margin-right: 5px;
+    }
+
+    #footer 
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-color: {COLOR};
+        color: {SECONDARYCOLOR};
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #footer td
+    {
+       vertical-align: middle;
+       height: 55px;
+    }
+    #footer b 
+    {
+        font-weight: 400;
+        font-size: 11px;
+        margin: 6px 0;
+        text-transform: uppercase;
+    }
+    #image-gall-1, #image-gall-2, #image-gall-3 {
+        position: absolute;
+        left: 10px;
+        top:  120px;
+        width: 251px;
+        height: 163px;
+    }
+    #image-gall-2 {
+        left:  271px;
+    }
+    #image-gall-3 {
+        left:  532px;
+    }
+</style>
+<page format="A4" orientation="P"  style="font: arial;">
+     <div id="header">
+        {LOGO}
+    </div>
+    <div id="qrcode" style="text-align: center;">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+        <br>
+        <span>+ INFO</span>
+    </div>
+    <div id="title">
+        <!-- <h4>{H2}</h4> -->
+        <h3>{LABELPRECIO}:</h3>
+        <span class="precio">{PRECIO}</span>
+    </div>
+    <div id="description">
+        <span>{REF}</span>
+        <h2>{H1}</h2>
+    </div>
+    <div id="image-big">
+        <img src="{IMGBIG}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="labels">
+        {LABELS}
+    </div>
+    <div id="image-small-1">
+        <img src="{IMGSMALL1}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="image-small-2">
+        <img src="{IMGSMALL2}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="image-small-3">
+        <img src="{IMGSMALL3}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div id="iconos">
+        <table style="width: 100%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                {ICONHAB}
+                {ICONBAN}
+                {ICONM2}
+                {ICONM2P}
+                {POOL}
+                {PARKING}
+                {ENERGY}
+            </tr>
+        </table>
+    </div>
+
+      <div id="footer" >
+        <table style="margin-left: 15px;width: 95%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="text-align: left; width: 33%">
+                    {EMAIL}
+                </td>
+                <td style="text-align: center; width: 33%">
+                    {PHONE}
+                </td>
+                <td style="text-align: right; width: 33%">
+                    {WEBSITE}
+                </td>
+            </tr>
+        </table>
+    </div>
+</page>
+<page format="A4" orientation="P"  style="font: arial;">
+    <div id="header">
+        {LOGO}
+    </div>
+    <div id="qrcode" style="text-align: center;">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+        <br>
+        <span>+ INFO</span>
+    </div>
+    <div id="title">
+        <!-- <h4>{H2}</h4> -->
+        <h3>{LABELPRECIO}:</h3>
+        <span class="precio">{PRECIO}</span>
+    </div>
+    
+    <div id="image-gall-1">
+        {IMGGALL1}
+    </div>
+    <div id="image-gall-2">
+        {IMGGALL2}
+    </div>
+    <div id="image-gall-3">
+        {IMGGALL3}
+    </div>
+    <div id="features">
+        <b>{FEATURES}</b>
+    </div>
+    <div id="footer" >
+        <table style="margin-left: 15px;width: 95%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="text-align: left; width: 33%">
+                    {EMAIL}
+                </td>
+                <td style="text-align: center; width: 33%">
+                    {PHONE}
+                </td>
+                <td style="text-align: right; width: 33%">
+                    {WEBSITE}
+                </td>
+            </tr>
+        </table>
+    </div>
+</page>
+<!-- <page format="A4" orientation="P"  style="font: arial;">
+    <div id="header"></div>
+    <div id="qrcode">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+    </div>
+    <div id="footer"></div>
+</page> -->
+<!-- backcolor="#AAAACC" -->

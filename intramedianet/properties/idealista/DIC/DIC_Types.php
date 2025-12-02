@@ -1,0 +1,68 @@
+<?php
+if ($lang_adm == 'es') {
+    return array(
+        "flat" => __("Apartamento", 1),
+        "house" => __("Casa", 1),
+        "house_independent" => __("Casa independiente", 1),
+        "house_semidetached" => __("Casa adosada", 1),
+        // "house_terraced" => __("House terraced", 1),
+        "rustic" => __("Rústico", 1),
+        "rustic_house" => __("Casa rústica", 1),
+        "rustic_village" => __("Pueblo", 1),
+        "rustic_castle" => __("Castillo", 1),
+        "rustic_palace" => __("Palacio", 1),
+        "rustic_rural" => __("Rural rústico", 1),
+        "rustic_caseron" => __("Caserón", 1),
+        "rustic_cortijo" => __("Cortijo ", 1),
+        "rustic_masia" => __("Masia", 1),
+        "rustic_terrera" => __("Terrera", 1),
+        "rustic_torre" => __("Torre", 1),
+        "storage" => __("Almacenamiento", 1),
+        "building" => __("Edificio", 1),
+        "garage" => __("Garaje", 1),
+        "land" => __("Parcela", 1),
+        "land_urban" => __("Parcela urbana", 1),
+        "land_countrybuildable" => __("Parcela edificable", 1),
+        "land_countrynonbuildable" => __("Parcela no edificable", 1),
+        "office" => __("Oficina", 1),
+        "premises" => __("Local", 1),
+        "premises_commercial" => __("Local comercial", 1),
+        "premises_industrial" => __("Local industrial", 1),
+        "storage" => __("Trastero", 1),
+    );
+} else {
+    return array(
+        "flat" => __("Flat", 1),
+        "house" => __("House", 1),
+        "house_independent" => __("House independent", 1),
+        "house_semidetached" => __("House semidetached", 1),
+        // "house_terraced" => __("House terraced", 1),
+        "rustic" => __("Rustic", 1),
+        "rustic_house" => __("Rustic house", 1),
+        "rustic_village" => __("Rustic village", 1),
+        "rustic_castle" => __("Rustic castle", 1),
+        "rustic_palace" => __("Rustic palace", 1),
+        "rustic_rural" => __("Rustic rural", 1),
+        "rustic_caseron" => __("Rustic caseron", 1),
+        "rustic_cortijo" => __("Rustic cortijo", 1),
+        "rustic_masia" => __("Rustic masia", 1),
+        "rustic_terrera" => __("Rustic terrera", 1),
+        "rustic_torre" => __("Rustic torre", 1),
+        "storage" => __("Storage", 1),
+        "building" => __("Building", 1),
+        "garage" => __("Garage", 1),
+        "land" => __("Land", 1),
+        "land_urban" => __("Land urban", 1),
+        "land_countrybuildable" => __("Land country buildable", 1),
+        "land_countrynonbuildable" => __("Land country non buildable", 1),
+        "office" => __("Office", 1),
+        "premises" => __("Premises", 1),
+        "premises_commercial" => __("Premises commercial", 1),
+        "premises_industrial" => __("Premises industrial", 1),
+        "storage" => __("Storage room", 1),
+    );
+}
+
+
+
+

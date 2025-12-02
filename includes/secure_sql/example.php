@@ -1,0 +1,1 @@
+This is help file which shows how to implement the secure class.

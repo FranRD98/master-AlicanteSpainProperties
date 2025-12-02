@@ -1,0 +1,553 @@
+//  ============================================================================
+//  /* @group PROPIEDAD */
+//  ============================================================================
+
+.property-form {
+    #requestInfoForm {
+        @extend .custom-form; // en _custom-mixins.scss
+    }
+}
+
+.property-title {
+    background-color: #fff;
+    padding: 15px 0;
+
+    .main-title {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+
+        .text-muted {
+            color: $primary !important;
+        }
+
+        small {
+            display: block;
+            color: $dark;
+            padding-top: 10px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            .btn {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &.fix-property-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999999999;
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+
+        @include media-breakpoint-down(md) {
+            .price-responsive {
+                display: none;
+            }
+        }
+    }
+
+    .btn {
+    }
+
+    .precio {
+        font-size: 24px;
+        font-weight: bold;
+        color: $dark;
+
+        del,
+        small {
+            font-size: 16px;
+        }
+    }
+}
+
+.property-gallery {
+    .property-gal {
+        position: relative;
+        z-index: 1;
+
+        .labels {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 2;
+        }
+
+        @extend .slides-custom;
+    }
+
+    .energia {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 3;
+        padding: 10px;
+        text-align: center;
+        border-radius: 4px;
+        img {
+            height: 30px;
+            margin: 0 auto;
+        }
+        span {
+            display: block;
+            margin-top: 5px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+    }
+}
+
+.property-slider-center {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+
+    .slick-list {
+        z-index: 1;
+    }
+
+    .slides {
+        .slick-slide {
+            opacity: 0.4;
+            z-index: 1;
+        }
+        .slick-current {
+            opacity: 1;
+        }
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @extend .slides-custom;
+}
+
+.property-data 
+{
+    .iconos {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        img {
+            height: 18px;
+            display: inline-block;
+        }
+        span {
+            display: inline-block;
+            padding-left: 8px;
+        }
+
+        ul {
+            padding: 10px 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .btn-collapse {
+        text-decoration: none;
+        color: $primary;
+        font-weight: bold;
+    }
+
+    .bloque-texto {
+        p {
+            line-height: 23px;
+            font-size: 15px;
+        }
+
+        .property-description {
+            min-height: 100px;
+        }
+
+        .collapse,
+        .collapsing {
+            height: 9rem; /* [NUM_OF_LINES] x [LINE_HEIGHT] */
+
+            position: relative;
+            padding-bottom: 10px;
+
+            &:before {
+                content: "";
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 24px;
+                position: absolute;
+            }
+        }
+
+        .collapse {
+            position: relative; /* For ...'s content absolute positioning */
+            display: block;
+            overflow: hidden;
+        }
+
+        .collapse.show {
+            height: auto; /* You need to reset the height when not collapsed */
+        }
+
+        .collapse.show:before {
+            display: none; /* Of course you don't want to display ... */
+        }
+    }
+
+    .botonera 
+    {
+        padding: 20px 0;
+
+        .dropdown-menu.show 
+        {
+            border: 1px solid #e3e3e3 !important;
+            border-radius: 15px !important;
+            margin-top: 5px !important;
+        }
+        .dropdown-item
+        {
+            width: calc(100% - 4px);
+            margin: 0 auto;
+        }
+        .social-links
+        {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            a 
+            {
+                @include transition;
+                display: inline-block;
+                font-size: 22px; 
+                line-height: 22px; 
+                position: relative; 
+                padding: 8px 10px;
+                border-radius: 12px;
+                width: 48px;
+                text-align: center;
+          
+                color: $primary;
+
+                i {
+                    font-weight: 300;
+                }
+
+                &:hover 
+                {
+                    background-color: $light;
+                          color: $text;
+                }
+
+            }
+        }
+
+    }
+    .nav-tabs {
+        display: none;
+    }
+    .calendar-disp {
+        min-height: 300px;
+    }
+
+    .tab-content {
+        h3 {
+            margin: 30px 0;
+        }
+
+        .tab-pane {
+            display: block;
+            padding-bottom: 20px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .nav-tabs {
+            display: flex;
+            background-color: $primary;
+            margin-bottom: 20px;
+
+            li {
+                a {
+                    font-size: 16px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 0;
+                    border: 0;
+                    padding-top: 11px;
+                    padding-bottom: 11px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    @include transition;
+
+                    &.active {
+                        background-color: darken($primary, 10%);
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background-color: darken($primary, 10%);
+                    }
+                }
+            }
+        }
+
+        .cardx {
+            border: none;
+        }
+        .cardx .card-header {
+            display: none;
+        }
+        .cardx .collapse {
+            display: block;
+        }
+    }
+}
+
+.gallery-grid 
+{
+    .btn-light 
+    {
+        background-color: #fff
+    }
+
+    @include media-breakpoint-down(md) 
+    {
+        margin-bottom: 0px;
+
+        .small-image-link
+        {
+            width: calc(50% - 8px);
+            float: left;
+            margin: 2px 4px !important;
+        }
+        .main-photo
+        {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+    }
+
+    .small-image-link
+    {
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+
+        .btn.all-img 
+        {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @include media-breakpoint-down(md)
+            {
+                display: none;
+            }
+        }
+    }
+
+   .main-photo
+   {
+        position: relative;
+        z-index: 0;        
+   }
+
+    .gallProp
+    {
+        display: inline-block;
+
+        &+.gallProp 
+        {
+            margin-top: 10px;
+        }
+
+    }
+}
+
+#pane-calendar {
+    .fc-state-default.fc-corner-right,
+    .fc-state-default.fc-corner-left {
+        border-radius: 0;
+        background: #eaeaea;
+        border-color: #eaeaea;
+    }
+    .fc-unthemed th,
+    .fc-unthemed td,
+    .fc-unthemed thead,
+    .fc-unthemed tbody,
+    .fc-unthemed .fc-divider,
+    .fc-unthemed .fc-row,
+    .fc-unthemed .fc-content,
+    .fc-unthemed .fc-popover,
+    .fc-unthemed .fc-list-view,
+    .fc-unthemed .fc-list-heading td {
+        border-color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .fc-unthemed .fc-row {
+        background: #eaeaea;
+
+        @include media-breakpoint-up(lg) {
+            max-height: 78px;
+        }
+    }
+    .fc-unthemed td.fc-today {
+        background-color: $primary;
+        color: #fff;
+    }
+
+    .fc-unthemed th {
+        background: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .fc-scroller.fc-day-grid-container {
+            max-height: 540px;
+        }
+    }
+}
+
+#swipebox-bottom-bar,
+#swipebox-top-bar {
+    opacity: 0.6;
+}
+
+
+#aviso 
+{
+  position: fixed;
+  z-index: 9999999;
+  width: 280px;
+  top: 30%;
+  left: 50%;
+  margin-left: -140px;
+  padding: 15px;
+  background: $light;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+//  ============================================================================
+//  /* @group GALERÍA MODAL  */
+//  ============================================================================
+
+.modal
+{
+    .modal-dialog.modal-full-screen 
+    {
+        margin: 0 !important;
+        max-width: 100%;
+
+        .property-title
+        {
+            .precio
+            {
+                del,
+                span
+                {
+                    font-weight: normal;
+                    display: block;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .modal-content
+        {
+            border-radius: 0;
+        }
+
+        .btn-close-modal
+        {
+            position: initial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-modal 
+        {
+            position: sticky;
+            z-index: 9999999999;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            padding-bottom: 15px !important;
+            box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+
+            @include media-breakpoint-down(lg)
+            {
+                 position: static;
+
+                .property-title .price-responsive
+                {
+                    display: block !important;
+                }
+            }
+           
+            .main-title
+            {
+                margin: 0 !important;
+                text-align: left !important;
+            }
+        }
+
+      
+    }
+ 
+        
+}
+
+//  ============================================================================
+//  /* @group Alerta de casa vendida */
+//  ============================================================================
+
+
+.vendido-tag-big
+{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-25deg);
+    font-size: 90px;
+    font-weight: bold;
+    color: $danger;
+    text-transform: uppercase;
+}
+
+.alert-danger
+{
+    color: #fff;
+    text-align: center;
+    background-color: rgba($danger,0.85);
+    font-size: 18px;
+    font-weight: normal;
+}

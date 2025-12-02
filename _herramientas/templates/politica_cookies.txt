@@ -1,0 +1,134 @@
+<h3>Cookies (mensaje de alerta)</h3>
+
+<p>Utilizamos cookies propias y de terceros para analizar y mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Puede configurar o rechazar la configuración u obtener más información <a href="/cookies">aquí</a>.</p>
+
+<h3>Política de cookies</h3>
+
+<p>Cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario. El navegador del usuario memoriza cookies en el disco duro solamente durante la sesión actual ocupando un espacio de memoria mínimo y no perjudicando al ordenador. Las cookies no contienen ninguna clase de información personal específica, y la mayoría de estas se borran del disco duro al finalizar la sesión de navegador (las denominadas cookies de sesión). La mayoría de los navegadores aceptan como estándar a las cookies y, con independencia de estas, permiten o impiden en los ajustes de seguridad las cookies temporales o memorizadas. Sin su expreso consentimiento (mediante la activación de las cookies en su navegador) las cookies no enlazarán los datos memorizados con sus datos personales proporcionados en el momento del registro o la compra.</p>
+
+<p>LA EMPRESA le puede facilitar el acceso a otras páginas web que consideramos pueden ser de su interés. El objetivo de dichos enlaces es únicamente facilitarle la búsqueda de los recursos que le puedan interesar a través de Internet. No obstante, algunas de dichas páginas no pertenecen a LA EMPRESA, ni se hace una revisión de sus contenidos, por lo que en ningún momento se podrá considerar a LA EMPRESA como responsable de las mismas, del funcionamiento de la página enlazada o de los posibles daños que puedan derivarse del acceso o uso de la misma. Dichas páginas deberán tener a disposición de los usuarios, tanto su propia Política de Privacidad, como el detalle de su Política de Cookies.</p>
+
+<div class=“table-responsive”>
+<table class="table table-bordered table-striped table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <td>
+                    Nombre
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Caducidad
+                </td>
+                <td>
+                    Finalidad
+                </td>
+                <td>
+                    Clase
+                </td>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    __utma
+                </td>
+                <td>
+                    De Terceros (Google Analytics)
+                </td>
+                <td>
+                    2 años
+                </td>
+                <td>
+                    Se usa para distinguir usuarios y sesiones.
+                </td>
+                <td>
+                    No Exenta
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    __utmb
+                </td>
+                <td>
+                    De Terceros (Google Analytics)
+                </td>
+                <td>
+                    30 minutos
+                </td>
+                <td>
+                    Se usa para determinar nuevas sesiones o visitas.
+                </td>
+                <td>
+                    No Exenta
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    __utmc
+                </td>
+                <td>
+                    De Terceros (Google Analytics)
+                </td>
+                <td>
+                    Al finalizar la sesión
+                </td>
+                <td>
+                    Se configura para su uso con Urchin.
+                </td>
+                <td>
+                    No Exenta
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    __utmz
+                </td>
+                <td>
+                    De Terceros (Google Analytics)
+                </td>
+                <td>
+                    6 meses
+                </td>
+                <td>
+                    Almacena el origen o la campaña que explica cómo el usuario ha llegado hasta la página web.
+                </td>
+                <td>
+                    No Exenta
+                </td>
+            </tr>
+    </tbody>
+</table>
+</div>
+
+- ¿Qué tipos de cookies utiliza esta página web?
+
+<ul>
+    <li>Cookies técnicas: Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.</li>
+    <li>Cookies de personalización: Son aquéllas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serian el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde accede al servicio, etc</li>
+    <li>Cookies de análisis: Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que le ofrecemos.</li>
+    <li>Cookies publicitarias: Son aquéllas que, bien tratadas por nosotros o por terceros, nos permiten gestionar de la forma más eficaz posible la oferta de los espacios publicitarios que hay en la página web, adecuando el contenido del anuncio al contenido del servicio solicitado o al uso que realice de nuestra página web. Para ello podemos analizar sus hábitos de navegación en Internet y podemos mostrarle publicidad relacionada con su perfil de navegación.</li>
+    <li>Cookies de publicidad comportamental: Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado. Estas cookies almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función de este.</li>
+</ul>
+
+<h3>Cookies de terceros</h3>
+
+<p>La Web de <b>@@Denominación Social||Mediaelx Web Design S.L.L.@@</b> puede utilizar servicios de terceros que recopilaran información con fines estadísticos, de uso del Site por parte del usuario y para la prestación de otros servicios relacionados con la actividad del Website y otros servicios de Internet. En particular, este sitio Web utiliza Google Analytics, un servicio analítico de web prestado por Google, Inc. con domicilio en los Estados Unidos con sede central en 1600 Amphitheatre Parkway, Mountain View, California 94043.  Para la prestación de estos servicios, estos utilizan cookies que recopilan la información, incluida la dirección IP del usuario, que será transmitida, tratada y almacenada por Google en los términos fijados en la Web Google.com. Incluyendo la posible transmisión de dicha información a terceros por razones de exigencia legal o cuando dichos terceros procesen la información por cuenta de Google.  </p>
+
+<p>El Usuario acepta expresamente, por la utilización de este Site, el tratamiento de la información recabada en la forma y con los fines anteriormente mencionados. Y asimismo reconoce conocer la posibilidad de rechazar el tratamiento de tales datos o información rechazando el uso de Cookies mediante la selección de la configuración apropiada a tal fin en su navegador. Si bien esta opción de bloqueo de Cookies en su navegador puede no permitirle el uso pleno de todas las funcionalidades del Website. Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:</p>
+
+<ul>
+    <li>Chrome,desde http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647</li>
+    <li>Safari, desde http://support.apple.com/kb/ph5042</li>
+    <li>Explorer, desde http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9</li>
+    <li>Firefox, desde http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</li>
+</ul>
+
+<p>Todo lo relativo a las cookies de Google, tanto analíticas como publicitarias, así como su administración y configuración se puede consultar en:</p>
+
+<ul>
+    <li>http://www.google.es/intl/es/policies/technologies/types/</li>
+    <li>http://www.google.es/policies/technologies/ads/</li>
+    <li>https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</li>
+</ul>

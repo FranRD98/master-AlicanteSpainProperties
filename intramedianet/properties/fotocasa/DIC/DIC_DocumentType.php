@@ -1,0 +1,26 @@
+<?php
+
+return array(
+    "1" => "Foto",
+    "2" => "Memoria de calidades",
+    "3" => "Escritura",
+    "4" => "Licencia obra",
+    "5" => "Dossier",
+    "6" => "Otros",
+    "7" => "Tour virtual",
+    "8" => "Video",
+    "9" => "MicroSite",
+    "10" => "Otros Link",
+    "11" => "Vista aérea",
+    "12" => "Logo Plantillas",
+    "13" => "Firma",
+    "15" => "DNI / CIF",
+    "16" => "Contrato",
+    "17" => "Documentación General",
+    "23" => "Plano",
+    "24" => "Contrato",
+    "25" => "Informe",
+    "43" => "Logo",
+    "45" => "Documento del catastro",
+    "47" => "Certificado energético",
+);

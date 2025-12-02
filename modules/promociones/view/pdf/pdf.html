@@ -1,0 +1,400 @@
+<style type="text/css">
+    page {
+        margin: 0;
+        z-index: 1;
+    }
+    #header {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: calc(100% - 50px);
+        height: 90px;
+        padding: 5px;
+    }
+
+    #logo {
+        position: absolute;
+        right:20px;
+        top:130px;
+        /*width:100px;*/
+        height: 50px;
+        z-index:2;
+    }
+
+    #qrcode {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+
+    #qrcode span {
+        font-size: 8px;
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .separator {
+        height: 1px;
+        width: 773px;
+        background-color: #ededed;
+        position: absolute;
+        left: 10px;
+    }
+
+     #footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-color: {COLOR};
+        color: {SECONDARYCOLOR};
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #footer td {
+       vertical-align: middle;
+       height: 55px;
+    }
+
+    #footer b {
+        font-weight: 400;
+        font-size: 11px;
+        margin: 6px 0;
+        text-transform: uppercase;
+    }
+
+    /* Página 1 */
+    .h1, .h2 {
+        position: absolute;
+        width: 754px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+    }
+    .h1 {
+        top: 140px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .h2 {
+        top: 175px;
+        font-size: 14px;
+        color: #000;
+    }
+
+    #image-big {
+        position: absolute;
+        left: 10px;
+        top:  225px;
+        width: 773px;
+        height: 530px;
+    }
+
+    #image-small-1, #image-small-2, #image-small-3 {
+        position: absolute;
+        left: 10px;
+        top:  765px;
+        width: 251px;
+        height: 170px;
+    }
+
+    #image-small-2 {
+        left:  271px;
+    }
+
+    #image-small-3 {
+        left:  532px;
+    }
+
+    .price-from, .price-to  {
+        position: absolute;
+        left: 10px;
+        top: 955px;
+        width: 386px;
+        height: 80px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .price-to {
+        left: 397px;
+    }
+
+    .separator-vert {
+        position: absolute;
+        left: 396px;
+        top: 965px;
+        width: 1px;
+        height: 80px;
+        background-color: #ededed;
+    }
+
+    .price-from, .price-to {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .price-from span, .price-to span {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    /* Página 2 */
+    .iconos {
+        position: absolute;
+        left: 10px;
+        top:  240px;
+        width: 773px;
+    }
+
+    .tableIcons td {
+        text-align: center;
+    }
+
+    .tableIcons td img {
+        height: 30px;
+    }
+
+    .tableIcons td span {
+        display: block;
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+
+    #image-small-4, #image-small-5 {
+        position: absolute;
+        left: 10px;
+        top:  340px;
+        width: 381px;
+        height: 270px;
+    }
+
+    #image-small-5 {
+        left:  402px;
+    }
+
+    .features {
+        position: absolute;
+        left: 10px;
+        top:  650px;
+        height: 545px;
+        width: 773px;
+        overflow: hidden;
+        display: block;
+        font-size: 12px;
+    }
+
+    .features h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .features img {
+        margin-right: 10px;
+    }
+
+    .features td {
+        padding-bottom: 10px;
+    }
+
+    .features p {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: #000;
+        line-height: 22px;
+    }
+
+    /* Página 3 */
+    .properties {
+        position: absolute;
+        left: 10px;
+        top:  120px;
+        width: 773px;
+    }
+
+    .properties h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .properties table thead tr th {
+        text-transform: uppercase;
+        font-size: 6px;
+        border-bottom: 1px solid #707070;
+        padding: 10px;
+        font-weight: normal;
+    }
+
+    .properties table tbody tr td {
+        font-size:10px;
+        border-bottom: 1px solid #ededed;
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    .properties table tbody tr td img {
+        width: 100%;
+        border-radius: 20px;
+    }
+</style>
+
+<page format="A4" orientation="P"  style="font: arial;">
+    
+    <div id="header">
+        {LOGO}
+    </div>
+
+    <div id="qrcode" style="text-align: center;">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+        <br>
+        <span>+ INFO</span>
+    </div>
+
+    <div class="separator" style="top: 120px;"></div>
+
+    <div class="h1">
+        {H1}
+    </div>
+
+    <div class="h2">
+        {H2}
+    </div>
+
+    <div class="separator" style="top: 210px;"></div>
+
+    <div id="image-big">
+        <img src="{IMGBIG}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div id="image-small-1">
+        <img src="{IMGSMALL1}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div id="image-small-2">
+        <img src="{IMGSMALL2}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div id="image-small-3">
+        <img src="{IMGSMALL3}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div class="price-from">
+        {PRICE-FROM}
+    </div>
+
+    <div class="separator-vert"></div>
+
+    <div class="price-to">
+        {PRICE-TO}
+    </div>
+
+    <div id="footer" >
+        <table style="margin-left: 15px;width: 95%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="text-align: left; width: 50%">
+                    {EMAIL}
+                </td>
+                <td style="text-align: right; width: 50%">
+                    {WEBSITE}
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</page>
+
+<page format="A4" orientation="P"  style="font: arial;">
+
+    <div id="header">
+        {LOGO}
+    </div>
+    <div id="qrcode" style="text-align: center;">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+        <br>
+        <span>+ INFO</span>
+    </div>
+
+    <div class="separator" style="top: 120px;"></div>
+
+    <div class="h1">
+        {H1}
+    </div>
+
+    <div class="h2">
+        {H2}
+    </div>
+
+    <div class="separator" style="top: 210px;"></div>
+
+    <div class="iconos">
+        {ICONOS}
+    </div>
+
+    <div id="image-small-4">
+        <img src="{IMGSMALL4}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div id="image-small-5">
+        <img src="{IMGSMALL5}" style="width: 100%; height: 100%;">
+    </div>
+
+    <div class="features">
+        {FEATURES}
+    </div>
+
+    <div id="footer" >
+        <table style="margin-left: 15px;width: 95%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="text-align: left; width: 50%">
+                    {EMAIL}
+                </td>
+                <td style="text-align: right; width: 50%">
+                    {WEBSITE}
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</page>
+
+<page format="A4" orientation="P"  style="font: arial;">
+
+    <div id="header">
+        {LOGO}
+    </div>
+    <div id="qrcode" style="text-align: center;">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+        <br>
+        <span>+ INFO</span>
+    </div>
+
+    <div class="separator" style="top: 120px;"></div>
+
+    <div class="properties">
+        {PROPERTIES}
+    </div>
+
+    <div id="footer" >
+        <table style="margin-left: 15px;width: 95%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="text-align: left; width: 50%">
+                    {EMAIL}
+                </td>
+                <td style="text-align: right; width: 50%">
+                    {WEBSITE}
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</page>

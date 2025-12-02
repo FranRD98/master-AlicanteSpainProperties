@@ -1,0 +1,14 @@
+{
+    "require": {
+        "php": "^8.2",
+        "smarty/smarty": "^5.3",
+        "spipu/html2pdf": "^5.2"
+    },
+    "config": {
+        "preferred-install": {
+            "symfony/polyfill-*": "source",
+            "*": "dist"
+        }
+    }
+
+}

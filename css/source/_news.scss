@@ -1,0 +1,108 @@
+.noticia 
+{
+    margin-bottom: 30px;
+
+    a {
+        text-decoration: none !important;
+        @include transition();
+    }
+    .marco-foto {
+        img {
+            @include transition(1s);
+        }
+
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+
+        margin-bottom: 30px;
+    }
+
+    .text-new {
+        .read-more {
+        }
+        .date {
+            margin-bottom: 20px;
+        }
+    }
+
+    &:hover {
+        .text-new {
+            h4 a {
+                color: $primary;
+            }
+        }
+        .marco-foto {
+            img.img-fluid {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+    }
+}
+
+#last-news {
+}
+
+.page-news {
+    padding-top: 30px;
+
+    .redes {
+        a {
+            margin-right: 30px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            &.facebook {
+                color: #0061a8;
+            }
+            &.twitter {
+                color: #0bd1f5;
+            }
+            &.linkedin {
+                color: #00497e;
+            }
+            &.pinterest {
+                color: #e60000;
+            }
+            i {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .sidebar-news {
+        h2 {
+        }
+
+        .list-group {
+            .list-group-item {
+                font-size: 14px;
+                padding-left: 2px;
+                line-height: 1.8;
+                color: $text;
+                background-color: transparent;
+                text-transform: uppercase;
+
+                border: 0;
+                @include transition;
+
+                &:hover {
+                    color: $secondary;
+                    font-weight: bold;
+                }
+
+                &.active {
+                    color: $primary;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

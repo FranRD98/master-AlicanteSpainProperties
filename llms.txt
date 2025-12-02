@@ -1,0 +1,6 @@
+# Nombre empresa
+> Descripción de la empresa
+---
+## Páginas
+---
+Fin del documento LLMs.txt.

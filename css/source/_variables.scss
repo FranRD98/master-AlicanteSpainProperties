@@ -1,0 +1,56 @@
+$fa-font-path: "fonts";
+$link-color:#444;
+$zindex-modal-backdrop: 999999999;
+$zindex-modal: 99999999999;
+$zindex-popover: 999999999999;
+$zindex-tooltip: 9999999999999;
+
+$dark: #303030;
+$text:#000000; 
+$primary: #017593;
+$secondary: #00bcd4;
+//$warning: #1267d1;
+$light: #f2f2f2;
+
+$main-header-height-top:  30px;
+$main-header-height:  70px;
+$body-padding-top: $main-header-height-top + $main-header-height;
+
+$form_control_height: 50px;
+$text-form: #333;
+$form-text-size: 14px;
+$nav-text-size: 14px;
+
+/* Checkmark form */
+$checkmark-border-radius: 50%;
+$checkmark-border-unchecked: 1px solid $dark;
+$checkmark-container-size: 26px;
+$checkmark-size: 12px;
+$checkmark-width: 2px;
+$checkmark-check-color: #1d1d1b;
+$checkmark-bg-checked: #fff;
+
+$checkmark-label-size: 11px;
+$checkmark-label-weight: 500;
+$checkmark-label-lineheight: 1.36;
+$checkmark-label-color: $dark;
+$checkmark-label-letterspacing: normal;
+
+//ejemplos para customizar el grid de boostrap
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 1023px,
+//   xl: 1280px,
+//   xxl: 1599px
+// );
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 980px,
+//   xl: 1200px,
+//   xxl: 1320px
+// );

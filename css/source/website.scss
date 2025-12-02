@@ -1,0 +1,619 @@
+//variables editadas para cada diseño particular: colores custom, $main-header-height, etc...
+@import "_variables.scss";
+
+@import "bootstrap/bootstrap";
+@import "slick/slick";
+@import "slick/slick-theme";
+@import "fullcalendar/main";
+@import "animate.css";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+@import "fontawesome/light";
+@import "fontawesome/regular";
+@import "fontawesome/brands";
+@import "fontawesome/duotone";
+@import "fontawesome/thin";
+@import "../../js/select2/dist/css/select2.min.css";
+@import "../../js/source/swipebox/src/css/swipebox.css";
+// @import "../../js/source/sidr/dist/stylesheets/jquery.sidr.bare";
+@import url("https://use.typekit.net/xav4vib.css");
+@import "../../js/source/OpenStreetMap/leaflet.css";
+@import "../../js/source/OpenStreetMap/MarkerCluster.css";
+@import "../../js/source/OpenStreetMap/MarkerCluster.Default.css";
+
+@import "components/embed-video";
+@import "components/reporte";
+@import "components/cookies";
+
+@import "custom-mixins"; //degradados, cabeceras para páginas foto-texto, formularios por defecto (custom-form), mixins, etc
+@import "properties"; //listados de propiedades.
+@import "buttons"; //redefinir botones de bootstrap
+
+@import "pages/home";
+@import "pages/miscellaneous"; //css que usa el front para elementos que no solemos tocar nunca
+
+//  ============================================================================
+//  /* @group BODY */
+//  ============================================================================
+
+html,
+body 
+{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: $main-header-height 0 0;
+    text-rendering: optimizeLegibility;
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; //para firefox
+    min-height: 100%;
+    @include sofia;
+}
+
+@include media-breakpoint-up(xl) 
+{
+    body {
+        padding: $body-padding-top 0 0;
+    }
+}
+
+//  ============================================================================
+//  /* @group GENERAL */
+//  ============================================================================
+
+
+.page-content 
+{
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9em;
+}
+
+.main-title 
+{
+    color: $text;
+    letter-spacing: 2px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 30px 0 30px;
+
+    small 
+    {
+        color: var(--gray);
+        font-size: 16px;
+        display: block;
+    }
+}
+
+
+//  ============================================================================
+//  /* @group MAIN HEADER */
+//  ============================================================================
+
+@import "_header.scss"; //main-header + nav, brand, menu responsivo, idiomas drop down
+
+//  ============================================================================
+//  /* @group SLIDER */
+//  ============================================================================
+
+.main-slider 
+{
+    position: relative;
+    width: 100%;
+    max-width: 2048px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 33vh;
+    min-height: 260px;
+    max-height: 420px;
+    background-position: center center;
+    background-size: cover;
+
+    @include media-breakpoint-up(sm) {
+        height: 40vh;
+        max-height: 480px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 60vh;
+        max-height: 580px;
+        margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: calc(100vh - #{$body-padding-top});
+        max-height: 1080px;
+    }
+
+    .caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        color: #fff;
+        text-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+        font-size: 30px;
+
+        small {
+            display: block;
+            font-size: 18px;
+            padding: 10px 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 38px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) 
+{
+    .wrapper-slider-search 
+    {
+        &.center-form {
+            position: relative;
+            z-index: 1;
+
+            .main-slider 
+            {
+                .caption {
+                    top: 40%;
+                }
+            }
+
+            .buscador {
+                top: 50%;
+                position: absolute;
+            }
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group BANNERS HOME */
+//  ============================================================================
+
+a.mini-banner 
+{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        @include overlay($primary);
+        @include transition();
+        opacity: 0.1;
+        z-index: 2;
+    }
+
+    .content-banner {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 3;
+    }
+
+    .btn-show {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 0.4;
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group BUSCADOR */
+//  ============================================================================
+
+@import "_buscador.scss";
+
+//  ============================================================================
+//  /* @group DESTACADOS, OFERTAS Y SIMILARES */
+//  ============================================================================
+
+//Featured properties, Ofertas, Similares
+
+@import "_featured_properties.scss";
+
+
+//  ============================================================================
+//  /* @group LAST NEWS, Listado de Noticias, ficha de noticia */
+//  ============================================================================
+
+@import "_news.scss";
+
+//  ============================================================================
+//  /* @group TEXTO INICIO */
+//  ============================================================================
+
+.home-text 
+{
+    h1 {
+        @extend .main-title;
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+    }
+}
+
+//  ============================================================================
+//  /* @group NEWSLETTER */
+//  ============================================================================
+
+.newsletter 
+{
+    background: var(--primary);
+    padding: 50px 0;
+    margin-bottom: 50px;
+    color: #fff;
+    h2 {
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    label {
+        font-weight: 600;
+    }
+    .checkbox {
+        margin: 10px 0;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+
+//  ============================================================================
+//  /* @group CONTACT FOOT */
+//  ============================================================================
+
+#contact-foot {
+    margin: 20px 0 50px;
+
+    .contact-form 
+    {
+        @extend .custom-form; //formato para formulario por defecto en _custom-mixins.scss
+    }
+    .contact-map {
+        .gmap {
+            iframe {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group FOOTER */
+//  ============================================================================
+
+#footer {
+    padding: 50px 0;
+    background: $primary;
+    color: #fff;
+
+    a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+        @include transition;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .fab {
+        font-size: 20px;
+        font-weight: 100 !important;
+    }
+    .foot-data {
+        a {
+            font-weight: 400;
+        }
+    }
+      ul {
+        font-size: 18px;
+        font-weight: 500;
+
+        .dropup .dropdown-toggle::after {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hidden-on-footer-nav {
+            display: none;
+        }
+
+        li {
+            width: 47%;
+            margin-bottom: 20px;
+            float: left;
+
+            .dropdown-menu {
+                @extend .custom-drop-down; //en _custom-mixins.scss
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+                li {
+                    float: none;
+                    width: auto;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        ul {
+            li {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+#footer-second {
+    background-color: $dark;
+    color: #fff;
+
+    .container {
+        border-top: 1px solid #296484;
+        padding: 25px 0;
+    }
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0 !important;
+
+        a {
+            color: inherit !important;
+            text-decoration: none;
+        }
+    }
+}
+
+.quicklinks-links {
+    background: #000;
+    padding: 30px 30px 52px;
+    margin-top: -22px;
+}
+
+.landings-links {
+    background: #0e0e0f;
+    padding: 30px 30px 82px;
+    margin-top: -22px;
+}
+
+.quicklinks-links,
+.landings-links {
+    a {
+        color: #fff;
+        font-weight: 600;
+        margin: 5px 0;
+    }
+}
+
+@include media-breakpoint-up(md) 
+{
+    .quicklinks-links {
+        padding: 30px;
+        margin-top: 0;
+    }
+    .landings-links {
+        padding: 30px;
+        margin-top: 0;
+    }
+    .quicklinks-links,
+    .landings-links {
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group PROPIADEDES VISTAS*/
+//  ============================================================================
+
+// en _properties.scss
+
+//  ============================================================================
+//  /* @group LISTADO DE PROPIEDADES Y MAPA */
+//  ============================================================================
+
+// en _properties.scss
+
+//  ============================================================================
+//  /* @group PROPIEDAD */
+//  ============================================================================
+
+@import "_property.scss"; //Ficha de propiedad
+
+//  ============================================================================
+//  /* @group CONTACTAR */
+//  ============================================================================
+
+.contact-map 
+{
+    iframe {
+        width: 100%;
+        height: 430px;
+    }
+}
+
+.gdpr 
+{
+    display: block;
+    margin: 10px 0 0;
+    font-size: 9px;
+    line-height: 14px;
+    height: 40px;
+    overflow: scroll;
+
+    b {
+        font-weight: 800;
+    }
+}
+
+.page-contact {
+    .contact-form {
+        form {
+            @extend .custom-form; //en _custom-mixins.scss
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group ZONAS, Ciudades */
+//  ============================================================================
+
+@import "_zonas.scss";
+
+//  ============================================================================
+//  /* @group reCAPTCHA */
+//  ============================================================================
+
+.g-recaptcha 
+{
+    width: 100px;
+    height: 70px;
+    max-width: 100%;
+    transform: scale(0.7);
+    transform-origin: 0 0;
+}
+
+//  ============================================================================
+//  /* @group BARRA RESPONSIVA */
+//  ============================================================================
+
+//antigua barrar con redes y contact para vista movil. Ahora solamente muestra el contactar por whatsapp
+
+@import "_barra-responsiva.scss";
+
+//  ============================================================================
+//  /* @group MAPA GOOGLE */
+//  ============================================================================
+
+.porta-gmap {
+    .gmap {
+        height: 400px;
+
+        img {
+            max-width: auto;
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group CUSTOM SELECTS */
+//  ============================================================================
+
+//select2 por defecto para buscador y buscador avanzado
+
+@import "_custom-selects.scss";
+
+
+//  ============================================================================
+//  /* @group PAGINATION */
+//  ============================================================================
+
+.pagination {
+    clear: both;
+}
+
+//  ============================================================================
+//  /* @group MODAL */
+//  ============================================================================
+
+.modal {
+    z-index: 2000000000;
+
+    .g-recaptcha iframe {
+        transform: scale(0.9);
+        transform-origin: 0;
+        @include media-breakpoint-up(md) {
+            transform: none;
+            transform-origin: none;
+        }
+    }
+
+    .modal-body {
+        font-size: 14px;
+        .checkbox {
+            font-size: 12px;
+        }
+    }
+
+    form {
+        @extend .custom-form; //en _custom-mixins.scss
+    }
+}
+
+//  ============================================================================
+//  /* @group online viewings  */
+//  ============================================================================
+
+.boton-lateral-fijo 
+{
+    position: fixed;
+    top: 45%;
+    right: -60px;
+    padding: 10px 12px;
+    background-color: #172038;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    transform: rotate(270deg);
+    z-index: 999;
+}
+.boton-lateral-fijo img {
+    height: 22px;
+}
+.boton-lateral-fijo:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+//  ============================================================================
+//  /* @group FIX SAFARI GOOGLE FONTS */
+//  ============================================================================
+
+select {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}

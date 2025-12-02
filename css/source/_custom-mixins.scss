@@ -1,0 +1,410 @@
+
+
+@mixin degradado-horizontal($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
+
+@mixin degradado-diag($deg, $color1, $color2, $color3) {
+    background: linear-gradient($deg, $color1 0%, $color2 30%, $color3 65%);
+    background-repeat: no-repeat;
+}
+
+@mixin degradado-vertical($color1, $color2) {
+    background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}
+
+@mixin transition($seconds: 0.3s) {
+    transition: all ease-in-out $seconds;
+}
+
+@mixin overlay($color: rgba(0, 0, 0, 0.3)) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+}
+
+@mixin text-wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin sofia {
+    font-family: 'sofia-pro', sans-serif !important;
+}
+
+@mixin ivyPrestoDisplay {
+    font-family: 'ivypresto-display', sans-serif !important;
+}
+
+/* formulario custom para usar en contacto, ficha de propiedad, etc */
+
+.custom-form {
+    textarea,
+    span.customSelect,
+    input[type="text"],
+    input[type="password"], .form-select,
+    .select2-container--default .select2-selection--multiple, .select2-container-multi .select2-choices, .select2-container .select2-choice {
+        border-radius: 0;
+        min-height: 48px;
+        border: 0;
+        background-color: #f7f7f7;
+        font-weight: 400;
+        font-size: 16px;
+        padding-left: 14px;
+
+        &::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: $text-form;
+        }
+        &:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: $text-form;
+            opacity: 1;
+        }
+        &::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: $text-form;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $text-form;
+        }
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $text-form;
+        }
+
+        .select2-arrow
+        {
+            background-color: transparent;
+            b 
+            {
+                background-color: transparent;
+            }
+        }
+    }
+
+
+    .checkcontainer {
+        min-width: 95%;
+        display: block;
+        margin-top: 4px;
+        position: relative;
+        cursor: pointer;
+        text-align: left;
+        user-select: none;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        /* On mouse-over, add a grey background color */
+        &:hover input ~ .checkmark {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        input:checked ~ .checkmark {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        /* Show the checkmark when checked */
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+        /* Style the checkmark/indicator */
+        .checkmark:after {
+            border: solid $checkmark-check-color;
+            border-width: 0 $checkmark-width $checkmark-width 0;
+            transform: rotate(45deg);
+            @include transition();
+        }
+        &.formulario {
+            margin-left: 0px;
+            color: $dark;
+            font-weight: 400;
+            .checkmark {
+                height: 18px;
+                width: 18px;
+                border-radius: 4px;
+                &:after {
+                    top: 1px;
+                    left: 5px;
+                    border-color: #fff;
+                }
+            }
+            input:checked ~ .checkmark {
+                background-color: $primary;
+            }
+            &.radio {
+                .checkmark {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 8px;
+                    border: 1px solid $dark;
+                    &:after {
+                        display: none;
+                    }
+                }
+                input:checked ~ .checkmark {
+                    background-color: #fff;
+                    border: 3px solid $primary;
+                }
+            }
+        }
+    }
+
+    .checkcontainer {
+        font-size: $checkmark-label-size;
+        font-weight: $checkmark-label-weight;
+        line-height: $checkmark-label-lineheight;
+        color: $checkmark-label-color;
+
+        letter-spacing: $checkmark-label-letterspacing;
+        text-transform: none;
+        padding-left: calc(15px + #{$checkmark-container-size});
+
+        a {
+            color: inherit;
+            font-weight: normal;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .checkmark {
+            background-color: transparent;
+            border: $checkmark-border-unchecked;
+            height: $checkmark-container-size;
+            width: $checkmark-container-size;
+            border-radius: $checkmark-border-radius;
+            @include transition();
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            &:after {
+                border-color: $checkmark-check-color;
+                left: calc(#{$checkmark-size} - 2px);
+                top: calc((#{$checkmark-size} - 2px) / 2);
+                width: calc(#{$checkmark-size} / 2);
+                height: $checkmark-size;
+            }
+        }
+        input:checked ~ .checkmark {
+            background-color: $checkmark-bg-checked;
+            border: 1px solid $checkmark-bg-checked;
+        }
+    }
+
+    
+    .gdpr {
+        font-size: 11px;
+        line-height: 1.64;
+        height: 50px;
+    }
+}
+
+//  ============================================================================
+//  /* @group dropdown menu */
+//  ============================================================================
+
+.custom-drop-down {
+    background-color: $primary !important;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    inset: 10px auto auto 0px !important;
+    color: #fff;
+
+    li.dropdown-item {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 0.35rem 1.3rem;
+        border-left: 0.35rem solid transparent;
+
+        @include transition();
+
+        a {
+            color: #fff;
+            padding: 0 !important;
+            box-shadow: none;
+            border: 0;
+            font-size: 15px;
+            font-weight: normal;
+            background-color: transparent;
+            text-transform: none;
+            @include transition();
+            display: inline-block;
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: #fff !important;
+            border-color: transparent;
+
+            a {
+                background-color: transparent !important;
+                color: $primary !important;
+            }
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group slider propiedades y ficha propiedad */
+//  ============================================================================
+
+.slides-custom {
+    .slides .slick-next,
+    .slides .slick-prev {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        width: 40px;
+        opacity: 0.8;
+        height: 100%;
+        background: none;
+        transition: background 0.4s;
+        transform: none;
+        z-index: 2;
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: url(/media/images/website/properties/next-dark.svg);
+            transform: rotate(180deg);
+            background-color: #fff;
+            opacity: 0.8;
+            display: inline-block;
+            line-height: 27px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 10px;
+            }
+
+            @include transition;
+        }
+    }
+    .slides .slick-next {
+        left: auto;
+        right: 0;
+
+        &:before {
+            content: url(/media/images/website/properties/next-dark.svg);
+            transform: rotate(0deg);
+        }
+
+        @include media-breakpoint-up(lg) {
+            &::before {
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    li {
+        &.slick-active {
+            button {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+//  ============================================================================
+//  /* @group header para cada sección  */
+//  ============================================================================
+
+
+
+.header-sec
+{
+    position: relative;
+    z-index: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    &::before
+    {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          @include overlay(rgba(0,0,0,0.2));
+          top: 0;
+          z-index: 2;
+    }
+    img 
+    {
+        position: relative;
+        z-index: 1;
+    }
+
+    .contenido-banner 
+    {
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .main-title
+        {
+            color: #fff;
+            font-size: 40px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: 2.4px;
+            text-align: left;
+            color: #fff;
+
+            @include media-breakpoint-up(md) 
+            {
+                font-size: 50px;
+            }
+        }
+        .subtitle
+        {
+
+        }
+    }
+}

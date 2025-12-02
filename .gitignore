@@ -1,0 +1,9 @@
+/templates/templates_c/*.php
+/modules/_cache/*.json
+/composer.lock
+/media/images/news/thumbnails/*.*
+!/media/images/news/thumbnails/.gitkeep
+/media/images/
+/vendor
+/node_modules
+.DS_Store

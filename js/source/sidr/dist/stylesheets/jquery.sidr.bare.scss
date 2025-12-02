@@ -1,0 +1,97 @@
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #253238;
+    color: #fff;
+}
+
+.sidr.right {
+    left: auto;
+    right: -260px;
+}
+
+.sidr.left {
+    left: -260px;
+    right: auto;
+}
+
+a.sidr-class-close-sidebar {
+    font-family: $font-family-sans-serif;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #435E6F;
+    border: 1px solid #435E6F;
+    border-radius: 20px;
+    text-decoration: none;
+    &:hover {
+        color: #6895B3;
+    }
+}
+
+.sidr ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #435E6F;
+}
+
+.sidr ul li {
+    display: block;
+    margin: 0;
+    line-height: 48px;
+    border-bottom: 1px solid #435E6F;
+}
+
+.sidr ul li.active,
+.sidr ul li.sidr-class-active {
+    background: #51748B;
+    a {
+        color: #253238;
+    }
+}
+
+.sidr ul li a,
+.sidr ul li span {
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+    color: #51748B;
+}
+
+.sidr ul li ul {
+    border-bottom: 0;
+    margin: 0;
+}
+
+.sidr ul li ul li {
+    font-size: 13px;
+    padding-left: 30px;
+}
+
+.sidr ul li ul li:last-child {
+    border-bottom: 0;
+}
+
+.sidr ul li ul li:hover,
+.sidr ul li ul li.active,
+.sidr ul li ul li.sidr-class-active {
+}
+
+.sidr ul li ul li:hover > a,
+.sidr ul li ul li:hover > span,
+.sidr ul li ul li.active > a,
+.sidr ul li ul li.active > span,
+.sidr ul li ul li.sidr-class-active > a,
+.sidr ul li ul li.sidr-class-active > span {
+}

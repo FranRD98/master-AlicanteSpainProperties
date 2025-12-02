@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /Connections
+Disallow: /includes
+Disallow: /intramedianet
+Disallow: /wheather
+Disallow: /resources
+Disallow: /media/files
+Disallow: /xml
+Disallow: /templates
+Disallow: /modules

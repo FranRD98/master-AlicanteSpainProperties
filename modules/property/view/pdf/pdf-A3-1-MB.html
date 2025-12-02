@@ -1,0 +1,257 @@
+<style type="text/css">
+    page {
+        margin: 0;
+    }
+    #header 
+    {
+        position: absolute;
+        left: 40px;
+        top: 15px;
+        width: calc(100% - 50px);
+        height: 90px;
+        padding: 5px;
+    }
+    #qrcode span
+    {
+        font-size: 10px;
+        color: {COLOR};
+        margin-top: 3px;
+    }
+    #qrcode 
+    {
+        position: absolute;
+        right: 50px;
+        top: 12px;
+    }
+    #image-big 
+    {
+        position: absolute;
+        left: 50px;
+        top:  106px;
+        width: 1110px;
+        height: 812px;
+    }
+    #labels {
+        position: absolute;
+        left: 65px;
+        top:  115px;
+    }
+    #labels .label {
+        padding: 5px 10px;
+        background: #32466B;
+        margin: 0 0 10px;
+        display: inline-block;
+        width: auto;
+        color: #fff;
+    }
+    #labels .label-success {
+        background: #5cb85c;
+    }
+    #labels .label-danger {
+        background: #DB001E;
+    }
+    #labels .label-custom {
+        padding: 5px 10px;
+        margin: 0 0 10px;
+        display: inline-block;
+        width: auto;
+    }
+    #image-small-1, #image-small-2, #image-small-3 {
+        position: absolute;
+        left: 1180px;
+        top:  106px;
+        width: 360px;
+        height: 260px;
+    }
+    #image-small-2 {
+        top:  382px;
+    }
+    #image-small-3 
+    {
+        top:  660px;
+    }
+    #title 
+    {
+        position: absolute;
+        left: 50px;
+        top:  20px;
+        width: 630px;
+    }
+    .decoration
+    {
+        border-left: 1px solid #dddddd;
+        height: 40px;
+        top: 30px;
+        position: absolute;
+        left: 332px;
+    }
+    h2 
+    {
+        margin: 0 0 6px 0;
+        font-size: 16px;
+        color: #000;
+        font-weight: 600;
+    }
+    h3 
+    {
+        margin: 0 0 8px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #7b7b7b;
+        font-weight: lighter;
+    }
+    .precio 
+    {
+       font-size: 18px;
+       color: {COLOR};
+    }
+    .precio del 
+    {
+         color: #7b7b7b;
+        font-size: 50%;
+    }
+    #description {
+        position: absolute;
+        right: 10px;
+        top:  290px;
+        width: 265px;
+    }
+    #description b {
+        font-weight: 300;
+        color: #000;
+        line-height: 20px;
+    }
+     #iconos {
+        position: absolute;
+        left: 1%;
+        right: 1%;
+        bottom:  80px;
+        width: 96%;
+        font-size: 14px;
+        padding: 20px 10px;
+        border-radius: 4px;
+    }
+    #iconos b {
+        font-weight: 500;
+    }
+
+    #iconos span 
+    {
+        color: {COLOR};
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    #features 
+    {
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        top:  850px;
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+        font-weight: 300;
+    }
+    #footer 
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-color: {COLOR};
+        color: {SECONDARYCOLOR};
+        font-size: 16px;
+        font-weight: 500;
+    }
+    #footer td
+    {
+       vertical-align: middle;
+       height: 55px;
+    }
+    #footer b 
+    {
+        font-weight: 400;
+        font-size: 11px;
+        margin: 6px 0;
+        text-transform: uppercase;
+    }
+
+</style>
+<page format="A3" orientation="L">
+    <!-- <div id="header">
+        {LOGO}
+    </div>
+    <div id="qrcode" style="text-align: center;">
+        <qrcode value="{URL}" ec="L" style="width: 20mm;"></qrcode>
+        <br>
+        <span>+ INFO</span>
+    </div>
+
+    <div class="decoration"></div> -->
+
+    <div id="title">
+        <h2>{H1}</h2>
+        <!-- <h4>{H2}</h4> -->
+        <h3>{REF}</h3>
+        <span class="precio">{PRECIO}</span>
+    </div>
+    
+
+
+    <div id="image-big">
+        <img src="{IMGBIG}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="labels">
+        {LABELS}
+    </div>
+    <div id="image-small-1">
+        <img src="{IMGSMALL1}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="image-small-2">
+        <img src="{IMGSMALL2}" style="width: 100%; height: 100%;">
+    </div>
+    <div id="image-small-3">
+        <img src="{IMGSMALL3}" style="width: 100%; height: 100%;">
+    </div>
+   
+ <!--    <div id="description">
+        <b>{DESCRIPTION}</b>
+    </div> -->
+    <!-- <div id="features">
+        <b>{FEATURES}</b>
+    </div> -->
+    <div id="iconos">
+        <table style="width: 100%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                {ICONHAB}
+                {ICONBAN}
+                {ICONM2}
+                {ICONM2P}
+                {POOL}
+                {PARKING}
+                {ENERGY}
+            </tr>
+        </table>
+    </div>
+    <!-- <div id="footer" >
+        <table style="width: 95%;border: none;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="text-align: center; width: 30%">
+                    {EMAIL}
+                </td>
+                <td style="text-align: right; width: 30%">
+                    {PHONE}
+                </td>
+                <td style="text-align: right; width: 40%">
+                    {WEBSITE}
+                </td>
+            </tr>
+        </table>
+    </div> -->
+</page>
+<!-- backcolor="#AAAACC" -->
