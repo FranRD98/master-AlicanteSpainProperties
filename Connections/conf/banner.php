@@ -16,7 +16,7 @@ $actBanner = 1;
 
 $actBannerWidht = 1920;
 
-$actBannerHeight = 964;
+$actBannerHeight = 1080;
 
 
 /*--------------------------------------------------------------------------

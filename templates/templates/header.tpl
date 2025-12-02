@@ -223,7 +223,7 @@
 
         <div class="main-slider" >
 
-            {if $actBannerUrl == 1 && $banners[0].url != ''}<a href="{$banners[0].url}">{/if}
+            {if $actBannerUrl == 0 && $banners[0].url != ''}<a href="{$banners[0].url}">{/if}
             
                 <div class="caption text-center">
 

@@ -1,6 +1,6 @@
 //variables editadas para cada diseño particular: colores custom, $main-header-height, etc...
 @import "_variables.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "bootstrap/bootstrap";
 @import "slick/slick";
 @import "slick/slick-theme";
@@ -50,7 +50,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; //para firefox
     min-height: 100%;
-    @include sofia;
+    @include montserrat;
 }
 
 @include media-breakpoint-up(xl) 
