@@ -1,11 +1,11 @@
 <?php
 $langStr["Más información"] = "Más información";
 $langStr["Inicio"] = "Inicio";
-$langStr["Quienes Somos"] = "Quiénes Somos";
+$langStr["Quienes Somos"] = "Sobre nosotros";
 $langStr["Propiedades"] = "Propiedades";
 $langStr["Favoritos"] = "Favoritos";
 $langStr["Noticias"] = "Noticias";
-$langStr["Contactar"] = "Contactar";
+$langStr["Contactar"] = "Contacto";
 $langStr["Dónde estamos"] = "Dónde estamos";
 $langStr["Nombre"] = "Nombre";
 $langStr["Email"] = "Email";

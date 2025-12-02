@@ -113,7 +113,7 @@
 
     {* @group SEC - TOP CABECERA DESKTOP *}
 
-    <div class="main-header-top d-none d-xl-block">
+    <div class="main-header-top d-none">
         <div class="container">
             <div class="row">
                 <div class="col text-end">
@@ -151,12 +151,12 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
 
-                <div class="col-6 col-md-3">
-                    <a class="d-inline-block" href="{$urlStart}">
-                        <img class="brand img-fluid" src="/media/images/website/website-logo.png" alt="{$nombreEmpresa}" title="{$nombreEmpresa}">
+                <div class="col-5 col-md-3 col-xl-2 h-100">
+                    <a class="d-inline-flex h-100 w-100 align-items-center py-2" href="{$urlStart}">
+                        <img class="brand img-fluid h-100 w-100" src="/media/images/website/website-logo.svg" alt="{$nombreEmpresa}" title="{$nombreEmpresa}">
                     </a>
                 </div>
-                <div class="col-6 col-md-9 text-end">
+                <div class="col-7 col-md-9 col-xl-10 text-end h-100 d-flex justify-content-end align-items-center ps-lg-0">
 
                     <nav id="main-nav" class="d-inline-block">
 
@@ -180,7 +180,25 @@
 
                     </nav>
 
-                    <div class="d-inline-block">
+                    <a class="btn-menu-lateral pill-btn-hamburguer ms-2 d-inline-flex" href="javascript:void(0);">
+                        <span class="d-none d-md-block">Menú</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.401" height="20" viewBox="0 0 30.401 20">
+                            <path data-name="Trazado 10930" d="M32 75h7.6m7.6 0h15.2M32 65.5h30.4M32 56h15.2m7.6 0h7.6" style="fill:none;stroke:#fff;stroke-linejoin:round" transform="translate(-32 -55.5)"></path>
+                        </svg>
+                    </a>
+
+                    <div class="d-none d-lg-flex align-items-center justify-content-center ms-3">
+<a href="{$urlStart}{$url_favorites}/"><span class="favor"></span> <svg xmlns="http://www.w3.org/2000/svg" width="21.741" height="18.988" viewBox="0 0 21.741 18.988">
+                                    <g data-name="Grupo 6725">
+                                        <g data-name="Grupo 6726">
+                                            <path data-name="Trazado 10347" d="M18.869 9.858a24.12 24.12 0 0 1-8.748 7.542 24.115 24.115 0 0 1-8.748-7.542A7.958 7.958 0 0 1 .012 5.052a5.429 5.429 0 0 1 2.055-3.929A5.415 5.415 0 0 1 6.379.1a5.447 5.447 0 0 1 3.742 2.859 5.332 5.332 0 0 1 8.054-1.833 5.428 5.428 0 0 1 2.055 3.926 7.959 7.959 0 0 1-1.361 4.806" transform="translate(.749 .767)" style="fill:none;stroke:#fff;stroke-width:1.5px"></path>
+                                        </g>
+                                    </g>
+                                </svg><span class="budget-fav">{if $totalFavs > 0}({$totalFavs}){/if}</span></a>
+                    </div>
+                    
+                    
+                    <div class="d-inline-block ps-xl-1 d-none d-lg-block menu-idiomas">
                         {*
                            url_flags = "flags" -> Iconos por defecto;
                            url_flags = "flags-rounded" -> iconos en forma de circulo
@@ -201,11 +219,6 @@
                         {/if}
                     </div>
 
-
-                    <a class="btn-menu-lateral  ms-3 d-inline-block" href="javascript:void(0);">
-                        <img src="/media/images/website/bars.svg">
-                    </a>
-
                 </div>
 
             </div>
@@ -223,7 +236,7 @@
 
         <div class="main-slider" >
 
-            {if $actBannerUrl == 0 && $banners[0].url != ''}<a href="{$banners[0].url}">{/if}
+            {if $actBannerUrl == 1 && $banners[0].url != ''}<a href="{$banners[0].url}">{/if}
             
                 <div class="caption text-center">
 

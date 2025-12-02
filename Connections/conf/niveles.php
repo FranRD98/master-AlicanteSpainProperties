@@ -39,7 +39,7 @@ $actUsuarios = 1;
 |
 */
 
-$actRegister = 0;
+$actRegister = 1;
 
 If($actLestinmo == 1) {
     $actEmpleados = 0;

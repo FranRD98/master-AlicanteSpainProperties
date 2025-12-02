@@ -13,11 +13,11 @@
     height: $main-header-height-top;
     line-height: $main-header-height-top;
     z-index: 3;
-    background: #fff;
+    background: transparent !important;
     font-size: 16px;
     color: $dark;
     letter-spacing: normal;
-    padding-top: 5px;
+    //padding-top: 5px;
 
 
     a 
@@ -84,10 +84,24 @@
     left: 0;
     right: 0;
     height: $main-header-height;
-    z-index: 2;
-    background: #fff;
+    width: 100%;
+    z-index: 9999;
+    background: transparent !important;
 
 
+    a {
+        text-decoration: none;
+        font-family: Outfit;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2.2px;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+    }
     #main-nav 
     {
         position: relative;
@@ -97,26 +111,9 @@
 
         li 
         {
-            padding-left: 10px;
-            padding-right: 10px;
-
-            a 
-            {
-                text-decoration: none;
-                color: #141215;
-
-                &:hover 
-                {
-                    color: $primary;
-                }
-            }
-            &.active 
-            {
-                a 
-                {
-                    color: $primary;
-                }
-            }
+            margin-right: 0px; // Pone a 0 la propiedad .list-inline-item:not(:last-child) de website.css
+                    padding-left: 6px;
+        padding-right: 6px;
 
             &.hidden-on-main-nav {
                 display: none;
@@ -135,8 +132,8 @@
 {
     .main-header 
     {
-        top: $main-header-height-top;
-        box-shadow: 0 0px 12px rgba(0,0,0,.2);
+        //top: $main-header-height-top;
+        //box-shadow: 0 0px 12px rgba(0,0,0,.2);
 
         &.fix-header 
         {
@@ -144,9 +141,30 @@
             top: 0;
             left: 0;
             right: 0;
-            z-index: 999999999;
+            z-index: 2;
         }
+
+            .pill-btn-login {
+                padding: 14px 12px;
+                border-radius: 25px;
+                border: solid 1px #fff;
+                letter-spacing: 2.8px;
+                gap:7px;
+            }
+
+            .pill-btn-hamburguer {
+                padding: 14px 10px;
+                border-radius: 25px;
+                border: solid 1px #fff;
+                letter-spacing: 2.8px;
+                gap:7px;
+            }
+
+            .menu-idiomas button:focus{
+                box-shadow: none;
+            }
     }
+
 
     #main-nav 
     {
@@ -156,6 +174,15 @@
             {
                 display: none;
             }
+
+             &.active 
+            {
+                a 
+                {
+                    color: $primary;
+                }
+            }
+
         }
     }
 }
@@ -184,10 +211,10 @@
     .bg-color-modal 
     {
         margin-left: auto;
-        width: 40%;
+        width: 70%;
         min-height: 100%;
         min-width: 340px;
-        max-width: 460px;
+        max-width: 70vw;
         padding: 16px 26px;
 
         background-color: $secondary;

@@ -1,6 +1,7 @@
 //variables editadas para cada diseño particular: colores custom, $main-header-height, etc...
 @import "_variables.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "bootstrap/bootstrap";
 @import "slick/slick";
 @import "slick/slick-theme";
@@ -44,7 +45,7 @@ body
 
 body {
     margin: 0;
-    padding: $main-header-height 0 0;
+    //padding: $main-header-height 0 0;
     text-rendering: optimizeLegibility;
     font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
@@ -56,7 +57,7 @@ body {
 @include media-breakpoint-up(xl) 
 {
     body {
-        padding: $body-padding-top 0 0;
+        //padding: $body-padding-top 0 0;
     }
 }
 
@@ -113,6 +114,7 @@ body {
     max-height: 420px;
     background-position: center center;
     background-size: cover;
+    z-index: 1;
 
     @include media-breakpoint-up(sm) {
         height: 40vh;
@@ -136,18 +138,39 @@ body {
         transform: translateY(-50%);
         left: 0;
         right: 0;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 4px;
+        text-align: center;
         color: #fff;
-        text-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-        font-size: 30px;
+        margin-bottom: 12px;
+
 
         small {
             display: block;
-            font-size: 18px;
-            padding: 10px 0;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            font-family: Outfit;
+            font-size: 80px;
+            font-weight: 100;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.88;
+            letter-spacing: -0.8px;
+            text-align: center;
+            color: #fff;
+            text-transform: none;
+        }
+        small.strong{
+              font-weight: 500;
         }
 
         @include media-breakpoint-up(xl) {
-            font-size: 38px;
+            font-size: 20px;
         }
     }
 }
