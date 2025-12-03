@@ -85,6 +85,122 @@ body.home
             border-radius: 6px;
             padding-top: 15px;
         }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            background-color: green;
+            height: 100%;
+        }
+    
+        .btn-search-reset {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #000;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        .btn-advanced-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #000;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+        }
+
+                .btn-search-map {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #000;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-decoration: none;
+            height: 100%;
+        }
+
+        .btn-save-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #000;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-decoration: none;
+            height: 100%;
+        }
+
+        .btn-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #000;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-decoration: none;
+            height: 100%;
+        }
+
     }
 }
 

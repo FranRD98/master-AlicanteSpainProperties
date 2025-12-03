@@ -108,18 +108,16 @@
         line-height: $main-header-height;
         margin: 0;
 
-        li 
-        {
+        li {
             margin-right: 0px; // Pone a 0 la propiedad .list-inline-item:not(:last-child) de website.css
-                    padding-left: 6px;
-        padding-right: 6px;
+            padding-left: 6px;
+            padding-right: 6px;
 
             &.hidden-on-main-nav {
                 display: none;
             }
             
-            .dropdown-menu 
-            {
+            .dropdown-menu {
                 line-height: 1.8;
                 @extend .custom-drop-down; //en _custom-mixins.scss
             }
