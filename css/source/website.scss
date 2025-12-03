@@ -128,7 +128,8 @@ body {
     }
 
     @include media-breakpoint-up(xl) {
-        height: calc(100vh - #{$body-padding-top});
+        //height: calc(100vh - #{$body-padding-top});
+        height: 100vh;
         max-height: 1080px;
     }
 
@@ -191,7 +192,7 @@ body {
             }
 
             .buscador {
-                top: 50%;
+                top: 75%;
                 position: absolute;
             }
         }
