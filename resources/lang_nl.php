@@ -445,3 +445,6 @@ $langStr["Deja tu nombre y teléfono para iniciar la conversación en WhatsApp"]
 $langStr["Hablar por whatsapp ahora"]["nl"] = "Chat nu via WhatsApp";
 $langStr["Buscar por mapa"] = "Zoeken op kaart";
 $langStr["Ver propiedades"] = "Bekijk panden";
+$langStr["Elige Costa"] = "Drie kusten, één gevoel";
+$langStr["Mediterraneo"] = "De Middellandse Zee, <strong>op jouw manier</strong>";
+

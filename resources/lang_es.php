@@ -451,6 +451,8 @@ $langStr["Deja tu nombre y teléfono para iniciar la conversación en WhatsApp"]
 $langStr["Hablar por whatsapp ahora"] = "Hablar por whatsapp ahora";
 $langStr["Buscar por mapa"] = "Buscar por mapa";
 $langStr["Ver propiedades"] = "Ver propiedades";
+$langStr["Elige Costa"] = "Elige tu costa, vive tu momento";
+$langStr["Mediterraneo"] = "Lo mejor del <strong>Mediterráneo</strong> en un solo lugar";
 
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";

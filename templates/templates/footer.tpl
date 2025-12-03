@@ -26,8 +26,8 @@
 
                 <!-- Títulos -->
                 <div class="banners-ttl pb-3 pb-md-2">
-                    <h3 class="title mb-2">Elige tu costa, vive tu momento</h3>
-                    <h2 class="title mb-4">Lo mejor del<strong> Mediterráneo </strong>en un solo lugar</h2>
+                    <h3 class="title mb-2">{$lng_elige_costa}</h3>
+                    <h2 class="title mb-4">{$lng_mediterraneo}</h2>
                 </div>
 
                 <!-- PRIMERA ÁREA (ft == 0) -->
@@ -101,9 +101,9 @@
 {/if}
 
 
-    {* @group SEC - BANNERS *}
+    {* @group SEC - BANNERS 
 
-    {if $seccion == ''}
+     {if $seccion == ''}
         {if $seccion != $url_news}
             <div class="banners">
                 <div class="container">
@@ -112,6 +112,7 @@
             </div>
         {/if}
     {/if}
+    *}
 
     {* @group SEC - DESTACADOS *}
     {if $seccion == '' && isset($featured[0]) && $featured[0].id_prop != ''}

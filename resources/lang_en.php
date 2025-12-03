@@ -450,4 +450,7 @@ $langStr["Deja tu nombre y teléfono para iniciar la conversación en WhatsApp"]
 $langStr["Hablar por whatsapp ahora"]["en"] = "Chat on WhatsApp now";
 $langStr["Buscar por mapa"] = "Search by map";
 $langStr["Ver propiedades"] = "View properties";
+$langStr["Elige Costa"] = "Three coasts, one feeling";
+$langStr["Mediterraneo"] = "The Mediterranean, <strong> your way </strong>";
+
 
