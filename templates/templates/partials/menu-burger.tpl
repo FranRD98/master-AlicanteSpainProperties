@@ -1,11 +1,11 @@
 <div class="mega-menu">
-    <div class="bg-color-modal d-flex" style="height: 100vh;">
+    <div class="bg-color-modal d-flex">
 
         <!-- COLUMNA IZQUIERDA CON PADDING -->
-        <div class="d-flex flex-column justify-content-between" style="flex: 1; padding: 40px 80px; box-sizing: border-box;">
+        <div class="content-menu-burger d-flex flex-column">
             
             <!-- Logo + Botón de cierre -->
-            <div class="col-12 d-flex justify-content-between align-items-center mb-4">
+            <div class="col-12 d-none d-md-flex justify-content-between align-items-center mb-4">
                 <div class="logo-container">
                     <img class="brand img-fluid h-100 w-100" src="/media/images/website/website-logo.svg" alt="{$nombreEmpresa}" title="{$nombreEmpresa}">
                 </div>
@@ -18,8 +18,8 @@
 
             <!-- Menú -->
             <div class="row">
-                <div class="col-xl-12">
-                    <ul class="ps-0 pe-4">
+                <div class="col-12 content-menu-burger-list mt-4 mt-md-5 pt-2">
+                    <ul class="px-0 mt-4 menu-burguer">
                         {include file="partials/menu.tpl" submenu=1 seccmen=ft}
                     </ul>
                 </div>
@@ -27,16 +27,16 @@
 
             <!-- Información de contacto -->
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <div class="contat-menu">
                         <h3 class="main-title">{$lng_contacte}</h3>
-                        <p>Email: <a href="mailto:{$correoEmpresa}">{$correoEmpresa}</a></p>
+                        <p class="mt-4">Email: <a href="mailto:{$correoEmpresa}">{$correoEmpresa}</a></p>
                         
-                        <div class="social-icons mt-3">
-                            <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="me-3"><i class="fab fa-bluesky"></i></a>
-                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <div class="social-icons mt-4 pt-2">
+                            <a href="https://www.facebook.com/alicantespainproperties"><img src="/media/images/website/icons/facebook.svg"/></a>
+                            <a href="https://bsky.app/profile/alicantesp.bsky.social"><img src="/media/images/website/icons/blue.svg"/></a>
+                            <a href="https://www.instagram.com/alicantespainproperties/"><img src="/media/images/website/icons/instagram.svg"/></a>
+                            <a href="https://www.linkedin.com/company/alicante-spain-properties/"><img src="/media/images/website/icons/linkedin.svg"/></a>
                         </div>
                     </div>
                 </div>

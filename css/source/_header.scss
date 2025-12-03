@@ -225,24 +225,60 @@
         }
     }
 
-
-    .btn-menu-lateral
-    {
-    display: inline-flex !important;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
+.logo-container img{
+max-width: 235px;
+}
+.content-menu-burger-list {
+    color: #fff !important;
+    transition: all;
+    font-weight: 100;
+    letter-spacing: normal;
     text-transform: uppercase;
-    letter-spacing: 2.8px;
-    font-size: 14px;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    height: 48px;
-    padding: 14px 12px;
-    border: 1px solid #fff;
-    border-radius: 25px;
-    transition: all;    
+    font-size: 36px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: none;
+}
+
+.content-menu-burger {
+    width: 100%;
+    max-width: 850px;
+    padding: 40px 80px;
+}
+.menu-burguer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.mega-menu .content-menu-burger-list .menu-burger li.list-inline-item {
+        margin-right: 0px;
+    width: calc(50% - 20px);
+}
+    .btn-menu-lateral{
+        display: inline-flex !important;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        height: 48px;
+        padding: 14px 12px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        transition: all;    
+    }
+
+    .btn-menu-lateral:hover {
+        color: $primary;
+        border-color: $primary;
     }
     .contat-menu .main-title {
         font-size: 28px;
@@ -250,6 +286,7 @@
         font-weight: 100;
         color: $primary;
         margin: 0;
+        letter-spacing: normal;
     }
 
         .contat-menu p{
@@ -381,7 +418,9 @@
         }
     }
     .social-icons {
-        padding-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .social-icons a i{
