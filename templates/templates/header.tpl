@@ -235,6 +235,8 @@
     {if $seccion == ''}
 
         <div class="main-slider" >
+            <div class="overlay"></div>
+
 
             {if $actBannerUrl == 1 && $banners[0].url != ''}<a href="{$banners[0].url}">{/if}
             
