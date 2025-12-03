@@ -31,8 +31,15 @@ RewriteRule ^img\/.*_(0|[1-9][0-9]*_[A-z]*\..*)$ media/images/properties/thumbna
 ## end landings
 
 ## zonas
-RewriteRule ^costa-blanca.html$ properties/?lang=es&zon=5 [L,QSA]
-RewriteRule ^en/costa-blanca.html$ properties/?lang=en&zon=5 [L,QSA]
+RewriteRule ^costa-calida.html$ properties/?lang=en&zon=5 [L,QSA]
+RewriteRule ^nl/costa-calida.html$ properties/?lang=nl&zon=5 [L,QSA]
+RewriteRule ^es/costa-calida.html$ properties/?lang=es&zon=5 [L,QSA]
+RewriteRule ^costa-blanca.html$ properties/?lang=en&zon=6 [L,QSA]
+RewriteRule ^nl/costa-blanca.html$ properties/?lang=nl&zon=6 [L,QSA]
+RewriteRule ^es/costa-blanca.html$ properties/?lang=es&zon=6 [L,QSA]
+RewriteRule ^costa-del-sol.html$ properties/?lang=en&zon=7 [L,QSA]
+RewriteRule ^nl/costa-del-sol.html$ properties/?lang=nl&zon=7 [L,QSA]
+RewriteRule ^es/costa-del-sol.html$ properties/?lang=es&zon=7 [L,QSA]
 ## end zonas
 
 ## ciudades

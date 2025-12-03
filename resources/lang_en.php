@@ -448,3 +448,6 @@ $langStr["Promociones destacadas"]["en"] = "Featured developments";
 $langStr["Ver todas las promociones"]["en"] = "View all developments";
 $langStr["Deja tu nombre y teléfono para iniciar la conversación en WhatsApp"]["en"] = "Enter your name and phone number to start the conversation on WhatsApp";
 $langStr["Hablar por whatsapp ahora"]["en"] = "Chat on WhatsApp now";
+$langStr["Buscar por mapa"] = "Search by map";
+$langStr["Ver propiedades"] = "View properties";
+

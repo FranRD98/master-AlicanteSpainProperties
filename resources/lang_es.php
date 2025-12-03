@@ -449,6 +449,8 @@ $langStr["Promociones destacadas"] = "Promociones destacadas";
 $langStr["Ver todas las promociones"] = "Ver todas las promociones";
 $langStr["Deja tu nombre y teléfono para iniciar la conversación en WhatsApp"] = "Deja tu nombre y teléfono para iniciar la conversación en WhatsApp";
 $langStr["Hablar por whatsapp ahora"] = "Hablar por whatsapp ahora";
+$langStr["Buscar por mapa"] = "Buscar por mapa";
+$langStr["Ver propiedades"] = "Ver propiedades";
 
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";

@@ -14,16 +14,103 @@
     </div>
     {/if}
 
+
+    {* @group SEC - ZONAS *}
+    {if $seccion == '' && isset($zonasmen[0])}
+<div class="home-zonas my-4 my-lg-5 py-3 py-lg-4">
+    <div class="container pt-3">
+        <div class="row align-items-center">
+            
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="col-lg-6">
+
+                <!-- Títulos -->
+                <div class="banners-ttl pb-3 pb-md-2">
+                    <h3 class="title mb-2">Elige tu costa, vive tu momento</h3>
+                    <h2 class="title mb-4">Lo mejor del<strong> Mediterráneo </strong>en un solo lugar</h2>
+                </div>
+
+                <!-- PRIMERA ÁREA (ft == 0) -->
+                {section name=ft loop=$zonasmen}
+                    {if $smarty.section.ft.index == 0}
+                        
+                        {assign var="imgProp" value="/media/images/zonas/{$zonasmen[ft].img}"}
+
+                        <a href="{$urlStart}{$zonasmen[ft].titulo|slug}.html" 
+                        class="zona-card d-flex align-items-start justify-content-start p-4 mb-4"
+                        style="background-image:url('{$imgProp}');">
+
+                            <div class="zona-card-content">
+                                <h3 class="zona-card-title">{$zonasmen[ft].titulo}</h3>
+                                <span class="zona-card-link">{$lng_ver_propiedades}</span>
+                            </div>
+
+                            <div class="zona-card-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="149.702" height="126.782" viewBox="0 0 149.702 126.782">
+                                        <g data-name="Grupo 9624">
+                                            <path data-name="Trazado 15789" d="M791.582 573.413A131.774 131.774 0 0 0 686.5 509.307a1.867 1.867 0 0 1-1.525-2.788l34.125-59.507z" transform="translate(-644.235 -447.012)" style="fill:#fff"/>
+                                            <path data-name="Trazado 15790" d="M801.213 563.27h-35.2a56.589 56.589 0 0 0-86.646 0h-27.86l24.962-43.528a14.271 14.271 0 0 1 11.409-7.122q4.572-.316 9.227-.319a131.553 131.553 0 0 1 104.1 50.97" transform="translate(-651.511 -436.488)" style="fill:#29bdef"/>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </a>
+
+                    {/if}
+                {/section}
+
+            </div>
+
+            <!-- COLUMNA DERECHA -->
+            <div class="col-lg-6">
+
+                <!-- RESTO DE ÁREAS (ft > 0) -->
+                {section name=ft loop=$zonasmen}
+                    {if $smarty.section.ft.index > 0}
+
+                        <div class="mb-4">
+                            {assign var="imgProp" value="/media/images/zonas/{$zonasmen[ft].img}"}
+
+                            <a href="{$urlStart}{$zonasmen[ft].titulo|slug}.html" 
+                            class="zona-card d-flex align-items-start justify-content-start p-4"
+                            style="background-image:url('{$imgProp}');">
+
+                                <div class="zona-card-content">
+                                    <h3 class="zona-card-title">{$zonasmen[ft].titulo}</h3>
+                                    <span class="zona-card-link">{$lng_ver_propiedades}</span>
+                                </div>
+
+                                <div class="zona-card-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="149.702" height="126.782" viewBox="0 0 149.702 126.782">
+                                        <g data-name="Grupo 9624">
+                                            <path data-name="Trazado 15789" d="M791.582 573.413A131.774 131.774 0 0 0 686.5 509.307a1.867 1.867 0 0 1-1.525-2.788l34.125-59.507z" transform="translate(-644.235 -447.012)" style="fill:#fff"/>
+                                            <path data-name="Trazado 15790" d="M801.213 563.27h-35.2a56.589 56.589 0 0 0-86.646 0h-27.86l24.962-43.528a14.271 14.271 0 0 1 11.409-7.122q4.572-.316 9.227-.319a131.553 131.553 0 0 1 104.1 50.97" transform="translate(-651.511 -436.488)" style="fill:#29bdef"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+
+                    {/if}
+                {/section}
+
+            </div>
+
+        </div>
+    </div>
+</div>
+{/if}
+
+
     {* @group SEC - BANNERS *}
 
     {if $seccion == ''}
-    {if $seccion != $url_news}
-    <div class="banners">
-        <div class="container">
-            {include file="partials/banners.tpl"}
-        </div>
-    </div>
-    {/if}
+        {if $seccion != $url_news}
+            <div class="banners">
+                <div class="container">
+                    {include file="partials/banners.tpl"}
+                </div>
+            </div>
+        {/if}
     {/if}
 
     {* @group SEC - DESTACADOS *}

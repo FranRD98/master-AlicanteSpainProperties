@@ -443,3 +443,5 @@ $langStr["Promociones destacadas"]["nl"] = "Uitgelichte promoties";
 $langStr["Ver todas las promociones"]["nl"] = "Bekijk alle promoties";
 $langStr["Deja tu nombre y teléfono para iniciar la conversación en WhatsApp"]["nl"] = "Vul je naam en telefoonnummer in om het gesprek op WhatsApp te starten";
 $langStr["Hablar por whatsapp ahora"]["nl"] = "Chat nu via WhatsApp";
+$langStr["Buscar por mapa"] = "Zoeken op kaart";
+$langStr["Ver propiedades"] = "Bekijk panden";

@@ -86,10 +86,15 @@ body.home
             padding-top: 15px;
         }
 
+        .container-col-search {
+            background-color: transparent;
+            border-radius: 25px;
+            width: 100%;
+        }
         .form-group {
             display: flex;
             align-items: center;
-            background-color: green;
+            //background-color: red;
             height: 100%;
         }
     

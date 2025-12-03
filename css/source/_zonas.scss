@@ -1,0 +1,101 @@
+.home-zonas .banners-ttl h3.title{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #29bdef;
+  text-transform: uppercase;
+}
+
+.home-zonas .banners-ttl h2.title{
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #000;
+}
+
+
+.zona-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 1.8;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.zona-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.1);
+    transition: background 0.5s ease;
+    z-index: 1;
+}
+
+.zona-card-content {
+    z-index: 2;
+}
+
+.zona-card-title {
+  font-family: Outfit;
+  font-size: 38px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.zona-card-link {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #fff;
+}
+
+.zona-card-logo {
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.5s ease;
+}
+
+.zona-card-logo img {
+    width: 45px;
+}
+
+.zona-card:hover::before {
+    background: rgba(0,0,0,0.7);
+}
+
+.zona-card:hover .zona-card-logo {
+    opacity: 1;
+    transform: translateY(0);
+}

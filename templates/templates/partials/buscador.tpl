@@ -11,7 +11,8 @@
             <div class="col-6 col-lg-3 col-xl-2 d-flex flex-wrap container-buscador-check justify-content-start justify-content-lg-start ps-0 pe-1">
                 <div class="label-container-buscador align-items-center d-flex">
                     <label class="custom-label-checkbox d-flex">
-                        INPUT 1
+                        <input type="checkbox" name="newbuild" value="2" id="newbuild">
+                        <span class="checkbox-text text-center txt-bajar">Obra Nueva</span>
                     </label>
                 </div>
             </div>
@@ -19,7 +20,9 @@
             <div class="col-6 col-lg-3 col-xl-2 d-flex flex-wrap container-buscador-check justify-content-start justify-content-lg-start px-1">
                 <div class="label-container-buscador align-items-center d-flex">
                     <label class="custom-label-checkbox d-flex">
-                        INPUT 2
+                        <input class="checkAlquiler" type="checkbox" name="resale" value="1" id="resale">
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-text text-center txt-bajar">Venta</span>
                     </label>
                 </div>
             </div>
@@ -224,7 +227,7 @@
                 <div class="col-lg-8">
                     <div class="form-group">
                         <a href="/mapa-de-propiedades/" class="btn-search-map">
-                            Buscar por mapa
+                            {$lng_buscar_por_mapa}
                             <svg xmlns="http://www.w3.org/2000/svg" width="31.406" height="31.671" viewBox="0 0 31.406 31.671">
                                 <path data-name="Trazado 10931" d="M44.271 24v27.028m0-27.028-10.136 3.378M44.271 24l10.135 3.378v27.028l-10.135-3.378m0 0-10.136 3.378m0-27.028v27.028m0-27.028L24 24v27.028l10.135 3.378"
                                     transform="translate(-23.5 -23.368)"
