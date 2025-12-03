@@ -452,5 +452,9 @@ $langStr["Buscar por mapa"] = "Search by map";
 $langStr["Ver propiedades"] = "View properties";
 $langStr["Elige Costa"] = "Three coasts, one feeling";
 $langStr["Mediterraneo"] = "The Mediterranean, <strong> your way </strong>";
+$langStr["Propiedades Home subtitulo"] = "Alicante Spain picks";
+$langStr["Propiedades Home titulo"] = "Homes that stay <strong>with you</strong>";
+
+
 
 

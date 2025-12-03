@@ -118,11 +118,41 @@
     {if $seccion == '' && isset($featured[0]) && $featured[0].id_prop != ''}
     <div id="featured-properties">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="main-title">{$lng_featured_properties}</h2>
+            <div class="row align-items-center">
+
+            <!-- Arrow Slides -->
+            <div class="col-12 col-lg-3 arrows-slide-dots gap-2 d-none d-lg-flex">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12.327" height="12.133" viewBox="0 0 12.327 12.133">
+                        <g data-name="Grupo 9618">
+                            <g data-name="Icon feather-arrow-right">
+                                <path data-name="Trazado 456" d="m18 7.5 5.291 5.549L18 18.6" style="fill:none;stroke:#000;stroke-width:1.5px" transform="rotate(180 12.164 9.558)"/>
+                            </g>
+                            <path data-name="Línea 1423" transform="rotate(90 3.155 9.173)" style="fill:none;stroke:#000;stroke-width:1.5px" d="M0 8V0"/>
+                        </g>
+                    </svg>
+                </button>
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12.327" height="12.133" viewBox="0 0 12.327 12.133">
+                        <g data-name="Grupo 9622">
+                            <g data-name="Icon feather-arrow-right">
+                                <path data-name="Trazado 456" d="m18 7.5 5.291 5.549L18 18.6" style="fill:none;stroke:#000;stroke-width:1.5px" transform="translate(-12 -6.983)"/>
+                            </g>
+                            <path data-name="Línea 1423" transform="rotate(-90 3.058 3.057)" style="fill:none;stroke:#000;stroke-width:1.5px" d="M0 8V0"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <h3 class="main-subtitle mb-2">{$lng_propiedades_home_subtitulo}</h3>
+                    <h2 class="main-title m-0">{$lng_propiedades_home_titulo}</h2>
                 </div>
-                <div class="col-md-12 px-md-0">
+
+                <div class="col-12 col-lg-3 justify-content-end d-none d-lg-flex">
+                <a href="/es/propiedades/" class="btn-propiedades px-lg-5">Ver todas las propiedades</a>
+                </div>
+                <div class="col-md-12 px-md-0 mt-4 pt-2 pt-md-3">
 
                     <div class="slides">
                         {section name=ft loop=$featured}

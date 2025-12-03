@@ -462,3 +462,74 @@
         right: 15px;
     }
 }
+
+
+//  ============================================================================
+//  /* @group PROPIEDADES DESTACADAS */
+//  ============================================================================
+
+#featured-properties .main-subtitle{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  color: #29bdef;
+  text-transform: uppercase;
+}
+
+#featured-properties .main-title{
+    font-family: Outfit;
+    font-size: 40px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: #000;
+    text-transform: none;
+}
+
+#featured-properties .arrows-slide-dots button{
+    outline: none;
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    height: auto;
+    width: auto;
+    transition: all ease-in-out 0.3s;
+    width: 64px;
+    height: 64px;
+}
+
+#featured-properties .arrows-slide-dots button:hover{
+    transform: scale(0.95);
+}
+
+#featured-properties .btn-propiedades{
+    padding: 24px 76px;
+    border-radius: 20px;
+    border: solid 1px #bfc2c3;
+    text-decoration: none;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    transition: all ease-in-out 0.3s;
+}
+
+#featured-properties .btn-propiedades:hover{
+    background-color: #bfc2c3;
+}
