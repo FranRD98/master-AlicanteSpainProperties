@@ -146,26 +146,28 @@ $slick-opacity-not-active: 0.25 !default;
     li {
         position: relative;
         display: inline-block;
-        height: 10px;
-        width: 10px;
+        height: 16px;
+        width: 16px;
         margin: 0 5px;
         padding: 0;
         cursor: pointer;
         button {
             border: 0;
-            background: #ccc;
             border-radius: 10px;
             display: block;
-            height: 10px;
-            width: 10px;
+            height: 16px;
+            width: 16px;
             outline: none;
             line-height: 0px;
             font-size: 0px;
-            color: transparent;
             padding: 5px;
+            transition: all ease-in-out 0.3s;
             cursor: pointer;
             &:hover, &:focus {
-                outline: none;
+                //outline: none;
+                  border: solid 1px #000;
+
+                background-color: transparent !important;
                 &:before {
                     opacity: $slick-opacity-on-hover;
                 }
@@ -176,22 +178,24 @@ $slick-opacity-not-active: 0.25 !default;
                 left: 0;
                 content: $slick-dot-character;
                 border-radius: 10px;
-                width: 10px;
-                height: 10px;
+                width: 16px;
+                height: 16px;
                 font-family: $slick-font-family;
                 font-size: $slick-dot-size;
                 line-height: 10px;
                 text-align: center;
-                color: #ccc;
                 opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+                background-color: #ebebeb !important;
             }
         }
         &.slick-active button:before {
-            color: var(--primary);
-            background: var(--primary);
+            color: transparent !important;
+            background: transparent !important;
             opacity: $slick-opacity-default;
+            width: 24px !important;
+            height: 24px !important;
         }
     }
 }

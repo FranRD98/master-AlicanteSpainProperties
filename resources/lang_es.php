@@ -455,6 +455,7 @@ $langStr["Elige Costa"] = "Elige tu costa, vive tu momento";
 $langStr["Mediterraneo"] = "Lo mejor del <strong>Mediterráneo</strong> en un solo lugar";
 $langStr["Propiedades Home subtitulo"] = "Selecciones de Alicante, España";
 $langStr["Propiedades Home titulo"] = "Hogares que se quedan <strong>contigo</strong>";
+$langStr["Todas las propiedades"] = "Ver todas las propiedades";
 
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";

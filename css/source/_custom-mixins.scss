@@ -340,7 +340,10 @@
     li {
         &.slick-active {
             button {
-                background-color: $primary;
+                border: solid 1px #000;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
             }
         }
     }

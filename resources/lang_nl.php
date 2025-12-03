@@ -449,4 +449,5 @@ $langStr["Elige Costa"] = "Drie kusten, één gevoel";
 $langStr["Mediterraneo"] = "De Middellandse Zee, <strong>op jouw manier</strong>";
 $langStr["Propiedades Home subtitulo"] = "Aanbevelingen in Alicante, Spanje";
 $langStr["Propiedades Home titulo"] = "Huizen die <strong>je bijblijven</strong>";
+$langStr["Todas las propiedades"] = "Bekijk alle woningen";
 

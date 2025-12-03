@@ -160,11 +160,14 @@
                         {/section}
                     </div>
 
+                    
                 </div>
             </div>
+            {*
             <div class="text-center mt-5 mb-5">
                 <a href="{$urlStart}{$url_properties}/" class="btn btn-primary">{$lng_ver_todas_las_propiedades}</a>
             </div>
+            *}
         </div>
     </div>
     {/if}
