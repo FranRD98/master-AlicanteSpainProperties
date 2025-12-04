@@ -42726,16 +42726,12 @@ select {
 }
 
 #last-news .btn-lastnews {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px 100px;
+  padding: 24px 76px;
   border-radius: 20px;
   border: solid 1px #bfc2c3;
   text-decoration: none;
-  white-space: nowrap;
   font-family: Outfit;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -42743,6 +42739,11 @@ select {
   letter-spacing: normal;
   text-align: center;
   color: #000;
+  transition: all ease-in-out 0.3s;
+}
+
+#last-news .btn-lastnews:hover {
+  background-color: #bfc2c3;
 }
 
 #last-news .noticia {
