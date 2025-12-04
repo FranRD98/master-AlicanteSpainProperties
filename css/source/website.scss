@@ -357,7 +357,7 @@ a.mini-banner
 
 #footer {
     padding: 50px 0;
-    background: $primary;
+    background: #0e1012;
     color: #fff;
 
     a {
@@ -426,7 +426,7 @@ a.mini-banner
 }
 
 #footer-second {
-    background-color: $dark;
+    background-color: #0e1012;
     color: #fff;
 
     .container {
@@ -1056,4 +1056,114 @@ font-family: Outfit;
   text-align: left;
   color: #29bdef;
   text-transform: uppercase;
+}
+
+/* CUSTOM FOOTER */
+#footer .label-social-icons{
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#footer .footer-social-icons {
+    display: flex;        
+    gap: 20px;            
+    align-items: center;  
+}
+
+/* Footer general */
+#footer h4.custom-title {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left; 
+    color: #29bdef;
+    text-transform: uppercase;
+}
+
+#footer ul.menu-footer li{
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#footer .contact-detail {
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#footer .contact-detail a{
+    text-decoration: underline;
+}
+
+#footer-third {
+    background-color: #0e1012;
+    color: #fff;
+
+    .container {
+        border-top: 1px solid #296484;
+        padding: 25px 0;
+    }
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 0 !important;
+
+        a {
+            color: inherit !important;
+            text-decoration: none;
+        }
+    }
+
+    a {
+        font-family: Outfit;
+        font-size: 19px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+
+    h4.custom-title {
+        font-family: Outfit;
+        font-size: 30px;
+        font-weight: 100;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #29bdef;
+        text-transform: uppercase;
+}
 }

@@ -41394,7 +41394,7 @@ body:not(.home) .buscador {
 
 #footer {
   padding: 50px 0;
-  background: #29bdef;
+  background: #0e1012;
   color: #fff;
 }
 #footer a {
@@ -41448,7 +41448,7 @@ body:not(.home) .buscador {
 }
 
 #footer-second {
-  background-color: #303030;
+  background-color: #0e1012;
   color: #fff;
 }
 #footer-second .container {
@@ -42624,6 +42624,112 @@ select {
   line-height: normal;
   letter-spacing: 2.6px;
   text-align: left;
+  color: #29bdef;
+  text-transform: uppercase;
+}
+
+/* CUSTOM FOOTER */
+#footer .label-social-icons {
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#footer .footer-social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Footer general */
+#footer h4.custom-title, #footer .custom-title.h4 {
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #29bdef;
+  text-transform: uppercase;
+}
+
+#footer ul.menu-footer li {
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#footer .contact-detail {
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#footer .contact-detail a {
+  text-decoration: underline;
+}
+
+#footer-third {
+  background-color: #0e1012;
+  color: #fff;
+}
+#footer-third .container {
+  border-top: 1px solid #296484;
+  padding: 25px 0;
+}
+#footer-third p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0 !important;
+}
+#footer-third p a {
+  color: inherit !important;
+  text-decoration: none;
+}
+#footer-third a {
+  font-family: Outfit;
+  font-size: 19px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+#footer-third h4.custom-title, #footer-third .custom-title.h4 {
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
   color: #29bdef;
   text-transform: uppercase;
 }
