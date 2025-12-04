@@ -39449,12 +39449,15 @@ button#gdpr-cookie-advanced {
 }
 
 .custom-drop-down, #footer ul li .dropdown-menu, .main-header #main-nav li .dropdown-menu, .idiomas-dropdown .dropdown-menu {
-  background-color: #29bdef !important;
+  background-color: #000000 !important;
   box-shadow: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 20px;
   inset: 10px auto auto 0px !important;
   color: #fff;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 24px 10px;
 }
 .custom-drop-down li.dropdown-item, #footer ul li .dropdown-menu li.dropdown-item, .main-header #main-nav li .dropdown-menu li.dropdown-item, .idiomas-dropdown .dropdown-menu li.dropdown-item {
   font-size: 15px;
@@ -39471,13 +39474,13 @@ button#gdpr-cookie-advanced {
   font-size: 15px;
   font-weight: normal;
   background-color: transparent;
-  text-transform: none;
+  text-transform: uppercase;
   transition: all ease-in-out 0.3s;
   display: inline-block;
   width: 100%;
 }
 .custom-drop-down li.dropdown-item:hover, #footer ul li .dropdown-menu li.dropdown-item:hover, .main-header #main-nav li .dropdown-menu li.dropdown-item:hover, .idiomas-dropdown .dropdown-menu li.dropdown-item:hover {
-  background-color: #fff !important;
+  background-color: #000000 !important;
   border-color: transparent;
 }
 .custom-drop-down li.dropdown-item:hover a, #footer ul li .dropdown-menu li.dropdown-item:hover a, .main-header #main-nav li .dropdown-menu li.dropdown-item:hover a, .idiomas-dropdown .dropdown-menu li.dropdown-item:hover a {

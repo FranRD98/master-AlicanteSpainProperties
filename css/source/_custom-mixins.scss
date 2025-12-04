@@ -234,12 +234,15 @@
 //  ============================================================================
 
 .custom-drop-down {
-    background-color: $primary !important;
+    background-color: #000000 !important;
     box-shadow: none;
     border: 0;
-    border-radius: 0;
+    border-radius: 20px;
     inset: 10px auto auto 0px !important;
     color: #fff;
+    width: -moz-min-content;
+    width: min-content;
+    padding: 24px 10px;
 
     li.dropdown-item {
         font-size: 15px;
@@ -257,14 +260,14 @@
             font-size: 15px;
             font-weight: normal;
             background-color: transparent;
-            text-transform: none;
+            text-transform: uppercase;
             @include transition();
             display: inline-block;
             width: 100%;
         }
 
         &:hover {
-            background-color: #fff !important;
+            background-color: #000000 !important;
             border-color: transparent;
 
             a {
