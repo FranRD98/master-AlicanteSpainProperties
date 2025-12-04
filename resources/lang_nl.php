@@ -458,6 +458,13 @@ $langStr["Ver todas las promociones"] = "Bekijk alle promoties";
 $langStr["[TESTIMONIALS]-title"] = "Agentschappen verbinden met kopers";
 $langStr["[TESTIMONIALS]-subtitle"] = "Verhalen <strong>van makelaars</strong>";
 $langStr["TESTIMONIALS-readmore"] = "Koeloven +";
+
+$langStr["SELL-PROPERTY-title"] = "Schrijf ons en laten we beginnen";
+$langStr["SELL-PROPERTY-subtitle"] = "Wilt u uw <strong>propiedad verkopen?</strong>";
+$langStr["SELL-PROPERTY-text"] = "We werken samen met meer dan 100 betrouwbare makelaars die klaar staan ​​om uw woning te promoten aan de Costa Blanca, Costa Cálida en Costa del Sol. Vul uw gegevens in en we nemen binnenkort contact met u op.";
+$langStr["SELL-PROPERTY-btnForm"] = "Ik wil verkopen";
+$langStr["SELL-PROPERTY-privacyText"] = "Vink het vakje aan om contact met ons op te nemen en ga ermee akkoord dat uw gegevens worden gebruikt in overeenstemming met onze privacyverklaring. U wordt dan automatisch toegevoegd aan onze mailinglijst, maar u kunt zich op elk gewenst moment afmelden*";
+
 $langStr["LASTNEWS-title"] = "Lokale inzichten";
 $langStr["LASTNEWS-subtitle"] = "Nieuws, tips en <strong>marktupdates</strong>";
 $langStr["LASTNEWS-btnText"] = "Bekijk al het nieuws";

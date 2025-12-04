@@ -918,7 +918,7 @@ font-family: Outfit;
   background-size: cover;
   background-position: top left;
   min-height: 440px;
-  padding: 20px;
+  padding: 45px 125px;
 }
 
 #sell-property .content-sell-property h3.main-title {
@@ -927,11 +927,12 @@ font-family: Outfit;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: 3.2px;
+  line-height: 1.14;
+  letter-spacing: 3px;
   text-align: left;
   color: #29bdef;
   text-transform: uppercase;
+  margin: 0;
 }
 
 #sell-property .content-sell-property h2.main-title {
@@ -940,11 +941,13 @@ font-family: Outfit;
     font-weight: 100;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.4px;
+    line-height: 1.14;
+    letter-spacing: normal;
     text-align: left;
     color: #fff;
     text-transform: none;
+      margin: 0;
+
 }
 
 #sell-property .content-sell-property h2.main-title strong{
@@ -957,7 +960,114 @@ font-family: Outfit;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+#sell-property .form-control {
+  border-radius: 25px;
+  border: solid 1px #e4e4e4;
+  background-color: #fff;
+  padding: 0.375rem 0.75rem;
+}
+
+#sell-property .form-control::placeholder {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+#sell-property .contact-form button{  
+padding: 2px 28px;
+  border-radius: 23px;
+  background-color: #000;
+}
+
+/* Ocultar el checkbox original */
+.checkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Contenedor general */
+.checkcontainer {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+      font-size: 11px;
+    font-weight: normal;
+    line-height: 1.36;
+    color: #0e1012;
+    letter-spacing: normal;
+    text-transform: none;
+    padding-left: calc(15px + 26px);
+}
+
+/* El checkbox dibujado */
+.checkcontainer .checkmark {
+ position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #0b1e2c;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkcontainer .checkmark:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo cuando está marcado */
+.checkcontainer input:checked ~ .checkmark {
+  background-color: #0b1e2c;
+}
+
+/* El icono del check */
+.checkcontainer .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar el icono al marcar */
+.checkcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Dibujo del tick */
+.checkcontainer .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.checkcontainer .tag-name {
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
@@ -1000,18 +1110,23 @@ font-family: Outfit;
     font-weight: 500;
 }
 #last-news .btn-lastnews {
-  display: inline-flex;              
-  align-items: center;               
-  justify-content: center;           
-  padding: 24px 60px;
-  border-radius: 20px;
-  border: solid 1px #bfc2c3;
-  text-decoration: none;
-  white-space: nowrap;               
-  font-family: Outfit;
-  font-size: 16px;
-  font-weight: 300;
-  color: #000;
+    display: inline-flex;              
+    align-items: center;               
+    justify-content: center;           
+    padding: 24px 100px;
+    border-radius: 20px;
+    border: solid 1px #bfc2c3;
+    text-decoration: none;
+    white-space: nowrap;               
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
 }
 
 #last-news .noticia {
@@ -1039,7 +1154,7 @@ font-family: Outfit;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1;
     letter-spacing: -0.3px;
     text-align: left;
     color: #000;

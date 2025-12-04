@@ -333,21 +333,44 @@
 <div id="sell-property">
     <div class="container">
         <div class="content-sell-property">
-            <div class="row align-items-center">
+            <div class="row">
 
                 <!-- Texto izquierda -->
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-5">
                     <div class="content-sell-property-txt">
-                        <h3 class="main-title mb-2">{$lng_buscas_algo_nuevo}</h3>
-                        <h2 class="main-title mb-3 py-1">{$lng_descubrir_novedades}</h2>
-                        <p class="pb-2">{$lng_texto_promociones_home}</p>
+                        <h3 class="main-title mb-2">{$lng_sell_property_title}</h3>
+                        <h2 class="main-title mb-3 pb-1">{$lng_sell_property_subtitle}</h2>
+                        <p>{$lng_sell_property_text}</p>
                     </div>
                 </div>
 
-                <!-- Formulario derecha (vacío por ahora) -->
-                <div class="col-12 col-lg-6">
+                <!-- Formulario derecha -->
+                <div class="col-12 col-lg-5 offset-lg-2 mt-4 mt-lg-0 pt-2 pt-md-3 pt-lg-0">
                     <div class="content-sell-property-form">
-                        <!-- Aquí irá el formulario -->
+                        <div class="contact-form">
+                                <form action="#" id="contactSellForm" method="post" role="form" class="validate form-white" novalidate="novalidate">
+    <div class="mb-3">
+        <input type="text" class="form-control required" name="name" id="name" placeholder="Name*">
+    </div>
+    <div class="row">
+        <div class="mb-3 col-md-6">
+            <input type="text" class="form-control  telefono" name="telefono" id="telefono" placeholder="Phone">
+        </div>
+        <div class="mb-3 col-md-6">
+            <input type="text" class="form-control required email" name="email" id="email" placeholder="E-mail*">
+        </div>
+    </div>
+        <button type="submit" class="btn btn-text text-white w-100">{$lng_sell_property_btnform}</button>
+    <div>
+        <label class="checkcontainer mt-4">
+            <input type="checkbox" name="lpd" id="lpd" class="required">
+            <span class="checkmark"></span>
+            <span class="tag-name">{$lng_sell_property_privacytext}</span>
+        </label>
+    </div>
+
+    </form>                            
+    </div>
                     </div>
                 </div>
 

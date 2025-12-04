@@ -462,6 +462,13 @@ $langStr["Ver todas las promociones"] = "View all promotions";
 $langStr["[TESTIMONIALS]-title"] = "Connecting agencies with buyers";
 $langStr["[TESTIMONIALS]-subtitle"] = " Stories from <strong>real estate agents</strong>";
 $langStr["TESTIMONIALS-readmore"] = "Read +";
+
+$langStr["SELL-PROPERTY-title"] = "Write us and let’s get started";
+$langStr["SELL-PROPERTY-subtitle"] = "Want to sell <strong>your property?</strong>";
+$langStr["SELL-PROPERTY-text"] = "We work with over 100 trusted real estate agents ready to promote your home across Costa Blanca, Costa Cálida and Costa del Sol. Just fill in your details and we’ll contact you shortly.";
+$langStr["SELL-PROPERTY-btnForm"] = "I want to sell";
+$langStr["SELL-PROPERTY-privacyText"] = "Check the box to contact us and agree to your information being used according to our Privacy Notice you will automatically be added to our mailing list, but you can opt out at any time*";
+
 $langStr["LASTNEWS-title"] = "Local insights";
 $langStr["LASTNEWS-subtitle"] = "News, tips and <strong>market updates</strong>";
 $langStr["LASTNEWS-btnText"] = "View all news";

@@ -463,6 +463,15 @@ $langStr["Texto Promociones home"] = "Explora promociones exclusivas y casas de 
 $langStr["TESTIMONIALS-title"] = "Conectando agencias con compradores";
 $langStr["TESTIMONIALS-subtitle"] = "Historias de <strong>agentes inmobiliarios</strong>";
 $langStr["TESTIMONIALS-readmore"] = "Leer +";
+$langStr["SELL-PROPERTY-title"] = "Escríbenos y comencemos";
+$langStr["SELL-PROPERTY-subtitle"] = "¿Quieres vender <strong>tu propiedad?</strong>";
+$langStr["SELL-PROPERTY-text"] = "Trabajamos con más de 100 agentes inmobiliarios de confianza, listos para promocionar su vivienda en la Costa Blanca, la Costa Cálida y la Costa del Sol. Simplemente complete sus datos y nos pondremos en contacto con usted en breve.";
+$langStr["SELL-PROPERTY-btnForm"] = "Quiero vender";
+$langStr["SELL-PROPERTY-privacyText"] = "
+Marque la casilla para contactarnos y aceptar que su información se utilice de acuerdo con nuestro Aviso de Privacidad. Se le agregará automáticamente a nuestra lista de correo, pero puede optar por no participar en cualquier momento*";
+
+
+
 $langStr["LASTNEWS-title"] = "Perspectivas locales";
 $langStr["LASTNEWS-subtitle"] = "Noticias, consejos y <strong>actualizaciones del mercado</strong>";
 $langStr["LASTNEWS-btnText"] = "Ver todas las noticias";
