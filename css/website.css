@@ -42233,3 +42233,73 @@ select.hasCustomSelect {
 select {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
+
+.home-promotions {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.home-promotions .content-home-promotions {
+  background-image: url(/media/images/website/properties/enmascarar-grupo-4.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: top left;
+  padding: 66px 70px;
+}
+
+.home-promotions .content-home-promotions-txt {
+  max-width: 400px;
+}
+
+.home-promotions .content-home-promotions-txt h3.main-title, .home-promotions .content-home-promotions-txt .main-title.h3, .home-promotions .content-home-promotions-txt .home-text h1.h3, .home-text .home-promotions .content-home-promotions-txt h1.h3, .home-promotions .content-home-promotions-txt .home-text h3.h1, .home-text .home-promotions .content-home-promotions-txt h3.h1, .home-promotions .content-home-promotions-txt .home-text .h3.h1, .home-text .home-promotions .content-home-promotions-txt .h3.h1 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.home-promotions .content-home-promotions-txt h2.main-title, .home-promotions .content-home-promotions-txt .main-title.h2, .home-promotions .content-home-promotions-txt .home-text h1.h2, .home-text .home-promotions .content-home-promotions-txt h1.h2, .home-promotions .content-home-promotions-txt .home-text h2.h1, .home-text .home-promotions .content-home-promotions-txt h2.h1, .home-promotions .content-home-promotions-txt .home-text .h2.h1, .home-text .home-promotions .content-home-promotions-txt .h2.h1 {
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 100;
+  font-stretch: normal;
+  text-transform: none;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #fff;
+}
+
+.home-promotions .content-home-promotions-txt h2.main-title strong, .home-promotions .content-home-promotions-txt .main-title.h2 strong, .home-promotions .content-home-promotions-txt .home-text h1.h2 strong, .home-text .home-promotions .content-home-promotions-txt h1.h2 strong, .home-promotions .content-home-promotions-txt .home-text h2.h1 strong, .home-text .home-promotions .content-home-promotions-txt h2.h1 strong, .home-promotions .content-home-promotions-txt .home-text .h2.h1 strong, .home-text .home-promotions .content-home-promotions-txt .h2.h1 strong {
+  font-weight: 500;
+}
+
+.home-promotions .content-home-promotions-txt p {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin: 0;
+}
+
+.home-promotions .content-home-promotions-txt a {
+  padding: 24px 72px;
+  border-radius: 20px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+}

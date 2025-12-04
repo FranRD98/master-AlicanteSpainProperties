@@ -198,6 +198,20 @@
     {/if}
     {/if}
 
+    <!-- PROMOCIONES -->
+    <div class="home-promotions">
+        <div class="container">
+            <div class="content-home-promotions">
+                <div class="content-home-promotions-txt">
+                    <h3 class="main-title mb-2">¿Buscas algo nuevo?</h3>
+                    <h2 class="main-title mb-3 py-1">Descubra nuestras <strong>últimas novedades</strong></h2>
+                    <p class="pb-2">Explora promociones exclusivas y casas de obra nueva en la Costa Blanca, Costa Cálida y Costa del Sol. Seleccionadas por agentes de confianza, diseñadas para la vida moderna.</p>
+                    <a href="/es/promociones/">Ver todas las promociones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {* @group SEC - PROMOCIONES DESTACADAS *}
     {if $seccion == '' && isset($featProms[0]) && $featProms[0].id_nws != ''}
     <div id="featProms-properties">
