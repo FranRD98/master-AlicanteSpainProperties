@@ -41199,8 +41199,11 @@ body:not(.home) .buscador {
 #similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels {
   position: absolute;
   left: 10px;
-  top: 10px;
+  bottom: 10px;
   z-index: 2;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 #featured-properties .slides-item a.property-featured .porta-img .labels .badge, #featured-properties .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref, .property-list-box .property #featured-properties .slides-item a.property-featured .porta-img .labels .ref,
 #ofertas-properties .slides-item a.property-featured .porta-img .labels .badge,
@@ -41215,31 +41218,29 @@ body:not(.home) .buscador {
 #similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels .badge,
 #similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref,
 .property-list-box .property #similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels .ref {
-  border-radius: 0;
-  padding: 3px 7px;
+  border-radius: 12px;
+  padding: 4px 7px;
   display: block;
   font-size: 12px;
   font-weight: 500;
-  line-height: inherit;
+  line-height: 18px;
   letter-spacing: 1.2px;
   text-align: center;
-  margin-bottom: 4px;
   text-transform: uppercase;
 }
-#featured-properties .slides-item a.property-featured .porta-img .labels .badge:not(:last-child), #featured-properties .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref:not(:last-child), .property-list-box .property #featured-properties .slides-item a.property-featured .porta-img .labels .ref:not(:last-child),
-#ofertas-properties .slides-item a.property-featured .porta-img .labels .badge:not(:last-child),
-#ofertas-properties .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref:not(:last-child),
-.property-list-box .property #ofertas-properties .slides-item a.property-featured .porta-img .labels .ref:not(:last-child),
-#similares-properties .slides-item a.property-featured .porta-img .labels .badge:not(:last-child),
-#similares-properties .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref:not(:last-child),
-.property-list-box .property #similares-properties .slides-item a.property-featured .porta-img .labels .ref:not(:last-child),
-#similares-properties-modal .slides-item a.property-featured .porta-img .labels .badge:not(:last-child),
-#similares-properties-modal .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref:not(:last-child),
-.property-list-box .property #similares-properties-modal .slides-item a.property-featured .porta-img .labels .ref:not(:last-child),
-#similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels .badge:not(:last-child),
-#similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels .property-list-box .property .ref:not(:last-child),
-.property-list-box .property #similares-properties-bajada-modal .slides-item a.property-featured .porta-img .labels .ref:not(:last-child) {
-  margin-top: 5px;
+#featured-properties .slides-item a.property-featured .label-1,
+#ofertas-properties .slides-item a.property-featured .label-1,
+#similares-properties .slides-item a.property-featured .label-1,
+#similares-properties-modal .slides-item a.property-featured .label-1,
+#similares-properties-bajada-modal .slides-item a.property-featured .label-1 {
+  background-color: #29bdef;
+}
+#featured-properties .slides-item a.property-featured .label-4,
+#ofertas-properties .slides-item a.property-featured .label-4,
+#similares-properties .slides-item a.property-featured .label-4,
+#similares-properties-modal .slides-item a.property-featured .label-4,
+#similares-properties-bajada-modal .slides-item a.property-featured .label-4 {
+  background-color: #f20c30;
 }
 #featured-properties .slides-item a.property-featured .property-detail,
 #ofertas-properties .slides-item a.property-featured .property-detail,
