@@ -478,7 +478,7 @@ $langStr["LASTNEWS-subtitle"] = "Noticias, consejos y <strong>actualizaciones de
 $langStr["LASTNEWS-btnText"] = "Ver todas las noticias";
 $langStr["LASTNEWS-readmore"] = "Leer +";
 
-$langStr["FOOTER-menu"] = "Menu";
+$langStr["FOOTER-menu"] = "Menú";
 $langStr["FOOTER-contactar"] = "Contacta con nosotros";
 $langStr["FOOTER-siguenos"] = "Síguenos";
 $langStr["FOOTER-top-busquedas"] = "Top Búsquedas";

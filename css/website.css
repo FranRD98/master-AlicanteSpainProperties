@@ -42811,6 +42811,10 @@ select {
   align-items: center;
 }
 
+#footer .footer-social-icons a:hover {
+  transform: scale(0.92);
+}
+
 /* Footer general */
 #footer h4.custom-title, #footer .custom-title.h4 {
   font-family: Outfit;
