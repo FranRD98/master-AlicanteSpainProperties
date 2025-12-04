@@ -476,3 +476,14 @@ $langStr["LASTNEWS-btnText"] = "View all news";
 $langStr["LASTNEWS-readmore"] = "Leer +";
 $langStr["LASTNEWS-readmore"] = "Read +";
 
+$langStr["FOOTER-menu"] = "Menu";
+$langStr["FOOTER-contactar"] = "Contact us";
+$langStr["FOOTER-siguenos"] = "Follow us";
+$langStr["FOOTER-top-busquedas"] = "Top Searches";
+$langStr["FOOTER-top-busquedas1"] = "New build villas in Orihuela Costa";
+$langStr["FOOTER-top-busquedas2"] = "New build homes near the sea in Costa Cálida";
+$langStr["FOOTER-top-busquedas3"] = "Resale homes in Torrevieja";
+$langStr["FOOTER-top-busquedas4"] = "Resale homes for sale in Benijófar";
+$langStr["FOOTER-top-busquedas5"] = "Resale villas with sea views in Costa Blanca";
+$langStr["FOOTER-top-busquedas6"] = "Modern villas for sale in Torrevieja";
+

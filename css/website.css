@@ -41393,7 +41393,7 @@ body:not(.home) .buscador {
 }
 
 #footer {
-  padding: 50px 0;
+  padding-top: 80px;
   background: #0e1012;
   color: #fff;
 }

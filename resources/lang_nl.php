@@ -470,3 +470,14 @@ $langStr["LASTNEWS-title"] = "Lokale inzichten";
 $langStr["LASTNEWS-subtitle"] = "Nieuws, tips en <strong>marktupdates</strong>";
 $langStr["LASTNEWS-btnText"] = "Bekijk al het nieuws";
 $langStr["LASTNEWS-readmore"] = "Koeloven +";
+
+$langStr["FOOTER-menu"] = "Menu";
+$langStr["FOOTER-contactar"] = "Neem contact met ons op";
+$langStr["FOOTER-siguenos"] = "Volg ons";
+$langStr["FOOTER-top-busquedas"] = "Populairste zoekopdrachten";
+$langStr["FOOTER-top-busquedas1"] = "Nieuwbouw villa's in Orihuela Costa";
+$langStr["FOOTER-top-busquedas2"] = "Nieuwbouwwoningen vlakbij de zee in Costa Cálida";
+$langStr["FOOTER-top-busquedas3"] = "Wederverkoopwoningen in Torrevieja";
+$langStr["FOOTER-top-busquedas4"] = "Wederverkoopwoningen te koop in Benijófar";
+$langStr["FOOTER-top-busquedas5"] = "Herverkoop villa's met zeezicht aan de Costa Blanca";
+$langStr["FOOTER-top-busquedas6"] = "Moderne villa's te koop in Torrevieja";

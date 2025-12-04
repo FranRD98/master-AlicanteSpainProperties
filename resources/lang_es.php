@@ -478,6 +478,20 @@ $langStr["LASTNEWS-subtitle"] = "Noticias, consejos y <strong>actualizaciones de
 $langStr["LASTNEWS-btnText"] = "Ver todas las noticias";
 $langStr["LASTNEWS-readmore"] = "Leer +";
 
+$langStr["FOOTER-menu"] = "Menu";
+$langStr["FOOTER-contactar"] = "Contacta con nosotros";
+$langStr["FOOTER-siguenos"] = "Síguenos";
+$langStr["FOOTER-top-busquedas"] = "Top Búsquedas";
+$langStr["FOOTER-top-busquedas1"] = "Villas de obra nueva en Orihuela Costa";
+$langStr["FOOTER-top-busquedas2"] = "Viviendas de obra nueva cerca del mar en la Costa Cálida";
+$langStr["FOOTER-top-busquedas3"] = "Viviendas de segunda mano en Torrevieja";
+$langStr["FOOTER-top-busquedas4"] = "Casas de segunda mano en venta en Benijófar";
+$langStr["FOOTER-top-busquedas5"] = "Villas de reventa con vistas al mar en la Costa Blanca";
+$langStr["FOOTER-top-busquedas6"] = "Villas modernas en venta en Torrevieja";
+
+
+
+
 
 
 

@@ -439,17 +439,29 @@
     <div id="footer">
         <div class="container text-center text-lg-start">
             <div class="row">
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4">
                     <img class="mb-4" src="/media/images/website/website-logo.svg" alt="{$nombreEmpresa}" title="{$nombreEmpresa}">
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="custom-title mb-4">{$lng_footer_menu}</h4>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-detail">
+                        <h4 class="mb-4 custom-title">{$lng_footer_contactar}</h4>
+</div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-lg-4 mb-4">
                     <div class="py-3">
-                    <p class="label-social-icons">Follow Us<p>
-                        {include file="partials/bottom-social.tpl"}
+                        <p class="label-social-icons">{$lng_footer_siguenos}<p>
+                            {include file="partials/bottom-social.tpl"}
                     </div>
 
                 </div>
-                <div class="col-lg-4 mb-lg-0 mb-4">
-                    <h4 class="custom-title mb-4">Menu</h4>
+
+                <div class="col-lg-4 mb-4">
                     <ul class="ps-0 menu-footer">
 
                         <li class="list-inline-item">
@@ -484,13 +496,11 @@
                             (x)
                             </a>
                         </li>
-
-                        
+                    
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <div class="contact-detail">
-                        <h4 class="mb-4 custom-title">{$lng_contacte}</h4>
+                <div class="col-lg-4 mb-4">
+                <div class="contact-detail">
                        <p><span>{$lng_telefono}: </span>
                        <a href="tel:{$telefonoEmpresa|replace:" ":""}">{$telefonoEmpresa}</a>
                        </p>
@@ -499,6 +509,8 @@
                        <p><span>{$lng_direccion}: </span> <a style="text-decoration: none"class="no-decoration">{$direccionEmpresa}</a></p>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -523,21 +535,21 @@
     <div class="container px-lg-4 px-5 text-center">
 
         <!-- Título centrado -->
-        <h4 class="custom-title mb-4">Top Searches</h4>
+        <h4 class="custom-title mb-4">{$lng_footer_top_busquedas}</h4>
 
         <!-- Row de 3 columnas -->
         <div class="row justify-content-center mb-4">
             <div class="col-md-4 mb-3">
-                <a href="#" class="d-block text-decoration-underline mb-2">New build villas in Orihuela Costa</a>
-                <a href="#" class="d-block text-decoration-underline">New build homes near the sea in Costa Cálida</a>
+                <a href="#" class="d-block text-decoration-underline mb-2">{$lng_footer_top_busquedas1}</a>
+                <a href="#" class="d-block text-decoration-underline">{$lng_footer_top_busquedas2}</a>
             </div>
             <div class="col-md-4 mb-3">
-                <a href="#" class="d-block text-decoration-underline mb-2">Resale homes in Torrevieja</a>
-                <a href="#" class="d-block text-decoration-underline">Resale homes for sale in Benijófar</a>
+                <a href="#" class="d-block text-decoration-underline mb-2">{$lng_footer_top_busquedas3}</a>
+                <a href="#" class="d-block text-decoration-underline">{$lng_footer_top_busquedas4}</a>
             </div>
             <div class="col-md-4 mb-3">
-                <a href="#" class="d-block text-decoration-underline mb-2">Resale villas with sea views in Costa Blanca</a>
-                <a href="#" class="d-block text-decoration-underline">Modern villas for sale in Torrevieja</a>
+                <a href="#" class="d-block text-decoration-underline mb-2">{$lng_footer_top_busquedas5}</a>
+                <a href="#" class="d-block text-decoration-underline">{$lng_footer_top_busquedas6}</a>
             </div>
         </div>
 
