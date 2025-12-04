@@ -203,10 +203,10 @@
         <div class="container">
             <div class="content-home-promotions">
                 <div class="content-home-promotions-txt">
-                    <h3 class="main-title mb-2">¿Buscas algo nuevo?</h3>
-                    <h2 class="main-title mb-3 py-1">Descubra nuestras <strong>últimas novedades</strong></h2>
-                    <p class="pb-2">Explora promociones exclusivas y casas de obra nueva en la Costa Blanca, Costa Cálida y Costa del Sol. Seleccionadas por agentes de confianza, diseñadas para la vida moderna.</p>
-                    <a href="/es/promociones/">Ver todas las promociones</a>
+                    <h3 class="main-title mb-2">{$lng_buscas_algo_nuevo}</h3>
+                    <h2 class="main-title mb-3 py-1">{$lng_descubrir_novedades}</h2>
+                    <p class="pb-2">{$lng_texto_promociones_home}</p>
+                    <a href="/es/promociones/">{$lng_ver_todas_las_promociones}</a>
                 </div>
             </div>
         </div>

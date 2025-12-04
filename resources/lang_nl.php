@@ -450,4 +450,7 @@ $langStr["Mediterraneo"] = "De Middellandse Zee, <strong>op jouw manier</strong>
 $langStr["Propiedades Home subtitulo"] = "Aanbevelingen in Alicante, Spanje";
 $langStr["Propiedades Home titulo"] = "Huizen die <strong>je bijblijven</strong>";
 $langStr["Todas las propiedades"] = "Bekijk alle woningen";
-
+$langStr["Buscas algo nuevo"] = "Op zoek naar iets nieuws?";
+$langStr["Descubrir novedades"] = "Ontdek onze <strong>nieuwste ontwikkelingen</strong>";
+$langStr["Texto Promociones home"] = "Ontdek exclusieve aanbiedingen en nieuwbouwwoningen aan de Costa Blanca, Costa Cálida en Costa del Sol. Geselecteerd door betrouwbare makelaars, gebouwd voor modern wonen.";
+$langStr["Ver todas las promociones"] = "Bekijk alle promoties";

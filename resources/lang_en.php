@@ -455,7 +455,10 @@ $langStr["Mediterraneo"] = "The Mediterranean, <strong> your way </strong>";
 $langStr["Propiedades Home subtitulo"] = "Alicante Spain picks";
 $langStr["Propiedades Home titulo"] = "Homes that stay <strong>with you</strong>";
 $langStr["Todas las propiedades"] = "View all properties";
-
+$langStr["Buscas algo nuevo"] = "Looking for something new?";
+$langStr["Descubrir novedades"] = "Discover our <strong>latest developments</strong>";
+$langStr["Texto Promociones home"] = "Explore exclusive promotions and new-build homes across Costa Blanca, Costa Cálida and Costa del Sol. Selected by trusted agents, built for modern living.";
+$langStr["Ver todas las promociones"] = "View all promotions";
 
 
 

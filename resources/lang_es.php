@@ -457,10 +457,9 @@ $langStr["Propiedades Home subtitulo"] = "Selecciones de Alicante, España";
 $langStr["Propiedades Home titulo"] = "Hogares que se quedan <strong>contigo</strong>";
 $langStr["Todas las propiedades"] = "Ver todas las propiedades";
 
-$langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
-$langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
-$langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
-$langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
+$langStr["Buscas algo nuevo"] = "¿Buscas algo nuevo?";
+$langStr["Descubrir novedades"] = "Descubra nuestras últimas novedades";
+$langStr["Texto Promociones home"] = "Explora promociones exclusivas y casas de obra nueva en la Costa Blanca, Costa Cálida y Costa del Sol. Seleccionadas por agentes de confianza, diseñadas para la vida moderna.";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
