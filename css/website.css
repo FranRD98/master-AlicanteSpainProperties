@@ -41402,8 +41402,9 @@ body:not(.home) .buscador {
 #footer a {
   color: #fff;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
+  letter-spacing: 1.6px;
   transition: all ease-in-out 0.3s;
 }
 #footer a:hover {
@@ -42803,6 +42804,10 @@ select {
   text-align: left;
   color: #fff;
   text-transform: uppercase;
+}
+
+#footer a:hover {
+  color: #29bdef;
 }
 
 #footer .footer-social-icons {

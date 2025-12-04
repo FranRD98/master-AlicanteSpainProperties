@@ -364,8 +364,9 @@ a.mini-banner
     a {
         color: #fff;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 500;
         text-decoration: none;
+        letter-spacing: 1.6px;
         @include transition;
 
         &:hover {
@@ -1229,6 +1230,10 @@ font-family: Outfit;
   text-transform: uppercase;
 }
 
+#footer a:hover{
+    color: $primary;
+}
+
 #footer .footer-social-icons {
     display: flex;        
     gap: 20px;            
@@ -1236,7 +1241,7 @@ font-family: Outfit;
 }
 
 #footer .footer-social-icons a:hover {
-    transform:  scale(0.92);
+    transform: scale(0.92);
 }
 
 /* Footer general */
