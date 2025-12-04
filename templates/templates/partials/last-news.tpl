@@ -4,7 +4,7 @@
     {assign var="link" value="{$urlStart}{$url_news}/{$resource.id_nws}/{$resource.titulo|slug}/"}
 {/if}
 
-<div class="col-lg-6">
+<div class="col-lg-4">
 
         <div class="noticia">
             {* @group SEC - Imagen *}
@@ -28,16 +28,16 @@
 
             <div class="text-new">
 
-                    {* @group SEC - FECHA *}
-                    <div class="date">{$resource.date_nws|date_format:"%e %b %Y"}</div>
+                    {* @group SEC - FECHA 
+                    <div class="date">{$resource.date_nws|date_format:"%e %b %Y"}</div>*}
 
                     {* @group SEC - TITULO *}
                     <h4><a href="{$link}">{$resource.titulo}</a></h4>
-                    {* @group SEC - TEXTO *}
-                    <p>{$resource.contenido|strip_tags|truncate:300:"..."}</p>
+                    {* @group SEC - TEXTO 
+                    <p>{$resource.contenido|strip_tags|truncate:300:"..."}</p>*}
 
                     {* @group SEC - BOTÓN *}
-                    <a href="{$link}" class="read-more">{$lng_mas_informacion}</a>
+                    <a href="{$link}" class="read-more">{$lng_lastnews_readmore}</a>
             </div>
         </div>
 

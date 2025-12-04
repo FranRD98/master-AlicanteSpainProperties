@@ -463,6 +463,13 @@ $langStr["Texto Promociones home"] = "Explora promociones exclusivas y casas de 
 $langStr["TESTIMONIALS-title"] = "Conectando agencias con compradores";
 $langStr["TESTIMONIALS-subtitle"] = "Historias de <strong>agentes inmobiliarios</strong>";
 $langStr["TESTIMONIALS-readmore"] = "Leer +";
+$langStr["LASTNEWS-title"] = "Perspectivas locales";
+$langStr["LASTNEWS-subtitle"] = "Noticias, consejos y <strong>actualizaciones del mercado</strong>";
+$langStr["LASTNEWS-btnText"] = "Ver todas las noticias";
+$langStr["LASTNEWS-readmore"] = "Leer +";
+
+
+
 
 
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";

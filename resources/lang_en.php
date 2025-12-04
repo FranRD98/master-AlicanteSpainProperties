@@ -462,5 +462,9 @@ $langStr["Ver todas las promociones"] = "View all promotions";
 $langStr["[TESTIMONIALS]-title"] = "Connecting agencies with buyers";
 $langStr["[TESTIMONIALS]-subtitle"] = " Stories from <strong>real estate agents</strong>";
 $langStr["TESTIMONIALS-readmore"] = "Read +";
-
+$langStr["LASTNEWS-title"] = "Local insights";
+$langStr["LASTNEWS-subtitle"] = "News, tips and <strong>market updates</strong>";
+$langStr["LASTNEWS-btnText"] = "View all news";
+$langStr["LASTNEWS-readmore"] = "Leer +";
+$langStr["LASTNEWS-readmore"] = "Read +";
 

@@ -326,7 +326,7 @@ $lastNewsQuery = "
     FROM news
     WHERE news.title_" . $lang . "_nws  != '' AND news.content_" . $lang . "_nws != '' AND type_nws = 1 AND activate_nws = 1
     ORDER BY news.date_nws DESC
-    LIMIT 2
+    LIMIT 3
 ";
 
 $smarty->assign("lastNews", getRecordsAndCache($lastNewsQuery, 'last-news'));

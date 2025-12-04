@@ -277,32 +277,6 @@
     </div>
     {/if}
 
-    {* @group SEC - ÚLTIMAS NOTICIAS *}
-
-    {if $seccion == '' && $actNoticias == 1 }
-
-        {if isset($lastNews[0]) && $lastNews[0].id_nws != '' }
-        <div id="last-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="main-title">{$lng_ultimas} {$lng_noticias}</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    {section name=ln loop=$lastNews}
-                        {include file="partials/last-news.tpl" resource=$lastNews[ln]}
-                    {/section}
-                </div>
-                <div class="text-center mt-3 mb-5">
-                    <a href="{$urlStart}{$url_news}/" class="btn btn-primary">{$lng_ver_todas_las_noticias}</a>
-                </div>
-            </div>
-        </div>
-        {/if}
-
-    {/if}
-
     {* @group SEC - TESTIMONIALS *}
 
     {if $actTestimonials == 1}
@@ -353,20 +327,6 @@
     {/if}
     {/if}
 
-    {* @group SEC - NEWSLETTER *}
-
-    {if $actMailchimp == 1}
-        {if $seccion == ''}
-        <div class="newsletter bg-primary">
-            <div class="container">
-                <div class="col-md-6 offset-md-3">
-                    {include file="modules/acumbamail/views/newsletter.tpl"}
-                </div>
-            </div>
-        </div>
-        {/if}
-    {/if}
-
 
     {if $seccion == '' && $home != ''}
     <!-- Vender propiedad -->
@@ -397,19 +357,32 @@
 </div>
     {/if}
 
-    {* @group SEC - TEXTO INICIO *}
-    {if $seccion == '' && $home != ''}
-    <div class="home-text">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    {* <h1>{$tituloland}</h1> *}
-                    {$home}
-                    <p><a href="{$urlStart}{$url_about_us}/" class="btn btn-primary">{$lng_mas_informacion}</a></p>
+     {* @group SEC - ÚLTIMAS NOTICIAS *}
+
+    {if $seccion == '' && $actNoticias == 1 }
+
+        {if isset($lastNews[0]) && $lastNews[0].id_nws != '' }
+        <div id="last-news">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 d-flex flex-column justify-content-start">
+                        <h3 class="main-title">{$lng_lastnews_title}</h3>
+                        <h2 class="main-title">{$lng_lastnews_subtitle}</h2>
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-end">
+                        <a href="{$urlStart}{$url_news}/" class="btn-lastnews">{$lng_lastnews_btntext}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    {section name=ln loop=$lastNews}
+                        {include file="partials/last-news.tpl" resource=$lastNews[ln]}
+                    {/section}
                 </div>
             </div>
         </div>
-    </div>
+        {/if}
+
     {/if}
 
     {* @group SEC - CONTACT FOOTER *}
@@ -544,6 +517,35 @@
 
     {* @group SEC - BARRA RESPONSIVA *}
     {include file="partials/barra-responsiva.tpl"}
+
+        {* @group SEC - TEXTO INICIO *}
+    {if $seccion == '' && $home != ''}
+    <div class="d-none home-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {* <h1>{$tituloland}</h1> *}
+                    {$home}
+                    <p><a href="{$urlStart}{$url_about_us}/" class="btn btn-primary">{$lng_mas_informacion}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/if}
+
+        {* @group SEC - NEWSLETTER *}
+
+    {if $actMailchimp == 1}
+        {if $seccion == ''}
+        <div class="newsletter bg-primary">
+            <div class="container">
+                <div class="col-md-6 offset-md-3">
+                    {include file="modules/acumbamail/views/newsletter.tpl"}
+                </div>
+            </div>
+        </div>
+        {/if}
+    {/if}
 
 <!-- JS
   ================================================== -->

@@ -458,3 +458,7 @@ $langStr["Ver todas las promociones"] = "Bekijk alle promoties";
 $langStr["[TESTIMONIALS]-title"] = "Agentschappen verbinden met kopers";
 $langStr["[TESTIMONIALS]-subtitle"] = "Verhalen <strong>van makelaars</strong>";
 $langStr["TESTIMONIALS-readmore"] = "Koeloven +";
+$langStr["LASTNEWS-title"] = "Lokale inzichten";
+$langStr["LASTNEWS-subtitle"] = "Nieuws, tips en <strong>marktupdates</strong>";
+$langStr["LASTNEWS-btnText"] = "Bekijk al het nieuws";
+$langStr["LASTNEWS-readmore"] = "Koeloven +";

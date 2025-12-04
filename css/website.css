@@ -40875,7 +40875,7 @@ body {
   font-weight: 100;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.88;
+  line-height: normal;
   letter-spacing: -0.8px;
   text-align: center;
   color: #fff;
@@ -42274,7 +42274,7 @@ select {
   font-stretch: normal;
   text-transform: none;
   font-style: normal;
-  line-height: 1;
+  line-height: normal;
   letter-spacing: -0.4px;
   text-align: left;
   color: #fff;
@@ -42290,7 +42290,7 @@ select {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.88;
+  line-height: normal;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
@@ -42324,7 +42324,7 @@ select {
   font-weight: 100;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.3;
+  line-height: normal;
   letter-spacing: -0.4px;
   text-align: left;
   color: #000;
@@ -42341,7 +42341,7 @@ select {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.88;
+  line-height: normal;
   letter-spacing: normal;
   text-align: left;
   color: #000;
@@ -42385,7 +42385,7 @@ select {
   font-weight: 100;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.75;
+  line-height: normal;
   letter-spacing: -0.4px;
   text-align: center;
   color: #fff;
@@ -42408,7 +42408,7 @@ select {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.36;
+  line-height: normal;
   letter-spacing: 0.28px;
   text-align: left;
   color: #fff;
@@ -42422,7 +42422,7 @@ select {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
+  line-height: normal;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
@@ -42508,7 +42508,7 @@ select {
   font-weight: 100;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
+  line-height: normal;
   letter-spacing: -0.4px;
   text-align: left;
   color: #fff;
@@ -42525,8 +42525,105 @@ select {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.88;
+  line-height: normal;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
+}
+
+/* NOTICIAS */
+#last-news {
+  margin-top: 80px;
+}
+
+#last-news h3.main-title, #last-news .main-title.h3, #last-news .home-text h1.h3, .home-text #last-news h1.h3, #last-news .home-text h3.h1, .home-text #last-news h3.h1, #last-news .home-text .h3.h1, .home-text #last-news .h3.h1 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #29bdef;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#last-news h2.main-title, #last-news .main-title.h2, #last-news .home-text h1.h2, .home-text #last-news h1.h2, #last-news .home-text h2.h1, .home-text #last-news h2.h1, #last-news .home-text .h2.h1, .home-text #last-news .h2.h1 {
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #000;
+  margin: 0;
+  text-transform: none;
+}
+
+#last-news h2.main-title strong, #last-news .main-title.h2 strong, #last-news .home-text h1.h2 strong, .home-text #last-news h1.h2 strong, #last-news .home-text h2.h1 strong, .home-text #last-news h2.h1 strong, #last-news .home-text .h2.h1 strong, .home-text #last-news .h2.h1 strong {
+  font-weight: 500;
+}
+
+#last-news .btn-lastnews {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 60px;
+  border-radius: 20px;
+  border: solid 1px #bfc2c3;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+#last-news .noticia {
+  padding-top: 5vh;
+}
+
+#last-news .noticia .marco-foto {
+  height: 350px;
+}
+
+#last-news .noticia .marco-foto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#last-news .noticia:hover img {
+  transform: none !important; /* desactiva el zoom */
+  transition: none !important; /* elimina la animación */
+}
+
+#last-news .noticia .text-new h4, #last-news .noticia .text-new .h4 {
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #000;
+}
+
+#last-news .noticia .text-new a.read-more {
+  font-family: Outfit;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.6px;
+  text-align: left;
+  color: #29bdef;
+  text-transform: uppercase;
 }
