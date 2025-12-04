@@ -198,6 +198,8 @@
     {/if}
     {/if}
 
+    {if $seccion == '' && $home != ''}
+
     <!-- PROMOCIONES -->
     <div class="home-promotions">
         <div class="container">
@@ -211,8 +213,9 @@
             </div>
         </div>
     </div>
-
+    {/if}
 <!-- Porque nosotros -->
+{if $seccion == '' && $home != ''}
 <div class="why-us-section mt-4 my-80 mb-lg-5">
     <div class="container-fluid">
         <div class="row align-items-start">
@@ -248,7 +251,7 @@
         </div>
     </div>
 </div>
-
+    {/if}
     {* @group SEC - PROMOCIONES DESTACADAS *}
     {if $seccion == '' && isset($featProms[0]) && $featProms[0].id_nws != ''}
     <div id="featProms-properties">
@@ -362,6 +365,36 @@
             </div>
         </div>
         {/if}
+    {/if}
+
+
+    {if $seccion == '' && $home != ''}
+    <!-- Vender propiedad -->
+<div id="sell-property">
+    <div class="container">
+        <div class="content-sell-property">
+            <div class="row align-items-center">
+
+                <!-- Texto izquierda -->
+                <div class="col-12 col-lg-6">
+                    <div class="content-sell-property-txt">
+                        <h3 class="main-title mb-2">{$lng_buscas_algo_nuevo}</h3>
+                        <h2 class="main-title mb-3 py-1">{$lng_descubrir_novedades}</h2>
+                        <p class="pb-2">{$lng_texto_promociones_home}</p>
+                    </div>
+                </div>
+
+                <!-- Formulario derecha (vacío por ahora) -->
+                <div class="col-12 col-lg-6">
+                    <div class="content-sell-property-form">
+                        <!-- Aquí irá el formulario -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
     {/if}
 
     {* @group SEC - TEXTO INICIO *}

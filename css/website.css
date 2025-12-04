@@ -42245,7 +42245,8 @@ select {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: top left;
-  padding: 66px 70px;
+  min-height: 490px;
+  padding: 20px;
 }
 
 .home-promotions .content-home-promotions-txt {
@@ -42475,5 +42476,57 @@ select {
   border-radius: 20px;
   border: solid 1px #bfc2c3;
   text-decoration: none;
+  color: #fff;
+}
+
+/* SELL PROPERTY */
+#sell-property .content-sell-property {
+  background-image: url(/media/images/website/sell-property.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  min-height: 440px;
+  padding: 20px;
+}
+
+#sell-property .content-sell-property h3.main-title, #sell-property .content-sell-property .main-title.h3, #sell-property .content-sell-property .home-text h1.h3, .home-text #sell-property .content-sell-property h1.h3, #sell-property .content-sell-property .home-text h3.h1, .home-text #sell-property .content-sell-property h3.h1, #sell-property .content-sell-property .home-text .h3.h1, .home-text #sell-property .content-sell-property .h3.h1 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #29bdef;
+  text-transform: uppercase;
+}
+
+#sell-property .content-sell-property h2.main-title, #sell-property .content-sell-property .main-title.h2, #sell-property .content-sell-property .home-text h1.h2, .home-text #sell-property .content-sell-property h1.h2, #sell-property .content-sell-property .home-text h2.h1, .home-text #sell-property .content-sell-property h2.h1, #sell-property .content-sell-property .home-text .h2.h1, .home-text #sell-property .content-sell-property .h2.h1 {
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #fff;
+  text-transform: none;
+}
+
+#sell-property .content-sell-property h2.main-title strong, #sell-property .content-sell-property .main-title.h2 strong, #sell-property .content-sell-property .home-text h1.h2 strong, .home-text #sell-property .content-sell-property h1.h2 strong, #sell-property .content-sell-property .home-text h2.h1 strong, .home-text #sell-property .content-sell-property h2.h1 strong, #sell-property .content-sell-property .home-text .h2.h1 strong, .home-text #sell-property .content-sell-property .h2.h1 strong {
+  font-weight: 500;
+}
+
+#sell-property .content-sell-property p {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
   color: #fff;
 }
