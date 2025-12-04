@@ -451,7 +451,41 @@
                 <div class="col-lg-4 mb-lg-0 mb-4">
                     <h4 class="custom-title mb-4">Menu</h4>
                     <ul class="ps-0 menu-footer">
-                        {include file="partials/menu.tpl" submenu=1 seccmen=ft}
+
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_inicio}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_propiedades}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_quienes_somos}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_venda_con_nosotros}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_noticias}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_testimonials}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_areas}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_promotions}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{$urlStart}">{$lng_contactar}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="/media/images/website/properties/heart-full.svg" alt=""/>
+                            (x)
+                            </a>
+                        </li>
+
+                        
                     </ul>
                 </div>
                 <div class="col-lg-4">
@@ -462,7 +496,7 @@
                        </p>
 
                        <p><span>E-Mail: </span> <a href="mailto:{$correoEmpresa}">{$correoEmpresa}</a> </p>
-                       <p><span>{$lng_direccion}: </span> <a class="no-decoration">{$direccionEmpresa}</a></p>
+                       <p><span>{$lng_direccion}: </span> <a style="text-decoration: none"class="no-decoration">{$direccionEmpresa}</a></p>
                     </div>
                 </div>
             </div>

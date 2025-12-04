@@ -238,6 +238,7 @@ $langStr["Cocinas"] = "Keuken";
 $langStr["Áreas"] = "Werkgebied";
 $langStr["Blog"] = "Blog";
 $langStr["Venda su propiedad"] = "Verkoop uw woning";
+$langStr["Venda con nosotros"] = "Verkoop bij ons";
 $langStr["Galería de imagenes"] = "Fotogalerij";
 $langStr["Mapa de la zona"] = "Kaart van de omgeving";
 $langStr["Mapa de la ciudad"] = "Stadskaart";

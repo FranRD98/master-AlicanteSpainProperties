@@ -238,6 +238,7 @@ $langStr["Cocinas"] = "Kitchen";
 $langStr["Áreas"] = "Areas";
 $langStr["Blog"] = "Blog";
 $langStr["Venda su propiedad"] = "Sell ​​your property";
+$langStr["Venda con nosotros"] = "Sell with us";
 $langStr["Galería de imagenes"] = "Image gallery";
 $langStr["Mapa de la zona"] = "Map of the area";
 $langStr["Mapa de la ciudad"] = "City map";
