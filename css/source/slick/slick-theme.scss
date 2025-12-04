@@ -187,12 +187,13 @@ $slick-opacity-not-active: 0.25 !default;
                 opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
-                background-color: #ebebeb !important;
+                background-color: transparent !important;
+                color: transparent !important; // color del puntito
             }
         }
         &.slick-active button:before {
             color: transparent !important;
-            background: transparent !important;
+            background: white !important;
             opacity: $slick-opacity-default;
             width: 24px !important;
             height: 24px !important;

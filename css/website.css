@@ -13133,11 +13133,12 @@ textarea.form-control-lg {
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ebebeb !important;
+  background-color: transparent !important;
+  color: transparent !important;
 }
 .slick-dots li.slick-active button:before {
   color: transparent !important;
-  background: transparent !important;
+  background: white !important;
   opacity: 0.75;
   width: 24px !important;
   height: 24px !important;
