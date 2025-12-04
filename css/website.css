@@ -42554,41 +42554,51 @@ select {
   color: #fff;
 }
 
-#sell-property .form-control {
+/* Inputs del formulario */
+#sell-property .form-input {
+  width: 100%;
+  height: 55px;
+  padding: 0 8px;
   border-radius: 25px;
-  border: solid 1px #e4e4e4;
+  border: 1px solid #e4e4e4;
   background-color: #fff;
-  padding: 0.375rem 0.75rem;
-}
-
-#sell-property .form-control::-moz-placeholder {
   font-family: Outfit;
   font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
   color: #000;
+  margin-bottom: 14px;
 }
 
-#sell-property .form-control::placeholder {
-  font-family: Outfit;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
+#sell-property .form-input::-moz-placeholder {
   color: #000;
+  opacity: 0.8;
 }
 
+#sell-property .form-input::placeholder {
+  color: #000;
+  opacity: 0.8;
+}
+
+/* Separación row sin gap estándar */
+#sell-property .contact-form .row .form-group, #sell-property .contact-form .sidebar-content-full .property-list-list .property-list-box .property .form-group, .sidebar-content-full .property-list-list .property-list-box #sell-property .contact-form .property .form-group {
+  margin-bottom: 14px;
+}
+
+/* Botón */
 #sell-property .contact-form button {
-  padding: 2px 28px;
-  border-radius: 23px;
+  height: 55px;
+  border-radius: 25px;
   background-color: #000;
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: none;
+  margin: 0;
+}
+
+/* Ajuste separaciones checkbox */
+#sell-property .checkcontainer {
+  margin-top: 14px;
 }
 
 /* Ocultar el checkbox original */

@@ -345,31 +345,38 @@
                 </div>
 
                 <!-- Formulario derecha -->
-                <div class="col-12 col-lg-5 offset-lg-2 mt-4 mt-lg-0 pt-2 pt-md-3 pt-lg-0">
-                    <div class="content-sell-property-form">
-                        <div class="contact-form">
-                                <form action="#" id="contactSellForm" method="post" role="form" class="validate form-white" novalidate="novalidate">
-    <div class="mb-3">
-        <input type="text" class="form-control required" name="name" id="name" placeholder="Name*">
-    </div>
-    <div class="row">
-        <div class="mb-3 col-md-6">
-            <input type="text" class="form-control  telefono" name="telefono" id="telefono" placeholder="Phone">
-        </div>
-        <div class="mb-3 col-md-6">
-            <input type="text" class="form-control required email" name="email" id="email" placeholder="E-mail*">
-        </div>
-    </div>
-        <button type="submit" class="btn btn-text text-white w-100">{$lng_sell_property_btnform}</button>
-    <div>
-        <label class="checkcontainer mt-4">
-            <input type="checkbox" name="lpd" id="lpd" class="required">
-            <span class="checkmark"></span>
-            <span class="tag-name">{$lng_sell_property_privacytext}</span>
-        </label>
-    </div>
+<div class="col-12 col-lg-5 offset-lg-2 mt-4 mt-lg-0 pt-2 pt-md-3 pt-lg-0">
+    <div class="content-sell-property-form">
+        <div class="contact-form">
 
-    </form>                            
+            <form action="#" id="contactSellForm" method="post" role="form" class="validate form-white" novalidate>
+
+                <div class="form-group">
+                    <input type="text" class="form-input required" name="name" id="name" placeholder="{$lng_nombre}">
+                </div>
+
+                <div class="row g-0">
+                    <div class="col-md-6 pe-md-1">
+                        <input type="text" class="form-input telefono" name="telefono" id="telefono" placeholder="{$lng_telefono}">
+                    </div>
+                    <div class="col-md-6 ps-md-1">
+                        <input type="text" class="form-input required email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                </div>
+
+                <button type="submit" class="w-100 text-white">{$lng_sell_property_btnform}</button>
+
+                <label class="checkcontainer mt-3">
+                    <input type="checkbox" name="lpd" id="lpd" class="required">
+                    <span class="checkmark"></span>
+                    <span class="tag-name">{$lng_sell_property_privacytext}</span>
+                </label>
+
+            </form>
+
+        </div>
+    </div>
+</div>       
     </div>
                     </div>
                 </div>
@@ -493,7 +500,9 @@
                         </li>
                         <li class="list-inline-item">
                             <img src="/media/images/website/properties/heart-full.svg" alt=""/>
-                            (x)
+                            
+                            {if $totalFavs > 0}({$totalFavs}) {else 0}{/if}
+
                             </a>
                         </li>
                     
