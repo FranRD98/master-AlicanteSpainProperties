@@ -669,9 +669,8 @@ select {
     background-image: url(/media/images/website/properties/enmascarar-grupo-4.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: top left;
     min-height: 490px;
-    padding: 20px;
+    padding: 50px 70px;
 }
 
 .home-promotions .content-home-promotions-txt {
@@ -703,6 +702,7 @@ select {
     letter-spacing: -0.4px;
     text-align: left;
     color: #fff;
+    margin: 0;
 }
 
 .home-promotions .content-home-promotions-txt h2.main-title strong{
@@ -716,11 +716,12 @@ select {
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.88;
     letter-spacing: normal;
     text-align: left;
     color: #fff;
     margin: 0;
+    margin-bottom: 5vh;
 }
 
 
@@ -777,9 +778,13 @@ select {
 
 /* TESTIMONIALS */
 #testimonials-home {
-    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
     position: relative;
-    background-color: #121c27;
+    padding-top: 15vh;  
+  padding-bottom: 30vh; 
+    background: #121c27;
 }
 
 #testimonials-home .svg-top {
@@ -796,16 +801,18 @@ select {
 
 
 #testimonials-home h2.main-title {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 3.2px;
-  text-align: center;
-  color: #29bdef;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-align: center;
+    color: #29bdef;
     margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 2px;
 }
 
 #testimonials-home h3.main-title {
@@ -826,10 +833,13 @@ select {
     font-weight: 500;
 }
 
+#testimonials-home .testimonial {
+    padding: 25px 130px;
+}
 
 #testimonials-home .testimonial  .imagen a img{
-width: 150px;
-height: auto;
+    width: 150px;
+    height: auto;
 }
 
 
@@ -847,13 +857,17 @@ height: auto;
   text-transform: uppercase;
 }
 
+#testimonials-home .testimonial .textos {
+    margin-left: 1vw;
+}
+
 #testimonials-home .testimonial .textos p{
   font-family: Outfit;
   font-size: 20px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
@@ -899,9 +913,15 @@ font-family: Outfit;
     margin-right: 9.5px;
 }
 
+#testimonials-home .wrapper-text {
+    margin-bottom: 5vh;
+}
+
 #testimonials-home .slides .slick-dots {
     display: none;
 }
+
+
 #testimonials-home .btn-testimonials {
   padding: 23.8px 69px 23.2px;
   border-radius: 20px;
@@ -913,12 +933,14 @@ font-family: Outfit;
 
 /* SELL PROPERTY */
 #sell-property .content-sell-property {
-  background-image: url(/media/images/website/sell-property.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top left;
-  min-height: 440px;
-  padding: 45px 125px;
+    background-image: url(/media/images/website/sell-property.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    min-height: 440px;
+    padding: 45px 125px;
+    position: relative;
+    top: -17vh;
 }
 
 #sell-property .content-sell-property h3.main-title {
@@ -1075,7 +1097,8 @@ padding: 2px 28px;
 
 /* NOTICIAS */
 #last-news{
-    margin-top: 80px;
+    margin-top: -8vh;
+    margin-bottom: 6vh;
 }
 
 #last-news h3.main-title {

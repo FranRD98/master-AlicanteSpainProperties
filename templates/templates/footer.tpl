@@ -205,8 +205,8 @@
         <div class="container">
             <div class="content-home-promotions">
                 <div class="content-home-promotions-txt">
-                    <h3 class="main-title mb-2">{$lng_buscas_algo_nuevo}</h3>
-                    <h2 class="main-title mb-3 py-1">{$lng_descubrir_novedades}</h2>
+                    <h3 class="main-title">{$lng_buscas_algo_nuevo}</h3>
+                    <h2 class="main-title">{$lng_descubrir_novedades}</h2>
                     <p class="pb-2">{$lng_texto_promociones_home}</p>
                     <a href="/es/promociones/">{$lng_ver_todas_las_promociones}</a>
                 </div>
@@ -281,7 +281,7 @@
 
     {if $actTestimonials == 1}
     {if $seccion == '' && isset($lastTestimonials[0]) && $lastTestimonials[0].id_nws != ''}
-        <div id="testimonials-home" class="d-flex flex-column justify-content-between">
+        <div id="testimonials-home" class="d-flex flex-column">
 
     <!-- SVG arriba izquierda -->
     <div class="svg-top">
@@ -292,8 +292,8 @@
 
     <!-- CONTENIDO CENTRADO -->
     <div class="container flex-grow-1 d-flex flex-column justify-content-center">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
 
                 <div class="d-flex flex-column align-items-center justify-content-center text-center">
                     <h2 class="main-title">{$lng_testimonials_title}</h2>
@@ -308,7 +308,7 @@
                     </div>
                 </div>
 
-                <div class="text-center mt-60">
+                <div class="text-center">
                     <a href="{$urlStart}{$url_testimonials}/" class="btn-testimonials">{$lng_see_all_testimonials}</a>
                 </div>
 

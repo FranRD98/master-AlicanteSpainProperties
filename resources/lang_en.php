@@ -277,7 +277,7 @@ $langStr["In the meantime, please have a look at this selection of similar prope
 $langStr["We have received a request for a report if you lower the price of the property with the reference"] = "We have received a request for a report if you lower the price of the property with the reference";
 $langStr["Información clave"] = "key features";
 $langStr["Testimonials"] = "Testimonials";
-$langStr["See all testimonials"] = "See all testimonials";
+$langStr["See all testimonials"] = "View all testimonials";
 $langStr["Here are just some of our Happy Customers"] = "Here are just some of our Happy Customers";
 $langStr["Newsletter Automática - Asunto - 1"] = "These are the properties you were looking for";
 $langStr["Newsletter Automática - Asunto - 2"] = "These are the houses you were looking for";
@@ -456,7 +456,7 @@ $langStr["Propiedades Home subtitulo"] = "Alicante Spain picks";
 $langStr["Propiedades Home titulo"] = "Homes that stay <strong>with you</strong>";
 $langStr["Todas las propiedades"] = "View all properties";
 $langStr["Buscas algo nuevo"] = "Looking for something new?";
-$langStr["Descubrir novedades"] = "Discover our <strong>latest developments</strong>";
+$langStr["Descubrir novedades"] = "Discover our <br><strong>latest developments</strong>";
 $langStr["Texto Promociones home"] = "Explore exclusive promotions and new-build homes across Costa Blanca, Costa Cálida and Costa del Sol. Selected by trusted agents, built for modern living.";
 $langStr["Ver todas las promociones"] = "View all promotions";
 $langStr["[TESTIMONIALS]-title"] = "Connecting agencies with buyers";

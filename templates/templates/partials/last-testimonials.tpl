@@ -3,7 +3,7 @@
     <div class="row align-items-center">
 
         {* IMAGEN *}
-        <div class="col-xl-3 text-center">
+        <div class="col-xl-4 d-flex justify-content-end">
             <div class="imagen">
                 <a href="{$urlStart}{$url_testimonials}/{$resource.id_nws}/{($resource.titulometa|default:$resource.titulo)|slug}/">
                     {if $resource.img != ''}
@@ -17,8 +17,8 @@
         </div>
 
         {* TEXTO *}
-        <div class="col-xl-9">
-            <div class="textos ml-lg-3">
+        <div class="col-xl-8">
+            <div class="textos ml-lg-2">
 
                 {* NOMBRE *}
                 <h3 class="title-testimonial">
