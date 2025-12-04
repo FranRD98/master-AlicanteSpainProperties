@@ -5,29 +5,29 @@
 {/if}
     <div class="row">
 
-    <!-- Container Checks-->
-    <div class="col-12 mb-2 bg-primary">
-        <div class="row justify-content-start justify-content-lg-center px-3 mb-2">
-            <div class="col-6 col-lg-3 col-xl-2 d-flex flex-wrap container-buscador-check justify-content-start justify-content-lg-start ps-0 pe-1">
-                <div class="label-container-buscador align-items-center d-flex">
-                    <label class="custom-label-checkbox d-flex">
-                        <input type="checkbox" name="newbuild" value="2" id="newbuild">
-                        <span class="checkbox-text text-center txt-bajar">Obra Nueva</span>
-                    </label>
-                </div>
+        <!-- Container Checks-->
+    <div class="col-12 mb-2">
+        <div class="row justify-content-center">
+            
+            <!-- Obra Nueva -->
+            <div class="col-6 col-lg-3 col-xl-2 d-flex justify-content-center">
+                <label class="custom-label-checkbox d-flex align-items-center">
+                    <input type="checkbox" name="newbuild" value="2" id="newbuild">
+                    <span class="checkmark"></span>
+                    <span class="checkbox-text">{$lng_obra_nueva}</span>
+                </label>
             </div>
 
-            <div class="col-6 col-lg-3 col-xl-2 d-flex flex-wrap container-buscador-check justify-content-start justify-content-lg-start px-1">
-                <div class="label-container-buscador align-items-center d-flex">
-                    <label class="custom-label-checkbox d-flex">
-                        <input class="checkAlquiler" type="checkbox" name="resale" value="1" id="resale">
-                                    <span class="check-mark"></span>
-                                    <span class="checkbox-text text-center txt-bajar">Venta</span>
-                    </label>
-                </div>
+            <!-- Venta -->
+            <div class="col-6 col-lg-3 col-xl-2 d-flex justify-content-center">
+                <label class="custom-label-checkbox d-flex align-items-center">
+                    <input type="checkbox" name="resale" value="1" id="resale">
+                    <span class="checkmark"></span>
+                    <span class="checkbox-text">{$lng_segunda_mano}</span>
+                </label>
             </div>
+
         </div>
-
     </div>
 
     <!-- Search Container -->
