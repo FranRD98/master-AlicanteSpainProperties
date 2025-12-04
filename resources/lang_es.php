@@ -460,7 +460,11 @@ $langStr["Todas las propiedades"] = "Ver todas las propiedades";
 $langStr["Buscas algo nuevo"] = "¿Buscas algo nuevo?";
 $langStr["Descubrir novedades"] = "Descubra nuestras últimas novedades";
 $langStr["Texto Promociones home"] = "Explora promociones exclusivas y casas de obra nueva en la Costa Blanca, Costa Cálida y Costa del Sol. Seleccionadas por agentes de confianza, diseñadas para la vida moderna.";
-$langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
+$langStr["TESTIMONIALS-title"] = "Conectando agencias con compradores";
+$langStr["TESTIMONIALS-subtitle"] = "Historias de <strong>agentes inmobiliarios</strong>";
+$langStr["TESTIMONIALS-readmore"] = "Leer +";
+
+
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 $langStr["xxxxxxxxxxxxxxxxxxxxxxxx"] = "xxxxxxxxxxxxxxxxxxxxxxxx";

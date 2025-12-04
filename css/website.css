@@ -42345,3 +42345,135 @@ select {
   text-align: left;
   color: #000;
 }
+
+/* TESTIMONIALS */
+#testimonials-home {
+  min-height: 80vh;
+  position: relative;
+  background-color: #121c27;
+}
+
+#testimonials-home .svg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#testimonials-home .svg-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#testimonials-home h2.main-title, #testimonials-home .main-title.h2, #testimonials-home .home-text h1.h2, .home-text #testimonials-home h1.h2, #testimonials-home .home-text h2.h1, .home-text #testimonials-home h2.h1, #testimonials-home .home-text .h2.h1, .home-text #testimonials-home .h2.h1 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  color: #29bdef;
+  margin: 0;
+}
+
+#testimonials-home h3.main-title, #testimonials-home .main-title.h3, #testimonials-home .home-text h1.h3, .home-text #testimonials-home h1.h3, #testimonials-home .home-text h3.h1, .home-text #testimonials-home h3.h1, #testimonials-home .home-text .h3.h1, .home-text #testimonials-home .h3.h1 {
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  text-transform: none;
+}
+
+#testimonials-home h3.main-title strong, #testimonials-home .main-title.h3 strong, #testimonials-home .home-text h1.h3 strong, .home-text #testimonials-home h1.h3 strong, #testimonials-home .home-text h3.h1 strong, .home-text #testimonials-home h3.h1 strong, #testimonials-home .home-text .h3.h1 strong, .home-text #testimonials-home .h3.h1 strong {
+  font-weight: 500;
+}
+
+#testimonials-home .testimonial .imagen a img {
+  width: 150px;
+  height: auto;
+}
+
+#testimonials-home .testimonial .textos .title-testimonial a {
+  font-family: Albert Sans;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.36;
+  letter-spacing: 0.28px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#testimonials-home .testimonial .textos p {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+#testimonials-home .testimonial .textos p a.leer-mas {
+  font-family: Outfit;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.6px;
+  text-align: left;
+  color: #29bdef;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#testimonials-home .testimonial .textos a.leer-mas {
+  font-family: Outfit;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.6px;
+  text-align: left;
+  color: #29bdef;
+}
+
+#testimonials-home .testimonial .textos .title-testimonial {
+  display: flex;
+  align-items: center;
+}
+
+#testimonials-home .testimonial .textos .title-testimonial .ref-line {
+  width: 100%;
+  max-width: 45px;
+  height: 1px;
+  background-color: #fff;
+  margin-right: 9.5px;
+}
+
+#testimonials-home .slides .slick-dots {
+  display: none;
+}
+
+#testimonials-home .btn-testimonials {
+  padding: 23.8px 69px 23.2px;
+  border-radius: 20px;
+  border: solid 1px #bfc2c3;
+  text-decoration: none;
+  color: #fff;
+}

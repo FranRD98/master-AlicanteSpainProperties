@@ -304,29 +304,49 @@
 
     {if $actTestimonials == 1}
     {if $seccion == '' && isset($lastTestimonials[0]) && $lastTestimonials[0].id_nws != ''}
-        <div id="testimonials-home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><h2 class="title-home">{$lng_testimonials}</h2></div>
+        <div id="testimonials-home" class="d-flex flex-column justify-content-between">
+
+    <!-- SVG arriba izquierda -->
+    <div class="svg-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="120.715" height="112.294" viewBox="0 0 120.715 112.294">
+            <path d="M-4.572-132.762-34.431-71.1l-9.087 1.3a13.9 13.9 0 0 1 5.193-7.465q3.895-2.921 10.386-2.921a24.756 24.756 0 0 1 17.2 6.816q7.465 6.816 7.465 17.85a25.14 25.14 0 0 1-8.114 18.824 26.733 26.733 0 0 1-19.148 7.789 24.909 24.909 0 0 1-18.175-7.789A25.646 25.646 0 0 1-56.5-55.519a53 53 0 0 1 1.3-10.71 91.294 91.294 0 0 1 5.84-16.552l29.21-58.419zm67.489 0L33.058-71.1l-9.087 1.3a13.9 13.9 0 0 1 5.193-7.465q3.895-2.921 10.386-2.921a24.756 24.756 0 0 1 17.2 6.816q7.465 6.816 7.465 17.85A25.14 25.14 0 0 1 56.1-36.695a26.733 26.733 0 0 1-19.148 7.789 24.909 24.909 0 0 1-18.175-7.789 25.646 25.646 0 0 1-7.789-18.824 53 53 0 0 1 1.3-10.71 91.293 91.293 0 0 1 5.842-16.552L47.338-141.2z" transform="translate(56.5 141.2)" style="fill:#0e2946"/>
+        </svg>
+    </div>
+
+    <!-- CONTENIDO CENTRADO -->
+    <div class="container flex-grow-1 d-flex flex-column justify-content-center">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+
+                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                    <h2 class="main-title">{$lng_testimonials_title}</h2>
+                    <h3 class="main-title">{$lng_testimonials_subtitle}</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="wrapper-text">
-                            <div class="slides">
-                                {section name=ln loop=$lastTestimonials}
-                                    <div>
-                                    {include file="partials/last-testimonials.tpl" resource=$lastTestimonials[ln]}
-                                    </div>
-                                {/section}
-                            </div>
-                        </div>
-                        <div class="text-center mt-60">
-                            <a href="{$urlStart}{$url_testimonials}/" class="btn btn-primary btn-g1 btn-outline">{$lng_see_all_testimonials}</a>
-                        </div>
+
+                <div class="wrapper-text">
+                    <div class="slides">
+                        {section name=ln loop=$lastTestimonials}
+                            <div>{include file="partials/last-testimonials.tpl" resource=$lastTestimonials[ln]}</div>
+                        {/section}
                     </div>
                 </div>
+
+                <div class="text-center mt-60">
+                    <a href="{$urlStart}{$url_testimonials}/" class="btn-testimonials">{$lng_see_all_testimonials}</a>
+                </div>
+
             </div>
         </div>
+    </div>
+
+    <!-- SVG abajo derecha -->
+    <div class="svg-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="120.715" height="112.294" viewBox="0 0 120.715 112.294">
+            <path d="M-4.572-132.762-34.431-71.1l-9.087 1.3a13.9 13.9 0 0 1 5.193-7.465q3.895-2.921 10.386-2.921a24.756 24.756 0 0 1 17.2 6.816q7.465 6.816 7.465 17.85a25.14 25.14 0 0 1-8.114 18.824 26.733 26.733 0 0 1-19.148 7.789 24.909 24.909 0 0 1-18.175-7.789A25.646 25.646 0 0 1-56.5-55.519a53 53 0 0 1 1.3-10.71 91.294 91.294 0 0 1 5.84-16.552l29.21-58.419zm67.489 0L33.058-71.1l-9.087 1.3a13.9 13.9 0 0 1 5.193-7.465q3.895-2.921 10.386-2.921a24.756 24.756 0 0 1 17.2 6.816q7.465 6.816 7.465 17.85A25.14 25.14 0 0 1 56.1-36.695a26.733 26.733 0 0 1-19.148 7.789 24.909 24.909 0 0 1-18.175-7.789 25.646 25.646 0 0 1-7.789-18.824 53 53 0 0 1 1.3-10.71 91.293 91.293 0 0 1 5.842-16.552L47.338-141.2z" transform="translate(56.5 141.2)" style="fill:#0e2946"/>
+        </svg>
+    </div>
+
+</div>
     {/if}
     {/if}
 

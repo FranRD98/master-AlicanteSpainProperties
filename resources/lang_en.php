@@ -459,6 +459,8 @@ $langStr["Buscas algo nuevo"] = "Looking for something new?";
 $langStr["Descubrir novedades"] = "Discover our <strong>latest developments</strong>";
 $langStr["Texto Promociones home"] = "Explore exclusive promotions and new-build homes across Costa Blanca, Costa Cálida and Costa del Sol. Selected by trusted agents, built for modern living.";
 $langStr["Ver todas las promociones"] = "View all promotions";
-
+$langStr["[TESTIMONIALS]-title"] = "Connecting agencies with buyers";
+$langStr["[TESTIMONIALS]-subtitle"] = " Stories from <strong>real estate agents</strong>";
+$langStr["TESTIMONIALS-readmore"] = "Read +";
 
 
