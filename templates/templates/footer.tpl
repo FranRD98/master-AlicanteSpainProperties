@@ -214,30 +214,35 @@
 
 <!-- Porque nosotros -->
 <div class="why-us-section mt-4 my-80 mb-lg-5">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-start">
 
             <!-- Primera imagen a la izquierda -->
-            <div class="d-none d-xl-block col-xl-1 home-img-left">
-                <img src="/media/images/website/why-us-1.webp" alt="Alicante Spain Properties" class="img-fluid">
+            <div class="d-none d-xl-block col-xl-2 px-0 home-img-left">
+                <img src="/media/images/website/why-us-1.webp" alt="Alicante Spain Properties" class="img-fluid w-100">
             </div>
 
             <!-- Segunda imagen -->
-            <div class="col-12 col-lg-6 col-xl-5">
+            <div class="col-12 col-lg-6 col-xl-4">
                 <img src="/media/images/website/why-us-2.webp" class="img-fluid w-100 br20" alt="Alicante Spain Properties">
             </div>
 
-            <!-- Título ligeramente sobre la imagen -->
+            <!-- Título y texto -->
             <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 ttl-left pt-lg-4 pt-xl-3 pb-4 px-3 px-lg-4">
-                <div class="title-offset" style="margin-left: -180px;">
+                
+                <!-- Título ligeramente sobre la imagen -->
+                <div class="title-offset" style="margin-left: -230px;">
                     <h3 class="main-title mb-2">Why us</h3>
-                    <h2 class="main-title mb-4 mb-lg-5">A powerful network for <strong>buyers and sellers</strong></h2>
+                    <h2 class="main-title mb-4 mb-lg-5">A powerful network for <br><strong>buyers and sellers</strong></h2>
                 </div>
 
-                <!-- Texto largo que no se mueve -->
-                <p>Alicante Spain Properties is a property portal created by Mediaelx to connect international buyers and sellers with trusted real estate agencies on the Costa Blanca, Costa Cálida and Costa del Sol.</p>
-                <p>With over 2,000 properties available—both new builds and resales—and a network of more than 100 professional agents, we offer one of the most complete and up-to-date selections on the market.</p>
-                <p>Whether you’re buying your next home or selling a property, we make the process easier and more reliable by putting you in direct contact with experienced local experts.</p>
+                <!-- Texto limitado en ancho -->
+                <div class="text-content" style="max-width: 500px;"> 
+                    <p>Alicante Spain Properties is a property portal created by Mediaelx to connect international buyers and sellers with trusted real estate agencies on the Costa Blanca, Costa Cálida and Costa del Sol.</p>
+                    <p>With over 2,000 properties available—both new builds and resales—and a network of more than 100 professional agents, we offer one of the most complete and up-to-date selections on the market.</p>
+                    <p>Whether you’re buying your next home or selling a property, we make the process easier and more reliable by putting you in direct contact with experienced local experts.</p>
+                </div>
+
             </div>
 
         </div>
