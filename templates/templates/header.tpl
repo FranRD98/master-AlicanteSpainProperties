@@ -240,7 +240,7 @@
 
             {if $actBannerUrl == 1 && $banners[0].url != ''}<a href="{$banners[0].url}">{/if}
             
-                <div class="caption text-center">
+                <div class="d-none md:d-block caption text-center">
 
                     {if $actBannerTxt == 1}
 
@@ -264,7 +264,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    {include file="partials/buscador.tpl"}
+
+                        {if $isMobile}
+                            {* Formulario móvil *}
+                            {include file="partials/buscador-mobile.tpl"}
+                        {else}
+                            {* Formulario escritorio *}
+                            {include file="partials/buscador.tpl"}
+                        {/if}
+
+
+                    
                 </div>
             </div>
         </div>

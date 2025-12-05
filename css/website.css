@@ -40605,6 +40605,17 @@ body.home .main-header.fix-header a {
     color: #29bdef;
   }
 }
+@media (max-width: 991.98px) {
+  .main-header {
+    background-color: #000 !important;
+  }
+  .main-header a {
+    color: #fff !important;
+  }
+  body.home .buscador .container {
+    padding-top: 0 !important;
+  }
+}
 .mega-menu {
   display: none;
   position: fixed;

@@ -205,6 +205,21 @@ body.home .main-header.fix-header {
     }
 }
 
+// Fondo negro en main-header para móviles
+@include media-breakpoint-down(lg) {
+    .main-header {
+        background-color: #000 !important;
+
+        a {
+            color: #fff !important; 
+        }
+    }
+
+    body.home .buscador .container{
+        padding-top: 0 !important;
+    }
+
+}
 
 
 // Menú desplegable (vista escritorio y responsive) //
