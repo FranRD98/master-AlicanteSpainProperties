@@ -40522,7 +40522,8 @@ body {
   height: 90px;
   width: 100%;
   z-index: 9999;
-  background: transparent !important;
+  background-color: #000;
+  transition: background-color 0.3s ease;
 }
 .main-header a {
   text-decoration: none;
@@ -40553,6 +40554,20 @@ body {
 }
 .main-header #main-nav li .dropdown-menu {
   line-height: 1.8;
+}
+
+body.home .main-header {
+  background-color: transparent;
+}
+body.home .main-header a {
+  color: #fff;
+}
+
+body.home .main-header.fix-header {
+  background-color: #000;
+}
+body.home .main-header.fix-header a {
+  color: #fff;
 }
 
 @media (min-width: 1280px) {
