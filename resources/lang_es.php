@@ -472,6 +472,13 @@ $langStr["SELL-PROPERTY-privacyText"] = "
 Marque la casilla para contactarnos y aceptar que su información se utilice de acuerdo con nuestro Aviso de Privacidad. Se le agregará automáticamente a nuestra lista de correo, pero puede optar por no participar en cualquier momento*";
 
 
+$langStr["WHYUS-title"] = "Por qué nosotros";
+$langStr["WHYUS-subtitle"] = "Una red poderosa para <strong>compradores y vendedores</strong>";
+$langStr["WHYUS-text"] = "Alicante Spain Properties es un portal inmobiliario creado por Mediaelx para conectar a compradores y vendedores internacionales con agencias inmobiliarias de confianza en la Costa Blanca, la Costa Cálida y la Costa del Sol.
+Con más de 2000 propiedades disponibles, tanto de obra nueva como de segunda mano, y una red de más de 100 agentes profesionales, ofrecemos una de las selecciones más completas y actualizadas del mercado.
+Tanto si compra su próxima casa como si vende una propiedad, facilitamos el proceso y le ofrecemos mayor fiabilidad poniéndole en contacto directo con expertos locales con amplia experiencia.";
+
+
 
 $langStr["LASTNEWS-title"] = "Perspectivas locales";
 $langStr["LASTNEWS-subtitle"] = "Noticias, consejos y <strong>actualizaciones del mercado</strong>";

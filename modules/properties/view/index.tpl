@@ -16,6 +16,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="page-content my-3 mt-lg-6">
+            <h1>Adios</h1>
             {if isset($smarty.get.idquick) && $smarty.get.idquick == ''} {* Este if es para SEO *}
                 
                 <h1 class="main-title subtitle text-center mb-3">

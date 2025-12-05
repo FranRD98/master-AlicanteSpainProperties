@@ -214,44 +214,41 @@
         </div>
     </div>
     {/if}
-<!-- Porque nosotros -->
 {if $seccion == '' && $home != ''}
-<div class="why-us-section mt-4 my-80 mb-lg-5">
-    <div class="container-fluid">
+<div class="home-text mt-4 my-80 mb-lg-5">
+    <div class="container">
         <div class="row align-items-start">
 
             <!-- Primera imagen a la izquierda -->
-            <div class="d-none d-xl-block col-xl-2 px-0 home-img-left">
-                <img src="/media/images/website/why-us-1.webp" alt="Alicante Spain Properties" class="img-fluid w-100">
+            <div class="d-none d-xl-block col-12 col-xl-1 home-img-left">
+                <img src="/media/images/website/why-us-1.webp" alt="Alicante Spain Properties" class="img-fluid w-100" 
+                style="position: relative;
+    top: 8vh;
+    transform-origin: top right;
+    transform: scale(5);">
             </div>
 
             <!-- Segunda imagen -->
-            <div class="col-12 col-lg-6 col-xl-4">
+            <div class="col-12 col-lg-6 col-xl-5">
                 <img src="/media/images/website/why-us-2.webp" class="img-fluid w-100 br20" alt="Alicante Spain Properties">
             </div>
 
             <!-- Título y texto -->
-            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 ttl-left pt-lg-4 pt-xl-3 pb-4 px-3 px-lg-4">
-                
-                <!-- Título ligeramente sobre la imagen -->
-                <div class="title-offset" style="margin-left: -230px;">
-                    <h3 class="main-title mb-2">Why us</h3>
-                    <h2 class="main-title mb-4 mb-lg-5">A powerful network for <br><strong>buyers and sellers</strong></h2>
-                </div>
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 ttl-left pt-lg-4 pt-xl-5 pb-4 px-3 px-lg-4">
+                <h3 class="why-us-title mb-2" style="position: relative;
+    left: -200px;">{$lng_whyus_title}</h3>
+                <h2 class="why-us-subtitle mb-4 mb-lg-5" style="position: relative;
+    left: -200px;">{$lng_whyus_subtitle}</h2>
 
-                <!-- Texto limitado en ancho -->
-                <div class="text-content" style="max-width: 500px;"> 
-                    <p>Alicante Spain Properties is a property portal created by Mediaelx to connect international buyers and sellers with trusted real estate agencies on the Costa Blanca, Costa Cálida and Costa del Sol.</p>
-                    <p>With over 2,000 properties available—both new builds and resales—and a network of more than 100 professional agents, we offer one of the most complete and up-to-date selections on the market.</p>
-                    <p>Whether you’re buying your next home or selling a property, we make the process easier and more reliable by putting you in direct contact with experienced local experts.</p>
+                <div class="why-us-text">
+                    <p>{$lng_whyus_text}</p>
                 </div>
-
             </div>
 
         </div>
     </div>
 </div>
-    {/if}
+{/if}
     {* @group SEC - PROMOCIONES DESTACADAS *}
     {if $seccion == '' && isset($featProms[0]) && $featProms[0].id_nws != ''}
     <div id="featProms-properties">

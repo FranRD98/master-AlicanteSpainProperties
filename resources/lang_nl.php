@@ -471,6 +471,13 @@ $langStr["LASTNEWS-subtitle"] = "Nieuws, tips en <strong>marktupdates</strong>";
 $langStr["LASTNEWS-btnText"] = "Bekijk al het nieuws";
 $langStr["LASTNEWS-readmore"] = "Koeloven +";
 
+$langStr["WHYUS-title"] = "Waarom wij";
+$langStr["WHYUS-subtitle"] = "Een krachtig netwerk voor <strong>kopers en verkopers</strong";
+$langStr["WHYUS-text"] = "Alicante Spain Properties is een vastgoedportaal, opgezet door Mediaelx, om internationale kopers en verkopers in contact te brengen met betrouwbare makelaarskantoren aan de Costa Blanca, Costa Cálida en Costa del Sol.
+Met meer dan 2.000 beschikbare woningen – zowel nieuwbouw als bestaande woningen – en een netwerk van meer dan 100 professionele makelaars, bieden wij een van de meest complete en actuele selecties op de markt.
+Of u nu uw volgende huis koopt of een woning verkoopt, wij maken het proces eenvoudiger en betrouwbaarder door u direct in contact te brengen met ervaren lokale experts.";
+
+
 $langStr["FOOTER-menu"] = "Menu";
 $langStr["FOOTER-contactar"] = "Neem contact met ons op";
 $langStr["FOOTER-siguenos"] = "Volg ons";
