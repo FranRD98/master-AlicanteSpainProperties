@@ -31,7 +31,7 @@
     </div>
 
     <!-- Search Container -->
-    <div class="col-12 container-col-search">
+    <div id="search-container" class="col-12">
 
         <div class="row justify-content-between">
             <div class="d-none col-lg-3">
@@ -55,7 +55,7 @@
             {if $actCostas == 0}
             
             <!-- Input Costa -->
-            <div class="col-lg-2 p-0">
+            <div class="col-lg-2 p-0 inputCosta search-property-input">
                 <div class="form-group mb-3">        
                     <select name="coast[]" id="coast{$dupl}" class="form-control select2" multiple data-placeholder="{$lng_costa}">
                         <option value="">{$lng_costa}</option>
@@ -70,7 +70,7 @@
             {/if}
             
             <!-- Input Población -->
-            <div class="col-lg-2 p-0">
+            <div class="col-lg-2 p-0 search-property-input">
                 <div class="form-group mb-3">
                     <select name="loct[]" id="loct{$dupl}" class="form-control select2" multiple data-placeholder="{$lng_ciudad}">
                         {* <option value="">{$lng_ciudad}</option> *}
@@ -82,7 +82,7 @@
             </div>
 
             <!-- Input Zona -->
-            <div class="d-none col-lg-3">
+            <div class="d-none col-lg-3 search-property-input">
                 <div class="form-group mb-3">
                     <select name="lozn[]" id="lozn{$dupl}" class="form-control select2" multiple data-placeholder="{$lng_zona}">
                         {* <option value="">{$lng_zona}</option> *}
@@ -94,7 +94,7 @@
             </div>
 
             <!-- Input Tipo -->
-            <div class="col-lg-2 p-0">
+            <div class="col-lg-2 p-0 search-property-input">
                 <div class="form-group mb-3">
                     <select name="tp[]" id="tp{$dupl}" class="form-control select2" multiple data-placeholder="{$lng_tipo}">
                         {section name=tp loop=$type}
@@ -107,7 +107,7 @@
             </div>
 
                 <!-- Input habitaciones -->
-            <div class="col-lg-2 p-0">
+            <div class="col-lg-2 p-0 search-property-input">
                 <div class="form-group mb-3">
                     <select name="bd" id="bd{$dupl}" class="form-control">
                         <option value="" {if isset($smarty.get.bd) && $smarty.get.bd == ''}selected{/if}>{$lng_habitaciones}</option>
@@ -119,7 +119,7 @@
             </div>
 
             <!-- Precio hasta -->
-            <div class="col-lg-2 p-0">
+            <div class="col-lg-2 p-0 search-property-input">
                 <div class="form-group mb-3">
                     <select name="prhs" id="prhs{$dupl}" class="form-control prhs">
                         <option value="" {if isset($smarty.get.prhs) && $smarty.get.prhs == ""}selected{/if}>{$lng_precio_hasta}</option>
@@ -156,7 +156,7 @@
             </div>
 
             <!-- Input Referencia -->
-            <div class="col-lg-2 p-0">
+            <div class="col-lg-2 p-0 inputReferencia search-property-input">
                 <div class="form-group mb-3">
                     <input type="text" name="rf" id="rf{$dupl}" class="form-control" value="{if isset($smarty.get.rf)}{$smarty.get.rf}{/if}" placeholder="{$lng_referencia}" />
                 </div>
@@ -168,136 +168,98 @@
     </div>
         
     <!-- Search Actions -->
-    <div class="col-12">
-        <div class="row d-flex justify-content-between bg-primary">
-        
-            <!-- Bloque izquierda -->
-            <div class="col-lg-5 d-flex justify-content-start p-0">
+    <div class="row g-3 search-actions">
 
-                <!-- Reset Button -->
-                <div class="col-lg-2">
-                    <div class="form-group">
-                        <a href="javascript:void(0);" class="btn-search-reset">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25.506" height="26.636" viewBox="0 0 25.506 26.636">
-                            <path data-name="Trazado 8449" d="M24.688 33.527a12.143 12.143 0 1 0 9.762-16.059c-4.4.619-7.31 3.81-10.45 6.627m0 0V16m0 8.1h8.1" transform="translate(-23.294 -15.5)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round"/>
-                        </svg>
-                        </a>
-                    </div>
-                </div>
+        <div class="col-12 col-lg-4 d-flex gap-2 justify-content-start group-1 p-0">
 
-                <!-- Advanced Search Button -->
-                <div class="col-lg-2 col-2">
-                    <div class="form-group">
-                        <input type="hidden" name="date" id="date{$dupl}" value="{$smarty.now}" />
-                        <input type="hidden" name="langx" id="langx{$dupl}" value="{$lang}">
-                        <div class="d-grid btn-advanced-search">
-                            <a href="{$urlStart}{$url_advanced_search}/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="27.665" height="27.483" viewBox="0 0 27.665 27.483">
-                                    <g data-name="Grupo 8516">
-                                        <g data-name="Grupo 7461">
-                                            <g data-name="Grupo 7460">
-                                                <g data-name="Grupo 7454">
-                                                    <g data-name="Grupo 19">
-                                                        <g data-name="Grupo 6330">
-                                                            <g data-name="Grupo 6329">
-                                                                <g data-name="Grupo 20">
-                                                                    <path data-name="Línea 2" transform="translate(13.513 9.172)" style="fill:none;stroke:#000;stroke-linecap:round" d="M0 9.391V0"/>
-                                                                    <path data-name="Línea 3" transform="rotate(90 2.171 16.038)" style="fill:none;stroke:#000;stroke-linecap:round" d="M0 9.391V0"/>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    <g data-name="Grupo 7139">
-                                                        <g data-name="Grupo 7133">
-                                                            <path data-name="Trazado 10514" d="M23.413 23.386A13.241 13.241 0 1 1 26.326 19" transform="translate(-.316 -.272)" style="stroke-miterlimit:10;stroke-linejoin:round;fill:none;stroke:#000;stroke-linecap:round"/>
-                                                        </g>
-                                                        <path data-name="Línea 1115" transform="translate(22.82 22.839)" style="stroke-miterlimit:10;fill:none;stroke:#000;stroke-linecap:round" d="m0 0 3.692 3.692"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Cuadraditos -->
+    <div class="reset-buttons d-flex">
+        <a href="javascript:void(0);" class="btn-search-reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25.506" height="26.636" viewBox="0 0 25.506 26.636">
+                <path data-name="Trazado 8449" d="M24.688 33.527a12.143 12.143 0 1 0 9.762-16.059c-4.4.619-7.31 3.81-10.45 6.627m0 0V16m0 8.1h8.1" transform="translate(-23.294 -15.5)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round"/>
+            </svg>
 
-                <!-- Buscar por mapa-->
-                <div class="col-lg-8">
-                    <div class="form-group">
-                        <a href="/mapa-de-propiedades/" class="btn-search-map">
-                            {$lng_buscar_por_mapa}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="31.406" height="31.671" viewBox="0 0 31.406 31.671">
-                                <path data-name="Trazado 10931" d="M44.271 24v27.028m0-27.028-10.136 3.378M44.271 24l10.135 3.378v27.028l-10.135-3.378m0 0-10.136 3.378m0-27.028v27.028m0-27.028L24 24v27.028l10.135 3.378"
-                                    transform="translate(-23.5 -23.368)"
-                                    style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bloque derecha -->
-            <div class="col-lg-5 d-flex justify-content-end p-0">
-                
-                <!-- Botón guardar búsqueda -->
-                {if $actSaveSearch == 1}
-
-                    {if $isLevel1 == false}
-
-                        <div class="col-lg-7">
-                            <div class="form-group">
-                                <a href="javascript:void(0);" class="btn-save-search" data-bs-toggle="modal" data-bs-target="#saveSearchModal">
-                                    {$lng_save_search}
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.134" height="26.134" viewBox="0 0 26.134 26.134">
-                                        <path data-name="Trazado 15794" d="M49.28 57.134V49.28h-9.426v7.854m14.138 0h-18.85A3.142 3.142 0 0 1 32 53.992v-18.85A3.142 3.142 0 0 1 35.142 32h12.836a3.142 3.142 0 0 1 2.222.92l6.014 6.014a3.142 3.142 0 0 1 .92 2.222v12.836a3.142 3.142 0 0 1-3.142 3.142z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round" transform="translate(-31.5 -31.5)"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    {else}
-                        <div class="col-lg-7">
-                            <div class="form-group">
-                                <input type="hidden" name="usrSS" id="usrSS" value="{$smarty.session.kt_login_id}">
-                                <a href="/modules/login/save.php" class="btn-save-search">
-                                    <span>{$lng_save_search}</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.134" height="26.134" viewBox="0 0 26.134 26.134">
-                                        <path data-name="Trazado 15794" d="M49.28 57.134V49.28h-9.426v7.854m14.138 0h-18.85A3.142 3.142 0 0 1 32 53.992v-18.85A3.142 3.142 0 0 1 35.142 32h12.836a3.142 3.142 0 0 1 2.222.92l6.014 6.014a3.142 3.142 0 0 1 .92 2.222v12.836a3.142 3.142 0 0 1-3.142 3.142z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round" transform="translate(-31.5 -31.5)"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    {/if}
-
-                {/if}
-
-                <!-- Buscar propiedades button -->
-                <div class="col-lg-5">
-                    <div class="form-group mb-3 d-grid">
-                        <button type="submit" class="btn-search">
-                            <span class="btn-text">{$lng_buscar_propiedades}</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28.12" height="27.935" viewBox="0 0 28.12 27.935">
-                                <g data-name="Grupo 7456">
-                                    <g data-name="Grupo 7139">
-                                        <g data-name="Grupo 7133">
-                                            <path data-name="Trazado 10514" d="M23.8 23.772a13.466 13.466 0 1 1 2.962-4.459" transform="translate(-.317 -.272)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"/>
-                                        </g>
-                                        <path data-name="Línea 1115" transform="translate(23.311 23.331)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10" d="m0 0 3.656 3.656"/>
-                                    </g>
+        </a>
+        <a href="{$urlStart}{$url_advanced_search}/" class="btn-search-reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27.665" height="27.483" viewBox="0 0 27.665 27.483">
+    <g data-name="Grupo 8516">
+        <g data-name="Grupo 7461">
+            <g data-name="Grupo 7460">
+                <g data-name="Grupo 7454">
+                    <g data-name="Grupo 19">
+                        <g data-name="Grupo 6330">
+                            <g data-name="Grupo 6329">
+                                <g data-name="Grupo 20">
+                                    <path data-name="Línea 2" transform="translate(13.513 9.172)" style="fill:none;stroke:#000;stroke-linecap:round" d="M0 9.391V0"/>
+                                    <path data-name="Línea 3" transform="rotate(90 2.171 16.038)" style="fill:none;stroke:#000;stroke-linecap:round" d="M0 9.391V0"/>
                                 </g>
-                            </svg>
-                        </button>
-                    </div>
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="Grupo 7139">
+                        <g data-name="Grupo 7133">
+                            <path data-name="Trazado 10514" d="M23.413 23.386A13.241 13.241 0 1 1 26.326 19" transform="translate(-.316 -.272)" style="stroke-miterlimit:10;stroke-linejoin:round;fill:none;stroke:#000;stroke-linecap:round"/>
+                        </g>
+                        <path data-name="Línea 1115" transform="translate(22.82 22.839)" style="stroke-miterlimit:10;fill:none;stroke:#000;stroke-linecap:round" d="m0 0 3.692 3.692"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+
+        </a>
+    </div>
+
+    <!-- Botón grande -->
+    <div class="flex-grow-1">
+        <a href="/mapa-de-propiedades/" class="btn-search-map">
+            {$lng_buscar_por_mapa}
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.406" height="31.671" viewBox="0 0 31.406 31.671">
+                <path data-name="Trazado 10931" d="M44.271 24v27.028m0-27.028-10.136 3.378M44.271 24l10.135 3.378v27.028l-10.135-3.378m0 0-10.136 3.378m0-27.028v27.028m0-27.028L24 24v27.028l10.135 3.378" transform="translate(-23.5 -23.368)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round"/>
+            </svg>
+        </a>
+    </div>
+
+</div>
+
+        <!-- GRUPO 2 (col-4 vacío) -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center group-2 ">
+            <!-- De momento vacío -->
+        </div>
+
+        <!-- GRUPO 3 (col-4) -->
+        <div class="col-12 col-lg-4 d-flex gap-2 justify-content-end group-3 p-0">
+                <!-- Save Search -->
+                <div class="col-8 flex-grow-1">
+                        <input type="hidden" name="usrSS" id="usrSS" value="{$smarty.session.kt_login_id}">
+                                <a href="javascript:void(0);" class="btn-save-search" data-bs-toggle="modal" data-bs-target="#saveSearchModal">
+
+                        {$lng_save_search}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26.134" height="26.134" viewBox="0 0 26.134 26.134">
+                            <path data-name="Trazado 15794" d="M49.28 57.134V49.28h-9.426v7.854m14.138 0h-18.85A3.142 3.142 0 0 1 32 53.992v-18.85A3.142 3.142 0 0 1 35.142 32h12.836a3.142 3.142 0 0 1 2.222.92l6.014 6.014a3.142 3.142 0 0 1 .92 2.222v12.836a3.142 3.142 0 0 1-3.142 3.142z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round" transform="translate(-31.5 -31.5)"/>
+                        </svg>
+
+                    </a>
                 </div>
-            </div>
+
+                <!-- Search -->
+                <div class="col-6 flex-grow-1">
+                    <button type="submit" class="btn-search">
+                        {$lng_buscar_propiedades}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28.12" height="27.935" viewBox="0 0 28.12 27.935">
+                            <g data-name="Grupo 7456">
+                                <g data-name="Grupo 7139">
+                                    <g data-name="Grupo 7133">
+                                        <path data-name="Trazado 10514" d="M23.8 23.772a13.466 13.466 0 1 1 2.962-4.459" transform="translate(-.317 -.272)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"/>
+                                    </g>
+                                    <path data-name="Línea 1115" transform="translate(23.311 23.331)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10" d="m0 0 3.656 3.656"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
         </div>
 
-        <div class="d-none">
-            <div class="result"><span></span> {$lng_propiedades}</div>
-        </div>
-
-        </div>
     </div>
 </form>

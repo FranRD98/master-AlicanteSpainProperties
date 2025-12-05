@@ -40562,6 +40562,9 @@ body {
     left: 0;
     right: 0;
     z-index: 2;
+    background-color: #000 !important;
+    transition: background-color 0.3s ease;
+    color: #fff !important;
   }
   .main-header .pill-btn-login {
     padding: 14px 12px;
@@ -40816,7 +40819,7 @@ body {
   }
 }
 
-/* HEADER CUSTOM */
+/* CUSTOM HEADER BUSCADOR */
 .custom-label-checkbox {
   display: flex;
   align-items: center;
@@ -40870,6 +40873,153 @@ body {
   text-align: left;
   color: #fff;
   transition: color 0.3s ease;
+}
+
+/* Input Costa */
+#search-container .inputCosta span.select2-selection.select2-selection--multiple {
+  border-bottom-left-radius: 25px !important;
+  border-top-left-radius: 25px !important;
+}
+
+/* Input de costa, población y tipo */
+#search-container span.select2-selection.select2-selection--multiple {
+  background-color: #fff !important;
+  border: solid 1px white !important;
+  height: 64px;
+}
+
+/* Placeholder Costa, población y Tipo */
+#search-container span.select2-selection.select2-selection--multiple input::-moz-placeholder {
+  font-family: Outfit;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191919;
+}
+#search-container span.select2-selection.select2-selection--multiple input::placeholder {
+  font-family: Outfit;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191919;
+}
+
+/* Input habitaciones y precio hasta */
+#search-container span.customSelect.form-control {
+  background-color: white;
+  height: 64px;
+  font-family: Outfit;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #191919;
+}
+
+/* Input Referencia */
+input#rf {
+  background-color: #e5e5e5;
+  height: 64px;
+  border-bottom-right-radius: 18px !important;
+  border-top-right-radius: 18px !important;
+}
+
+/* NO FUNCIONA */
+input#rf:focus {
+  outline: none !important;
+}
+
+/* Placeholder Input Referencia */
+input#rf::-moz-placeholder {
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #797979;
+}
+input#rf::placeholder {
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #797979;
+}
+
+/* THIRD */
+.search-actions .group-1 .col-4 {
+  display: flex;
+  gap: 10px;
+}
+
+.search-actions .btn-search-reset {
+  width: 76px;
+  height: 70px;
+  padding: 24px 27px;
+  border-radius: 20px;
+  border: solid 1px #000;
+  background-color: #e4f0f7;
+}
+
+.search-actions .btn-search-map {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  border-radius: 20px;
+  border: solid 1px #000;
+  background-color: #e4f0f7;
+}
+
+.search-actions .group-3 .btn-save-search {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff !important;
+  border-radius: 20px;
+  background-color: #29bdef !important;
+}
+
+.search-actions .group-3 .btn-search {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff !important;
+  border-radius: 20px;
+  background-color: #000 !important;
 }
 
 .main-slider {
